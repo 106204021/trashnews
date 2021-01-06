@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet"> 
     
     <style> 
-        body{ margin: 0; padding: 0; }
+        *{
+            box-sizing: border-box;
+            }
+        
         .header{
             background-color: #27c9ff;
             width: 1440px;
@@ -15,6 +21,7 @@
             justify-content: space-between;
             align-items: center;
         }
+        
         .header-font{
             font-family: Noto Serif TC;
             font-size: 32px;
@@ -83,6 +90,83 @@
             position: absolute;
             width: 173px;
         }
+        
+        /*徐嘉璟Caurosuel*/
+        .p-carousel {
+            object-fit: cover;
+            width: 817px;
+            height: 461px;
+        }
+
+        .p-carousel-indicator li{
+            width: 16px;
+            height: 16px;
+            border-radius: 100%;
+            background-color: #F15BB5;
+        }
+
+
+        .p {
+            background-color: #ffffff;
+            margin-right: auto;
+            position: relative;
+            width:1440px;
+            height:461px;
+        }
+        
+        .title-car{
+            position: absolute;
+            left:875px;
+            bottom:206px;
+            top:116px;
+        }
+
+        .titleinfo-car{
+            font-family: 'Roboto','Noto Sans TC';
+            font-weight: 700;
+            font-size: 36px;
+        }
+        
+        .bluetag{
+            background-color: #27C9FF;
+            width:77px;
+            height:35px;
+            font-weight: bold;
+            position: absolute;
+            left:875px;
+            bottom:157.3px;
+            top:268px;
+            border-radius: 90px;
+            display: flex;
+        }
+        
+        .bluetaginfo{
+            color: #ffffff;
+            font-family: 'Roboto','Noto Sans TC';
+            font-size: 18px;
+            font-weight: 700;
+            margin: auto;
+        }
+        
+        .pinktag{
+            border:solid #F15BB5 1.5px;
+            width:243px;
+            height:36px;
+            position: absolute;
+            left:996px;
+            top:268px;
+            bottom:157.3px;
+            display: flex; 
+        }
+
+        .pinktaginfo{
+            color: #F15BB5;
+            display: inline-block;
+            font-family: 'Roboto','Noto Serif TC';
+            font-size: 18px;
+            font-weight: 400;
+            margin: auto;  
+        }
     </style>
 </head>
 <body style="background-color: #ffea69;">
@@ -101,6 +185,140 @@
                 <div><img src="../finalsite/好人有好報 廢人有廢報.png" ></div>
         </div>
     </div>
+       
+    <!--徐嘉璟Caurousel開頭-->
+        <div id="carouselExampleIndicators" class="carousel slide p" data-bs-ride="carousel">
+        <ol class="carousel-indicators p-carousel-indicator li" style="bottom:93px; left:527px; top:352px">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" style="margin-left: 20px;"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" style="margin-left: 20px;"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" style="margin-left: 20px;"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" style="margin-left: 20px;"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" style="margin-left: 20px;"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="position: relative;">
+                <img class="p-carousel"
+                    src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/f0b53b2da041fca49ef0b9839060b345-768x480.jpg"
+                    class="d-block w-100" alt="...">
+                <div class="title-car">
+                    <div class="titleinfo-car">烙社會標籤</div>
+                    <div class="titleinfo-car">光桌映女性自我迷惘</div>   
+                </div> 
+                <div class="bluetag">
+                    <div class="bluetaginfo">藝文</div>
+                </div>
+                <div class="pinktag">
+                    <div class="pinktaginfo">#光桌</div>
+                    <div class="pinktaginfo">#賴聖芸</div>
+                    <div class="pinktaginfo">#交大應藝所</div>
+                </div>
+            </div>
+            <div class="carousel-item" style="position: relative;">
+                <img class="p-carousel"
+                    src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/4a8a08f09d37b73795649038408b5f33-768x577.jpg"
+                    class="d-block w-100" alt="...">
+                    <div class="title-car">
+                        <div class="titleinfo-car">油彩融創作心境</div>
+                        <div class="titleinfo-car">林君晏塑公園散步景觀</div>   
+                    </div> 
+                    <div class="bluetag">
+                        <div class="bluetaginfo">藝文</div>
+                    </div>
+                    <div class="pinktag">
+                        <div class="pinktaginfo">#油畫</div>
+                        <div class="pinktaginfo">#林君晏</div>
+                        <div class="pinktaginfo">#清大藝設系</div>
+                    </div>
+                 
+            </div>
+            <div class="carousel-item" style="position: relative;">
+                <img class="p-carousel"
+                    src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/ec6ef230f1828039ee794566b9c58adc.png"
+                    class="d-block w-100" alt="...">
+                    <div class="title-car">
+                        <div class="titleinfo-car">堆疊紀錄科學視角</div>
+                        <div class="titleinfo-car">《參照系》探索地景樣貌</div>   
+                    </div>
+                    <div class="bluetag">
+                        <div class="bluetaginfo">藝文</div>
+                    </div>
+                    <div class="pinktag">
+                        <div class="pinktaginfo">#紀錄片</div>
+                        <div class="pinktaginfo">#蘇郁心</div>
+                        <div class="pinktaginfo">#雙年展</div>
+                    </div>
+            </div>
+            <div class="carousel-item" style="position: relative;">
+                <img class="p-carousel"
+                    src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/a8de89050bb1310f63af721f6038ae59-768x513.jpg"
+                    class="d-block w-100" alt="...">
+                    <div class="title-car">
+                        <div class="titleinfo-car">藍鵲盃限新手參賽</div>
+                        <div class="titleinfo-car">盼掀袋棍球風潮</div>   
+                    </div>
+                    <div class="bluetag">
+                        <div class="bluetaginfo">體育</div>
+                    </div>
+                    <div class="pinktag">
+                        <div class="pinktaginfo">#藍鵲盃</div>
+                        <div class="pinktaginfo">#袋棍球</div>
+                        <div class="pinktaginfo">#推廣</div>
+                    </div>
+            </div>
+            <div class="carousel-item" style="position: relative;">
+                <img class="p-carousel"
+                    src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/bd8479affd63e8a7a69b005f63c302a1-768x512.jpg"
+                    class="d-block w-100" alt="...">
+                    <div class="title-car">
+                        <div class="titleinfo-car">無聲中展球后霸氣</div>
+                        <div class="titleinfo-car">沈彥汝全障運羽球雙金</div>   
+                    </div>
+                    <div class="bluetag">
+                        <div class="bluetaginfo">體育</div>
+                    </div>
+                    <div class="pinktag">
+                        <div class="pinktaginfo">#全障運</div>
+                        <div class="pinktaginfo">#沈彥汝</div>
+                        <div class="pinktaginfo">#聽障羽球</div>
+                    </div>
+            </div>
+            <div class="carousel-item" style="position: relative;">
+                <img class="p-carousel"
+                    src="https://unews.nccu.edu.tw/wp-content/uploads/2020/10/bf38cb2316b73047b5c7375c0f06e9cc-768x512.jpg"
+                    class="d-block w-100" alt="...">
+                    <div class="title-car">
+                        <div class="titleinfo-car">一「舉」兩得</div>
+                        <div class="titleinfo-car">鄭又睿健力破紀錄奪金</div>   
+                    </div>
+                    <div class="bluetag">
+                        <div class="bluetaginfo">體育</div>
+                    </div>
+                    <div class="pinktag">
+                        <div class="pinktaginfo">#全民運</div>
+                        <div class="pinktaginfo">#鄭又睿</div>
+                        <div class="pinktaginfo">#健力</div>
+                    </div>
+            </div>
+        </div>
+
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <!--徐嘉璟Caurousel結尾-->
+    
     <div style="display: flex;align-items: flex-end;">
         <div style="display: inline-block;">
             <div class="cat">
