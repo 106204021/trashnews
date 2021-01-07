@@ -16,12 +16,11 @@
         
         .header{
             background-color: #27c9ff;
-            width: 1440px;
+            width: 1450px;
             height: 97px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             position:relative;
+            top:-10px;
+            left:-10px;
         }
         
         .header-font{
@@ -30,8 +29,8 @@
             line-height: 34px;
             font-weight: 900;
             color: #ffffff;
-            margin-right: 50px;
-            letter-spacing: 0.06em;
+            margin-right: 30px;
+            letter-spacing: 0.1em;
         }
         
         .yellowlogo{
@@ -39,15 +38,20 @@
             position:absolute; 
             left: 40px ;
         }
+
+
+
     
         .bottom{
-            width: 1440px;
+            width: 1450px;
             height: 166px;
             background-color: #27c9ff;
             display: flex;
             justify-content: space-between;
             align-items: center;
-
+            position: relative;
+            bottom:-10px;
+            left:-10px;
         }
         .bottom-font{
             color: #ffffff;
@@ -57,16 +61,6 @@
             line-height: 20px;
             margin-left: 105px;
             letter-spacing: 0.155em;
-        }
-                
-
-        .p {
-            background-color: #ffffff;
-            margin-right: auto;
-            position: relative;
-            width:1440px;
-            height:461px;
-            margin-bottom: 163px;
         }
 
         .flex-container{
@@ -201,30 +195,29 @@
 </head>
 <body style="background-color: #ffea69;">
     <div class="header">
-        <a href="https://106204021.github.io/trashnews/finalsite.html" target="_self">
-            <img src="assets/BannerLOGOy.png" class="yellowlogo" >
-        </a>
-        <div style="display: inline-block; position: absolute; right:10px;">
+        <div style="position: absolute;left:0px; top:13px">
+        <a href="https://106204021.github.io/trashnews/finalsite.html" target="_self"><img src="assets/BannerLOGOy.png" class="yellowlogo" ></a>
+        </div>
+        <div style="display: inline-block; position: absolute; right:5px; top:40px">
         <span class="header-font">校園</span>
         <span class="header-font">體育</span>
         <span class="header-font">藝文</span>
         <span class="header-font">關於我們 ＋</span>
         </div>
     </div>
-    <div style="background-color: #ffea69;display: flex;align-items: center;justify-content: center;height: 400px;width: 1440px;">
-        <div>
-                <div><img src="assets/LOGOob.png" width=300px;></div>
-        </div>
+    <div style="display: flex;align-items: center;justify-content: center;height: 400px;width: 1440px;">
+        <div><img src="assets/LOGOob.png" width=300px;></div>
     </div>
 
     <div class="flex-container">
         <div class="white"></div>
+        
         <div class="blue" style="position: absolute;top:-30px;"><span class="blue-font">關於我們</span></div>       
-        
-        
+          
         <div class="intro-trash">
             <span style="font-size: 28px;">廢報</span>，顧名思義廢到爆。這裡集結了我們三人在政大新聞與媒體實驗室、政大大學報產出的報導，秉持「好人有好報，廢人有廢報」之精神，把悲傷留給自己，上課教的留給法賢，廢報留給你。2021年初嚴冬之下，就算錯過也沒關係的優質媒體。
         </div> 
+        
         <div class="intro-three">
             <div>
                 <img class="writerphoto" src="assets/wuphoto.jpg">
@@ -242,7 +235,6 @@
                 <div class="writerintro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
             </div>
         </div>
-
        
         <div class="blue" style="position: absolute;bottom:290px;"><span class="blue-font">贊助廢報</span></div>
         
@@ -268,6 +260,5 @@
         <img src="assets/LOGOy.png" width=190px >
         <span style="color: #ffffff ; font-size: 36px ; line-height: 52px ; position: absolute ; left: 153px ; top:55px ; font-family:'Noto Serif TC'; font-weight: 700;">贊助我們</span>
     </div>
-</div>
 </body>
 </html>
