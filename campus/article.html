@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="style-for-print.css" media="print">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto Serif TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: #27c9ff;
+            width: 1440px;
+            height: 97px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            margin-bottom: 200px;
+        }
+
+        .header-font {
+            font-family: 'Roboto', 'Noto Serif TC';
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 900;
+            color: #ffffff;
+            margin-right: 50px;
+        }
+
+        .yellowlogo {
+            width: 150px;
+            position: absolute;
+            left: 40px;
+        }
+
+        .wbg {
+            width: 1285px;
+            height: 4555px;
+            background-color: #ffffff;
+            position: absolute;
+            top: 335px;
+            z-index: -100;
+        }
+
+        .upicon{
+            width: 75px;
+            height: 75px;
+            position: fixed;
+            top: 590px;
+            right: 250px;
+            z-index: 100;
+        }
+
+        .shareicon{
+            width: 75px;
+            height: 75px;
+            position: fixed;
+            right: 160px;
+            top:590px;
+            z-index: 100;
+        }
+
+        .title {
+            font-family: 'Roboto', 'Noto Sans TC';
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 77.52px;
+            letter-spacing: 0.075em;
+            position: relative;
+        }
+
+        .bluetag {
+            background-color: #27C9FF;
+            width: 108px;
+            height: 52px;
+            border-radius: 90px;
+            font-family: 'Roboto', 'Noto Sans TC';
+            font-weight: 700px;
+            font-size: 28px;
+            line-height: 40.5px;
+            position: absolute;
+            top: -80px;
+            display: flex;
+        }
+
+        .bluetaginfo {
+            color: #ffffff;
+            font-family: 'Roboto', 'Noto Sans TC';
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 40.5px;
+            margin: auto;
+        }
+
+        .pinkstick {
+            width: 16px;
+            height: 175px;
+            background: #F15BB5;
+            border-radius: 120px;
+            position: absolute;
+            left: -90px;
+            bottom: 0px;
+        }
+
+        .info {
+            color: #000000;
+            font-family: 'Roboto', 'Noto Serif TC';
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 29px;
+            position: absolute;
+            bottom: -60px;
+            letter-spacing: 0.04em;
+        }
+
+        .pinktag {
+            border: solid #F15BB5 1.5px;
+            width: 251px;
+            height: 36px;
+            bottom: -60px;
+            right: 30px;
+            position: absolute;
+            display: flex;
+        }
+
+        .pinktaginfo {
+            color: #F15BB5;
+            display: inline-block;
+            font-family: 'Roboto', 'Noto Serif TC';
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 400;
+            margin: auto;
+            letter-spacing: 0.04em;
+        }
+
+        .gray {
+            width: 735px;
+            height: auto;
+            background: #E5E5E5;
+            margin-top: 140px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .fpara {
+            width: 645px;
+            height: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: #000000;
+            font-family: 'Roboto', 'Noto Sans TC';
+            font-size: 20px;
+            line-height: 29px;
+            font-weight: normal;
+            letter-spacing: 0.075em;
+        }
+
+        .pic {
+            width: 735px;
+            height: 550px;
+            margin-top: 60px;
+        }
+
+        .cap {
+            width: 735px;
+            height: auto;
+            border-left: solid #A2A2A2 1px;
+            padding-left: 20px;
+            font-family: Noto Sans TC;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 26px;
+            color: #A2A2A2;
+            margin-top: 25px;
+        }
+
+        .para {
+            width: 656px;
+            font-family: Noto Sans TC;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 29px;
+            letter-spacing: 0.075em;
+            color: #000000;
+            margin-top: 35px;
+        }
+
+        .container {
+            height: 370px;
+            width: 735px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 160px;
+        }
+
+        .titlecontainer {
+            display: flex;
+            width: 205px;
+            height: 75px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .writertitle {
+            display: inline-block;
+            font-family: Noto Serif TC;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 52px;
+            letter-spacing: 0.155em;
+            color: #000000;
+            margin-left: 30px;
+        }
+
+        .writerpink {
+            display: inline-block;
+            width: 8px;
+            background: #F15BB5;
+            border-radius: 120px;
+            height: 73px;
+        }
+
+        .writercontainer {
+            display: flex;
+            width: 700px;
+            height: 185px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .writerphoto {
+            width: 185px;
+            height: 185px;
+            border-radius: 50%;
+        }
+
+        .namecontainer {
+            width: 422px;
+            height: 185px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .name {
+            width: 284px;
+            height: 30px;
+            font-family: Noto Serif TC;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 25px;
+            letter-spacing: 0.155em;
+            color: #000000;
+            padding-bottom: 45px;
+            border-bottom: 0.1px solid #000000;
+        }
+
+        .intro {
+            width: 422px;
+            height: auto;
+            font-family: Noto Serif TC;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 0.155em;
+            color: #000000;
+        }
+
+        .relativecontainer {
+            display: flex;
+            width: 700px;
+            height: 185px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .relativearticle {
+            width: 236px;
+            height: 162px;
+        }
+
+        .relativetitle {
+            width: 400px;
+            height: 92px;
+            font-family: Noto Sans TC;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 46px;
+            color: #000000;
+        }
+
+        .bottom {
+            width: 1440px;
+            height: 166px;
+            background-color: #27c9ff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bottom-font {
+            color: #ffffff;
+            font-family: 'Noto Serif TC';
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+            margin-left: 105px;
+            letter-spacing: 0.155em;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: #ffea69;">
+    <div class="header">
+        <img src="assets/BannerLOGOy.png" class="yellowlogo">
+        <div style="display: inline-block; position: absolute; left: 950px">
+            <span class="header-font">校園</span>
+            <span class="header-font">體育</span>
+            <span class="header-font">藝文</span>
+            <span class="header-font">關於我們 ＋</span>
+        </div>
+        <div class="wbg"></div>
+        <img src="photo/pg up.png" class="upicon">
+        <img src="photo/share.png" class="shareicon">
+
+    </div>
+
+    <div style="display: flex; align-items:center ;justify-content: center; flex-direction: column ;width: 1440px;">
+        <div style="width:800px; ">
+            <div class="title">「中式」連儂牆現身　台陸學生盼相互尊重
+                <div class="bluetag">
+                    <div class="bluetaginfo">校園</div>
+                </div>
+                <div class="pinkstick"></div>
+                <div class="info">2019-11-01　陳庭寬</div>
+                <div class="pinktag">
+                    <div class="pinktaginfo">#陸生</div>
+                    <div class="pinktaginfo">#連儂牆</div>
+                    <div class="pinktaginfo">#反送中</div>
+                </div>
+            </div>
+        </div>
+        <div class="gray">
+            <div class="fpara">
+                【記者陳庭寬台北報導】自反送中議題爆發以來，香港官民衝突不斷，台灣的大學生紛紛於校園內廣設連儂牆，以聲援香港民間的行動。近日於國立政治大學內，卻出現同於多數陸方觀點的「中式」連儂牆，張貼支持香港警方、反對暴力示威的標語，甫貼出即獲得大量回覆。不同立場的聲音在同一場域形成對立，也凸顯言論自由和多元意見間的爭議性。
+            </div>
+        </div>
+        <img src="http://www.newslab.nccu.edu.tw/uploads/asset/data/5dba4d311d41c8061a007bce/DSCF5927.JPG" class="pic">
+        <div class="cap">
+            政大連儂牆出現同於多數陸方觀點的文宣（圖右），與港方意見於同一場域形成強烈對比（圖左） 。　圖／陳庭寬攝
+        </div>
+        <div class="para">
+            中國大陸留學生小A（化名）認為，起初很開心彼此能擁有溝通的空間，然而，一旦表達不同觀點，即被成千上萬帶有負面語言的紙條覆蓋，無法真正交流。至於為何反對反送中，小A表示，引渡條例已撤回，許多示威活動的合法性值得商榷，他期盼香港人民能冷靜地解決問題。
+        </div>
+        <img src="http://www.newslab.nccu.edu.tw/uploads/asset/data/5dba4d2a1d41c82b66002439/DSCF5954.JPG" class="pic">
+        <div class="cap">
+            陸方文宣(白底黑字紙張)，主張「支持港警合法使用武力」、「反對立場霸凌」等意見，已遭大量持反面意見的便條紙覆蓋。　圖/陳庭寬攝
+        </div>
+        <div class="para">
+            另一位陸生E大(化名)則認為部分連儂牆上的陸方言論用語較情緒化且具暗喻性，自然會獲得負面回應。「我們陸生來到台灣，本就該學會使用當地較能接受的語言，我們自己也有問題需要改進。」他補充說道。不過他也希望台灣學生反思連儂牆的初衷，若淪為純粹消費他人的場域，不免失去原先意義。
+        </div>
+        <img src="http://www.newslab.nccu.edu.tw/uploads/asset/data/5dba4d291d41c8061a007bca/DSCF5988.JPG" class="pic">
+        <div class="cap">
+            部分偏向陸方立場的用詞被認為過於情緒化，因此與其他相反立場的言論形成衝突。　圖/陳庭寬攝
+        </div>
+        <div class="para">
+            對於言論總被先入為主地忽視，陸生B姊無奈表示，雖感到難過，但仍希望雙方能跳脫同溫層，換位思考並理性看待不同立場的訊息，他不希望兩岸人民因此失去相互理解的機會。政大法律學系二年級學生陸致嘉也提到，在台灣不易獲得陸方的資訊，校內難得能出現不同的聲音，卻未受重視，稍嫌可惜。台灣以民主自由為傲，不應滿足於僅有發言權利的「消極」言論自由，該給予更多尊重與包容，才是真正的言論自由。
+        </div>
+        <img src="http://www.newslab.nccu.edu.tw/uploads/asset/data/5dba4d2a1d41c8061a007bcc/DSCF5903.JPG" class="pic">
+        <div class="cap">
+            代表不同立場的文宣於同一牆面形成對比，吸引大量同學圍觀。　圖/陳庭寬攝
+        </div>
+        <div class="para">
+            政大新聞學系教授馮建三說:「我們不應只看見陸方不好的地方，若只是不斷攻擊，無助於溝通。」他指出，台灣應多同理他人的處境。他希望民眾能先傾聽陸方的看法，再決定是否接受，溝通的目的不在於改變原先的思想，而是嘗試理解他人的想法。
+        </div>
+
+        <div class="container">
+            <div class="titlecontainer">
+                <div class="writerpink"></div>
+                <div class="writertitle">廢人廢話</div>
+            </div>
+            <div class="writercontainer">
+                <img src="photo/chen.png" class="writerphoto">
+                <div class="namecontainer">
+                    <div class="name">陳庭寬</div>
+                    <div class="intro">五十字左右五十字左右五十字左右五十字左右五十字左右五十字左右五十字左右五十字左右五十字左右五十字左右</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="titlecontainer">
+                <div class="writerpink"></div>
+                <div class="writertitle">廢廢相報</div>
+            </div>
+            <div class="relativecontainer">
+                <img src="http://www.newslab.nccu.edu.tw/uploads/asset/data/5df272721d41c82b660054f4/theevent_photo_%E6%B8%AF%E7%94%9F%E5%B0%88%E6%A1%882.JPG"
+                    class="relativearticle">
+                <div class="relativetitle">訪台專案助港生　實際效益待考量</div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div style="display:inline-block;height: 80px;">
+            <div class="bottom-font">記者｜吳冠伶  徐嘉璟  陳庭寬</div>
+            <div class="bottom-font">指導｜李法賢</div>
+            <div style="width: 10px;height:20px;background-color: #27c9ff;"></div>
+            <div class="bottom-font">copyright©2020 廢報</div>
+    </div>
+    <div style="position: relative;width: 400px;">
+        <img src="assets/LOGOy.png" width=190px >
+        <span style="color: #ffffff ; font-size: 36px ; line-height: 52px ; position: absolute ; left: 153px ; top:55px ; font-family:'Noto Serif TC'; font-weight: 700;">贊助我們</span>
+    </div>
+</div>
+</body>
+
+</html>
