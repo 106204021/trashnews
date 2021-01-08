@@ -18,8 +18,21 @@
             box-sizing: border-box;
         }
 
-        /* 覆蓋瀏覽器預設的樣式 */
-        body, p {
+        /*phone*/
+        @media (max-width: 767px) {
+            .only-for-desktop {
+                display: none;
+            }
+
+            .only-for-tablet {
+                display: none;
+            }
+
+            .only-for-phone {
+                display: block;
+            }
+
+        body, p{
             margin: 0px;
         }
 
@@ -32,39 +45,39 @@
         .header {
             background-color: #27c9ff;
             width: 100%;
-            height: 97px;
+            height: 60px;
             position: relative;
         }
 
         .header-font {
             font-family: 'Noto Serif TC';
-            font-size: 24px;
-            line-height: 34px;
+            font-size: 20px;
+            line-height: 29px;
             font-weight: 900;
             color: #ffffff;
-            margin-right: 30px;
-            letter-spacing: 0.1em;
+            margin-right: 5px;
+            letter-spacing: 0.04em;
         }
 
         .yellowlogo {
-            width: 150px;
+            width: 82px;
             position: absolute;
-            left: 40px;
+            left: 10px;
+            top:10px;
         }
         .trashlogo{
-            margin-top:60px;
+            margin-top:29px;
             margin-right:auto;
-            margin-bottom:90px;
+            margin-bottom:38px;
             margin-left:auto;
-            width: 300px;
-            height: 200px;
-
+            width: 145px;
+            height: 100px;
         }
 
 
         .bottom {
-            width: 100%px;
-            height: 166px;
+            width: 100%;
+            height: 61px;
             background-color: #27c9ff;
             display: flex;
             justify-content: space-between;
@@ -77,48 +90,35 @@
             color: #ffffff;
             font-family: 'Noto Serif TC';
             font-weight: bold;
-            font-size: 14px;
-            line-height: 20px;
-            margin-left: 105px;
+            font-size: 9px;
+            line-height: 13px;
+            margin-left: 26px;
             letter-spacing: 0.155em;
         }
 
 
         .white {
-            width: 995px;
-            height: 773px;
-            display: flex;
-
             background-color: #ffffff;
-            position: absolute;
-            top: 0px;
+            width: 342px;
+            height: 560px;
+            margin-left: auto;
+            margin-right:auto;
             z-index: -1;
         }
 
-        .blue {
-            width: 290px;
-            height: 74px;
-            background-color: #27c9ff;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
 
         .blue-block {
-            width: 290px;
-            height: 74px;
+            width: 131px;
+            height: 33px;
             background-color: #27c9ff;
             text-align: center;
-            line-height:74px;
-
-            /* 水平置中 */
+            line-height:33px;
             margin-left:auto;
             margin-right: auto;
         }
 
         .blue-font {
-            font-size: 40px;
+            font-size: 18px;
             font-family: 'Noto Serif TC';
             font-weight: 900;
             text-align: center;
@@ -130,162 +130,678 @@
         .wu-intro-trash {
             font-family: 'Noto Serif TC';
             font-weight: 600;
-            font-size: 18px;
-            line-height: 40px;
+            font-size: 14px;
+            line-height: 25px;
             color: #000000;
-            width: 712px;
+            width: 278px;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 108px;
+            margin-top: 35px;
+            padding-left: 10px;
         }
 
 
         .wu-intro-three {
             display: flex;
             justify-content: space-between;
-            width: 760px;
-            height: 411px;
+            width: 288px;
+            height: 243px;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 88px;
+            margin-top: 40px;
         }
 
         
         .wu-intro-three>div {
-            width: 195px;
-            height: 367px;
+            width: 78px;
+            height: 243px;
             display: flex;
             justify-content: space-between;
             position: relative;
         }
 
         .writerphoto {
-            width: 145px;
-            height: 145px;
+            width: 58px;
+            height: 58px;
             border-radius: 50%;
-            margin-left: 25px;
+            margin-left: 12px;
         }
 
         .writername {
             position: absolute;
-            width: 195px;
-            height: 34px;
-            top: 170px;
+            width: 86px;
+            top: 70px;
             font-family: 'Noto Serif TC';
             font-weight: bold;
-            font-size: 24px;
-            line-height: 25px;
+            font-size: 14px;
+            line-height: 20px;
             text-align: center;
-            letter-spacing: 0.155em;
+            letter-spacing: 0.15em;
             color: #000000;
             border-bottom: 0.1px solid #000000;
         }
 
         .writerintro {
             position: absolute;
-            width: 180px;
-            height: 40px;
-            top: 230px;
-            left: 10px;
+            width: 86px;
+            top: 100px;
             font-family: 'Noto Serif TC';
             font-weight: 500;
-            font-size: 18px;
+            font-size: 10px;
             line-height: 20px;
             text-align: center;
-            letter-spacing: 0.155em;
+            letter-spacing: 0.15em;
             color: #000000;
-            display: flex;
-            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
         }
 
 
         .wu-money {
-            width: 461px;
-            height: 113px;
+            width: 375px;
+            height: 60px;
             font-family: 'Noto Serif TC';
             font-style: normal;
             font-weight: bold;
-            font-size: 24px;
-            line-height: 50px;
+            font-size: 16px;
+            line-height:25px;
             text-align: center;
-            letter-spacing: 0.2em;
+            letter-spacing: 0.045em;
             color: #000000;
-
-            margin: 73px auto 104px auto;
-
+            margin: 22px auto 43px auto;
             position: relative;
         }
 
-        .pink-underline {
-            width: 245px;
-            height: 17px;
-            background: #F15BB5;
-            top: 28px;
-            left: 187px;
-            position: absolute;
-            z-index: -1;
-        }
 
         .wu-pink-underline {
-            width: 245px;
-            height: 17px;
+            width: 145px;
+            height: 11px;
             background: #F15BB5;
-            
             margin-left: auto;
             margin-right: auto;
             position: absolute;
-            right: 32px;
-            top: 25px;
+            left: 160px;
+            top: 12px;
             z-index: -1;
+        }
+        }
+        
+        /*tablet*/
+        @media (min-width: 768px) and (max-width: 1439px) {
+
+            .only-for-desktop {
+                display: none;
+            }
+
+            .only-for-tablet {
+                display: block;
+            }
+
+            .only-for-phone {
+                display: none;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            /* 覆蓋瀏覽器預設的樣式 */
+            body,
+            p {
+                margin: 0px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+
+            .header {
+                background-color: #27c9ff;
+                width: 100%;
+                height: 60px;
+                position: relative;
+            }
+
+            .header-font {
+                font-family: 'Noto Serif TC';
+                font-size: 21px;
+                line-height: 30px;
+                font-weight: 900;
+                color: #ffffff;
+                margin-right: 15px;
+                letter-spacing: 0.06em;
+            }
+
+            .yellowlogo {
+                width: 90px;
+                position: absolute;
+                left: 22px;
+                top: 10px;
+            }
+
+            .trashlogo {
+                margin-top: 35px;
+                margin-right: auto;
+                margin-bottom: 40px;
+                margin-left: auto;
+                width: 160px;
+                height: 100px;
+            }
+
+
+            .bottom {
+                width: 100%;
+                height: 90px;
+                background-color: #27c9ff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+
+            }
+
+            .bottom-font {
+                color: #ffffff;
+                font-family: 'Noto Serif TC';
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 16px;
+                margin-left: 33px;
+                letter-spacing: 0.155em;
+            }
+
+
+            .white {
+                background-color: #ffffff;
+                width: 451px;
+                height: 601px;
+                margin-left: auto;
+                margin-right: auto;
+                z-index: -1;
+            }
+
+
+            .blue-block {
+                width: 131px;
+                height: 33px;
+                background-color: #27c9ff;
+                text-align: center;
+                line-height: 33px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .blue-font {
+                font-size: 18px;
+                font-family: 'Noto Serif TC';
+                font-weight: 900;
+                text-align: center;
+                color: #ffffff;
+            }
+
+
+
+            .wu-intro-trash {
+                font-family: 'Noto Serif TC';
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 25px;
+                color: #000000;
+                width: 314px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 40px;
+                padding-left: 10px;
+            }
+
+
+            .wu-intro-three {
+                display: flex;
+                justify-content: space-between;
+                width: 324px;
+                height: 243px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 40px;
+            }
+
+
+            .wu-intro-three>div {
+                width: 78px;
+                height: 243px;
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+            }
+
+            .writerphoto {
+                width: 58px;
+                height: 58px;
+                border-radius: 50%;
+                margin-left: 12px;
+            }
+
+            .writername {
+                position: absolute;
+                width: 86px;
+                top: 65px;
+                font-family: 'Noto Serif TC';
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 26px;
+                text-align: center;
+                letter-spacing: 0.15em;
+                color: #000000;
+                border-bottom: 0.1px solid #000000;
+            }
+
+            .writerintro {
+                position: absolute;
+                width: 90px;
+                top: 100px;
+                font-family: 'Noto Serif TC';
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.15em;
+                color: #000000;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+
+            .wu-money {
+                width: 375px;
+                height: 75px;
+                font-family: 'Noto Serif TC';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 30px;
+                text-align: center;
+                letter-spacing: 0.155em;
+                color: #000000;
+                margin: 22px auto 43px auto;
+                position: relative;
+            }
+
+
+            .wu-pink-underline {
+                width: 177px;
+                height: 13px;
+                background: #F15BB5;
+                margin-left: auto;
+                margin-right: auto;
+                position: absolute;
+                left: 154px;
+                top: 15px;
+                z-index: -1;
+            }
+        }
+
+
+        /*desktop*/
+        @media (min-width: 1440px) {
+
+            .only-for-desktop {
+                display: block;
+            }
+
+            .only-for-tablet {
+                display: none;
+            }
+
+            .only-for-phone {
+                display: none;
+            }
+
+            /* 覆蓋瀏覽器預設的樣式 */
+            body,
+            p {
+                margin: 0px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+
+            .header {
+                background-color: #27c9ff;
+                width: 100%;
+                height: 97px;
+                position: relative;
+            }
+
+            .header-font {
+                font-family: 'Noto Serif TC';
+                font-size: 24px;
+                line-height: 34px;
+                font-weight: 900;
+                color: #ffffff;
+                margin-right: 30px;
+                letter-spacing: 0.1em;
+            }
+
+            .yellowlogo {
+                width: 150px;
+                position: absolute;
+                left: 40px;
+            }
+
+            .trashlogo {
+                margin-top: 60px;
+                margin-right: auto;
+                margin-bottom: 90px;
+                margin-left: auto;
+                width: 300px;
+                height: 200px;
+
+            }
+
+
+            .bottom {
+                width: 100%px;
+                height: 166px;
+                background-color: #27c9ff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                bottom: -10px;
+            }
+
+            .bottom-font {
+                color: #ffffff;
+                font-family: 'Noto Serif TC';
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                margin-left: 105px;
+                letter-spacing: 0.155em;
+            }
+
+
+            .white {
+                width: 995px;
+                height: 773px;
+                display: flex;
+
+                background-color: #ffffff;
+                position: absolute;
+                top: 0px;
+                z-index: -1;
+            }
+
+            .blue {
+                width: 290px;
+                height: 74px;
+                background-color: #27c9ff;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .blue-block {
+                width: 290px;
+                height: 74px;
+                background-color: #27c9ff;
+                text-align: center;
+                line-height: 74px;
+
+                /* 水平置中 */
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .blue-font {
+                font-size: 40px;
+                font-family: 'Noto Serif TC';
+                font-weight: 900;
+                text-align: center;
+                color: #ffffff;
+            }
+
+
+
+            .wu-intro-trash {
+                font-family: 'Noto Serif TC';
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 40px;
+                color: #000000;
+                width: 712px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 108px;
+            }
+
+
+            .wu-intro-three {
+                display: flex;
+                justify-content: space-between;
+                width: 760px;
+                height: 411px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 88px;
+            }
+
+
+            .wu-intro-three>div {
+                width: 195px;
+                height: 367px;
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+            }
+
+            .writerphoto {
+                width: 145px;
+                height: 145px;
+                border-radius: 50%;
+                margin-left: 25px;
+            }
+
+            .writername {
+                position: absolute;
+                width: 195px;
+                height: 34px;
+                top: 170px;
+                font-family: 'Noto Serif TC';
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 25px;
+                text-align: center;
+                letter-spacing: 0.155em;
+                color: #000000;
+                border-bottom: 0.1px solid #000000;
+            }
+
+            .writerintro {
+                position: absolute;
+                width: 180px;
+                height: 40px;
+                top: 230px;
+                left: 10px;
+                font-family: 'Noto Serif TC';
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 20px;
+                text-align: center;
+                letter-spacing: 0.155em;
+                color: #000000;
+                display: flex;
+                justify-content: center;
+            }
+
+
+            .wu-money {
+                width: 461px;
+                height: 113px;
+                font-family: 'Noto Serif TC';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 50px;
+                text-align: center;
+                letter-spacing: 0.2em;
+                color: #000000;
+
+                margin: 73px auto 104px auto;
+
+                position: relative;
+            }
+
+            .pink-underline {
+                width: 245px;
+                height: 17px;
+                background: #F15BB5;
+                top: 28px;
+                left: 187px;
+                position: absolute;
+                z-index: -1;
+            }
+
+            .wu-pink-underline {
+                width: 245px;
+                height: 17px;
+                background: #F15BB5;
+
+                margin-left: auto;
+                margin-right: auto;
+                position: absolute;
+                right: 32px;
+                top: 25px;
+                z-index: -1;
+            }
         }
     </style>
 </head>
 
 <body style="background-color: #ffea69;">
-    <div class="header">
-        <div style="position: absolute;left:0px; top:13px">
-            <a href="https://106204021.github.io/trashnews/finalsite.html" target="_self"><img
-                    src="assets/BannerLOGOy.png" class="yellowlogo"></a>
-        </div>
-        <div style="display: inline-block; position: absolute; right:5px; top:40px">
-            <span class="header-font"><a href="https://106204021.github.io/trashnews/campuscat.html" target="_self">校園</a></span>
-            <span class="header-font"><a href="https://106204021.github.io/trashnews/sportcat.html" target="_self">體育</a></span>
-            <span class="header-font"><a href="https://106204021.github.io/trashnews/artcat.html" target="_self">藝文</a></span>
-            <span class="header-font"><a href="https://106204021.github.io/trashnews/about.html" target="_self">關於我們 ＋</a></span>
-        </div>
-    </div>
-    <div class="trashlogo">
-        <div><img src="assets/LOGOob.png" width=300px;></div>
-    </div>
-
-    <!-- 1440px version -->
-    <div style="background-color: #fff; width: 995px; margin-left: auto; margin-right:auto;">
-        <div class="blue-block" style="position:relative; top: -30px;"><span class="blue-font">關於我們</span></div>
-        <div class="wu-intro-trash">
-            <span
-                style="font-size: 28px;">廢報</span>，顧名思義廢到爆。這裡集結了我們三人在政大新聞與媒體實驗室、政大大學報產出的報導，秉持「好人有好報，廢人有廢報」之精神，把悲傷留給自己，上課教的留給法賢，廢報留給你。2021年初嚴冬之下，就算錯過也沒關係的優質媒體。
-        </div>
-
-        <div class="wu-intro-three">
+    <div class="only-for-phone">
+        <div class="header">
             <div>
-                <img class="writerphoto" src="assets/wuphoto.jpg">
-                <div class="writername">吳冠伶</div>
-                <div class="writerintro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
+                <a href="https://106204021.github.io/trashnews/finalsite.html" target="_self">
+                    <img src="assets/BannerLOGOy.png" class="yellowlogo"></a>
             </div>
-            <div>
-                <img class="writerphoto" src="assets/wuphoto.jpg">
-                <div class="writername">吳冠伶</div>
-                <div class="writerintro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
-            </div>
-            <div>
-                <img class="writerphoto" src="assets/wuphoto.jpg">
-                <div class="writername">吳冠伶</div>
-                <div class="writerintro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
+            <div style="display: inline-block; position: absolute; right:5px; top:20px">
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/campuscat.html" target="_self">校園</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/sportcat.html" target="_self">體育</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/artcat.html" target="_self">藝文</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/about.html" target="_self">關於我們＋</a></span>
             </div>
         </div>
+        <div class="trashlogo">
+            <div><img src="assets/LOGOob.png" width=145px;></div>
+        </div>
+    
+        <!-- 375px version -->
+        <div class="white">
+            <div class="blue-block" style="position:relative; top: -19px;"><span class="blue-font">關於我們</span></div>
+            <div class="wu-intro-trash">
+                <span
+                    style="font-size: 26px;">廢報</span>，顧名思義廢到爆。這裡集結了我們三人在政大新聞與媒體實驗室、政大大學報產出的報導，秉持「好人有好報，廢人有廢報」之精神，把悲傷留給自己，上課教的留給法賢，廢報留給你。2021年初嚴冬之下，就算錯過也沒關係的優質媒體。
+            </div>
+    
+            <div class="wu-intro-three">
+                <div>
+                    <img class="writerphoto" src="assets/wuphoto.jpg">
+                    <div class="writername">吳冠伶</div>
+                    <div class="writerintro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
+                </div>
+                <div>
+                    <img class="writerphoto" src="assets/wuphoto.jpg">
+                    <div class="writername">吳冠伶</div>
+                    <div class="writerintro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
+                </div>
+                <div>
+                    <img class="writerphoto" src="assets/wuphoto.jpg">
+                    <div class="writername">吳冠伶</div>
+                    <div class="writerintro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="blue-block" style="margin-top: 40px;"><span class="blue-font">贊助廢報</span></div>
+    
+            <div class="wu-money">
+                <div class="wu-pink-underline"></div>
+                <span>歡迎匯款至 陳庭寬の創業基金</span><br><span>玉山銀行(808) 0691979145726</span>
+            </div>
+    
+    
+        <div class="bottom">
+            <div style="display:inline-block;height: 48px;">
+                <div class="bottom-font">記者｜吳冠伶 徐嘉璟 陳庭寬</div>
+                <div class="bottom-font">指導｜李法賢</div>
+                <div class="bottom-font">copyright©2020 廢報</div>
+            </div>
+            
+            <div style="position: relative; width: 185px;height: 50px; right: 0px;bottom:5px;"><img src="assets/LOGOy.png" width=85px>
+                <div style="position: absolute;top:20px;right:25px;color: #ffffff ; font-size: 24px ;line-height: 34px; font-family:'Noto Serif TC'; font-weight: 700;">
+                <a href="https://106204021.github.io/trashnews/about.html" target="_self">贊助我們</a>
+                </div>
+            </div>
+            
+        </div>
     </div>
 
-    <div class="blue-block" style="margin-top: 110px;"><span class="blue-font">贊助廢報</span></div>
+    <div class="only-for-tablet">
+        <div class="header">
+            <div>
+                <a href="https://106204021.github.io/trashnews/finalsite.html" target="_self">
+                    <img src="assets/BannerLOGOy.png" class="yellowlogo"></a>
+            </div>
+            <div style="display: inline-block; position: absolute; right:5px; top:20px">
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/campuscat.html"
+                        target="_self">校園</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/sportcat.html"
+                        target="_self">體育</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/artcat.html"
+                        target="_self">藝文</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/about.html"
+                        target="_self">關於我們＋</a></span>
+            </div>
+        </div>
+        <div class="trashlogo">
+            <div><img src="assets/LOGOob.png" width=145px;></div>
+        </div>
+
+        <!-- 375px version -->
+        <div class="white">
+            <div class="blue-block" style="position:relative; top: -19px;"><span class="blue-font">關於我們</span></div>
+            <div class="wu-intro-trash">
+                <span
+                    style="font-size: 24px;">廢報</span>，顧名思義廢到爆。這裡集結了我們三人在政大新聞與媒體實驗室、政大大學報產出的報導，秉持「好人有好報，廢人有廢報」之精神，把悲傷留給自己，上課教的留給法賢，廢報留給你。2021年初嚴冬之下，就算錯過也沒關係的優質媒體。
+            </div>
+
+            <div class="wu-intro-three">
+                <div>
+                    <img class="writerphoto" src="assets/wuphoto.jpg">
+                    <div class="writername">吳冠伶</div>
+                    <div class="writerintro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
+                </div>
+                <div>
+                    <img class="writerphoto" src="assets/wuphoto.jpg">
+                    <div class="writername">吳冠伶</div>
+                    <div class="writerintro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
+                </div>
+                <div>
+                    <img class="writerphoto" src="assets/wuphoto.jpg">
+                    <div class="writername">吳冠伶</div>
+                    <div class="writerintro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blue-block" style="margin-top: 40px;"><span class="blue-font">贊助廢報</span></div>
 
         <div class="wu-money">
             <div class="wu-pink-underline"></div>
@@ -293,18 +809,93 @@
         </div>
 
 
-    <div class="bottom">
-        <div style="display:inline-block;height: 80px;">
-            <div class="bottom-font">記者｜吳冠伶 徐嘉璟 陳庭寬</div>
-            <div class="bottom-font">指導｜李法賢</div>
-            <div style="width: 10px;height:20px;background-color: #27c9ff;"></div>
-            <div class="bottom-font">copyright©2020 廢報</div>
+        <div class="bottom">
+            <div style="display:inline-block;height: 35px;">
+                <div class="bottom-font">記者｜吳冠伶 徐嘉璟 陳庭寬</div>
+                <div class="bottom-font">指導｜李法賢</div>
+                <div class="bottom-font">copyright©2020 廢報</div>
+            </div>
+
+            <div style="position: relative; width: 168px;height: 35px; right: 0px;bottom:5px;"><img
+                    src="assets/LOGOy.png" width=65px>
+                <div
+                    style="position: absolute;top:10px;right:20px;color: #ffffff ; font-size: 24px ;line-height: 34px; font-family:'Noto Serif TC'; font-weight: 700;">
+                    <a href="https://106204021.github.io/trashnews/about.html" target="_self">贊助我們</a>
+                </div>
+            </div>
+
         </div>
-        <div style="position: relative;width: 400px;">
-            <img src="assets/LOGOy.png" width=190px>
-            <span style="color: #ffffff ; font-size: 36px ; line-height: 52px ; position: absolute ; left: 153px ; top:55px ; font-family:'Noto Serif TC'; font-weight: 700;">
-                <a href="https://106204021.github.io/trashnews/about.html" target="_self">贊助我們</a>
-            </span>
+    </div>
+    <div class="only-for-desktop">
+        <div class="header">
+            <div style="position: absolute;left:0px; top:13px">
+                <a href="https://106204021.github.io/trashnews/finalsite.html" target="_self"><img
+                        src="assets/BannerLOGOy.png" class="yellowlogo"></a>
+            </div>
+            <div style="display: inline-block; position: absolute; right:5px; top:40px">
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/campuscat.html"
+                        target="_self">校園</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/sportcat.html"
+                        target="_self">體育</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/artcat.html"
+                        target="_self">藝文</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/about.html" target="_self">關於我們
+                        ＋</a></span>
+            </div>
+        </div>
+        <div class="trashlogo">
+            <div><img src="assets/LOGOob.png" width=300px;></div>
+        </div>
+
+        <!-- 1440px version -->
+        <div style="background-color: #fff; width: 995px; margin-left: auto; margin-right:auto;">
+            <div class="blue-block" style="position:relative; top: -30px;"><span class="blue-font">關於我們</span></div>
+            <div class="wu-intro-trash">
+                <span
+                    style="font-size: 28px;">廢報</span>，顧名思義廢到爆。這裡集結了我們三人在政大新聞與媒體實驗室、政大大學報產出的報導，秉持「好人有好報，廢人有廢報」之精神，把悲傷留給自己，上課教的留給法賢，廢報留給你。2021年初嚴冬之下，就算錯過也沒關係的優質媒體。
+            </div>
+
+            <div class="wu-intro-three">
+                <div>
+                    <img class="writerphoto" src="assets/wuphoto.jpg">
+                    <div class="writername">吳冠伶</div>
+                    <div class="writerintro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
+                </div>
+                <div>
+                    <img class="writerphoto" src="assets/wuphoto.jpg">
+                    <div class="writername">吳冠伶</div>
+                    <div class="writerintro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
+                </div>
+                <div>
+                    <img class="writerphoto" src="assets/wuphoto.jpg">
+                    <div class="writername">吳冠伶</div>
+                    <div class="writerintro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blue-block" style="margin-top: 110px;"><span class="blue-font">贊助廢報</span></div>
+
+        <div class="wu-money">
+            <div class="wu-pink-underline"></div>
+            <span>歡迎匯款至 陳庭寬の創業基金</span><br><span>玉山銀行(808) 0691979145726</span>
+        </div>
+
+
+        <div class="bottom">
+            <div style="display:inline-block;height: 80px;">
+                <div class="bottom-font">記者｜吳冠伶 徐嘉璟 陳庭寬</div>
+                <div class="bottom-font">指導｜李法賢</div>
+                <div style="width: 10px;height:20px;background-color: #27c9ff;"></div>
+                <div class="bottom-font">copyright©2020 廢報</div>
+            </div>
+            <div style="position: relative;width: 400px;">
+                <img src="assets/LOGOy.png" width=190px>
+                <span
+                    style="color: #ffffff ; font-size: 36px ; line-height: 52px ; position: absolute ; left: 153px ; top:55px ; font-family:'Noto Serif TC'; font-weight: 700;">
+                    <a href="https://106204021.github.io/trashnews/about.html" target="_self">贊助我們</a>
+                </span>
+            </div>
         </div>
 </body>
 
