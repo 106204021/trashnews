@@ -16,44 +16,70 @@
             box-sizing: border-box;
         }
 
-        a {
-            text-decoration: none;
-            color: #ffffff;
-        }
+            body, p {
+                margin: 0px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
 
 
-        .header {
-            background-color: #27c9ff;
-            width: 100%;
-            height: 97px;
-            position: relative;
-        }
+            .header {
+                background-color: #27c9ff;
+                width: 100%;
+                height: 97px;
+                position: relative;
+            }
 
-        .header-font {
-            font-family: 'Noto Serif TC';
-            font-size: 24px;
-            line-height: 34px;
-            font-weight: 900;
-            color: #ffffff;
-            margin-right: 30px;
-            letter-spacing: 0.1em;
-        }
+            .header-font {
+                font-family: 'Noto Serif TC';
+                font-size: 24px;
+                line-height: 34px;
+                font-weight: 900;
+                color: #ffffff;
+                margin-right: 30px;
+                letter-spacing: 0.1em;
 
-        .yellowlogo {
-            width: 150px;
-            position: absolute;
-            left: 40px;
-        }
+            }
 
-        .wbg {
-            width: 85%;
-            height: 4258px;
-            background-color: #ffffff;
-            position: absolute;
-            top: 285px;
-            z-index: -100;
-        }
+            .yellowlogo {
+                width: 150px;
+                position: absolute;
+                left: 40px;
+            }
 
+            .bottom {
+                width: 100%;
+                height: 166px;
+                background-color: #27c9ff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                bottom: -10px;
+            }
+
+            .bottom-font {
+                color: #ffffff;
+                font-family: 'Noto Serif TC';
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                margin-left: 105px;
+                letter-spacing: 0.155em;
+            }
+
+
+             .wbg {
+                 width: 85%;
+                 height: 4258px;
+                 background-color: #ffffff;
+                 position: absolute;
+                 top: 285px;
+                z-index: -100;            
+            }
 
         .bluetag {
             background-color: #27C9FF;
@@ -304,52 +330,11 @@
             color: #000000;
         }
 
-        .bottom {
-            width: 100%px;
-            height: 166px;
-            background-color: #27c9ff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-            bottom: -10px;
-            margin-top: 107px;
-        }
-
-        .bottom-font {
-            color: #ffffff;
-            font-family: 'Noto Serif TC';
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 20px;
-            margin-left: 105px;
-            letter-spacing: 0.155em;
-        }
-
-        .bottom {
-            width: 100%px;
-            height: 166px;
-            background-color: #27c9ff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-            bottom: -10px;
-        }
-
-        .bottom-font {
-            color: #ffffff;
-            font-family: 'Noto Serif TC';
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 20px;
-            margin-left: 105px;
-            letter-spacing: 0.155em;
-        }
     </style>
 
 </head>
 <body style="background-color: #FFEA69; margin: 0;">
+    <!--
     <div class="header">
         <div>
             <a href="https://106204021.github.io/trashnews/finalsite.html" target="_self">
@@ -365,8 +350,27 @@
             <span class="header-font"><a href="https://106204021.github.io/trashnews/about.html"
                     target="_self">關於我們＋</a></span>
         </div>
+    -->
+    <div class="header">
+        <div style="position: absolute;left:0px; top:13px">
+            <a href="https://106204021.github.io/trashnews/finalsite.html" target="_self"><img
+                    src="../assets/BannerLOGOy.png" class="yellowlogo"></a>
+        </div>
+        <div style="display: inline-block; position: absolute; right:5px; top:40px">
+            <span class="header-font"><a href="https://106204021.github.io/trashnews/campuscat.html"
+                    target="_self">校園</a></span>
+            <span class="header-font"><a href="https://106204021.github.io/trashnews/sportcat.html"
+                    target="_self">體育</a></span>
+            <span class="header-font"><a href="https://106204021.github.io/trashnews/artcat.html"
+                    target="_self">藝文</a></span>
+            <span class="header-font"><a href="https://106204021.github.io/trashnews/about.html" target="_self">關於我們
+                    ＋</a></span>
+        </div>
+    
+    </div>
         <div class="wbg"></div>
     </div>
+
     <div style="margin-top: 88px;">
         <div style="width: 820px;margin-left: auto; margin-right: auto;">
             <div style="margin-left: 55px">
@@ -443,13 +447,13 @@
                 </div>
             </div>
         </div>
-        <div style="width: 735px;margin-top: 152px;margin-left: auto;margin-right: auto;">
+        <div style="width: 735px;margin-top: 152px;margin-left: auto;margin-right: auto;margin-bottom: 100px">
             <div class="outcontainer">
                 <div class="writerpink"></div>
                 <div class="writertitle">廢廢相報</div>
             </div>
             <div class="relativecontainer">
-                <img src="http://www.newslab.nccu.edu.tw/uploads/asset/data/5df272721d41c82b660054f4/theevent_photo_%E6%B8%AF%E7%94%9F%E5%B0%88%E6%A1%882.JPG"
+                <img src="photo/4-5.jpg"
                     class="relativearticle">
                 <div class="relativetitle">訪台專案助港生　實際效益待考量</div>
             </div>
@@ -463,7 +467,7 @@
             <div class="bottom-font">copyright©2020 廢報</div>
         </div>
         <div style="position: relative;width: 400px;">
-            <img src="assets/LOGOy.png" width=190px>
+            <img src="../assets/LOGOy.png" width=190px>
             <span
                 style="color: #ffffff ; font-size: 36px ; line-height: 52px ; position: absolute ; left: 153px ; top:55px ; font-family:'Noto Serif TC'; font-weight: 700;">
                 <a href="https://106204021.github.io/trashnews/about.html" target="_self">贊助我們</a>
