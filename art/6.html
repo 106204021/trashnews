@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>火車化身沉浸式移動舞台　穿越時空遊客庄</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="style-for-print.css" media="print">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto Serif TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+            body, p {
+                margin: 0px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+
+            .header {
+                background-color: #27c9ff;
+                width: 100%;
+                height: 97px;
+                position: relative;
+            }
+
+            .header-font {
+                font-family: 'Noto Serif TC';
+                font-size: 24px;
+                line-height: 34px;
+                font-weight: 900;
+                color: #ffffff;
+                margin-right: 30px;
+                letter-spacing: 0.1em;
+            }
+
+            .header-font a:hover{
+                color: #F15BB5;
+                opacity: 90%;
+            }
+
+            .yellowlogo {
+                width: 150px;
+                position: absolute;
+                left: 40px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 166px;
+                background-color: #27c9ff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                bottom: -10px;
+            }
+
+            .bottom-font {
+                color: #ffffff;
+                font-family: 'Noto Serif TC';
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                margin-left: 105px;
+                letter-spacing: 0.155em;
+            }
+
+
+             .wbg {
+                 width: 85%;
+                 height:3766px;
+                 background-color: #ffffff;
+                 position: absolute;
+                 top: 295px;
+                 z-index: -100;            
+            }
+
+        .bluetag {
+            background-color: #27C9FF;
+            width: 108px;
+            height: 57px;
+            border-radius: 90px;
+            margin-left: 57px;
+            margin-bottom:15px;
+
+            color: #ffffff;
+            font-family: 'Noto Sans TC';
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 57px;
+            text-align: center;
+        }
+
+
+        .first{
+            display: inline-block;
+            width: 800px;
+            height: 200px;
+            margin-bottom: 70px;
+
+        }
+
+        .pinkstick {
+            display: inline-block;
+            width: 16px;
+            height: 175px;
+            background: #F15BB5;
+            border-radius: 120px;
+            vertical-align: middle;
+        }
+
+        .title {
+            display: inline-block;
+            width: 700px;
+            font-family: 'Noto Sans TC';
+            font-weight: bold;
+            font-size: 58px;
+            line-height: 88px;
+            letter-spacing: 0.075em;
+            vertical-align: middle;
+            margin-left: 60px;
+
+        }
+
+        .info {
+            display: flex;
+            color: #000000;
+            font-family: 'Noto Serif TC';
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: 0.04em;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .pinktag {
+            display: flex;
+            border: solid #F15BB5 1.5px;
+            height: 36px;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .pinktaginfo {
+            color: #F15BB5;
+            display: inline-block;
+            font-family: 'Noto Serif TC';
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        .gray {
+            width: 735px;
+            height: auto;
+            background: #E5E5E5;
+            margin-top: 50px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .fpara {
+            width: 645px;
+            height: auto;
+            color: #000000;
+            font-family: 'Noto Sans TC';
+            font-size: 20px;
+            line-height: 29px;
+            font-weight: normal;
+            letter-spacing: 0.075em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .pic {
+            width: 735px;
+            height: auto;
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cap {
+            width: 735px;
+            height: auto;
+            border-left: solid #A2A2A2 1px;
+            padding-left: 20px;
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 26px;
+            color: #A2A2A2;
+            margin-top: 25px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .pic-container{
+            width: 735px;
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+
+        .para {
+            width: 656px;
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 29px;
+            letter-spacing: 0.075em;
+            color: #000000;
+            margin-top: 35px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .little-title{
+            width: 656px;
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 23px;
+            line-height: 29px;
+            letter-spacing: 0.075em;
+            color: #000000;
+            margin-top: 35px;
+            margin-bottom: -25px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .ps{
+            width: 656px;
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 20px;
+            letter-spacing: 0.075em;
+            color: #000000;
+            margin-top: 15px;
+            margin-right: auto;
+            margin-left: auto;
+
+        }
+
+        .writercontainer {
+            margin-top: 22px;
+            display: flex;
+            width: 700px;
+            height: 185px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .writerphoto {
+            width: 185px;
+            height: 185px;
+            border-radius: 50%;
+        }
+
+        .namecontainer {
+            width: 422px;
+            height: 185px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .name {
+            width: 284px;
+            height: 30px;
+            font-family: 'Noto Serif TC';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 25px;
+            letter-spacing: 0.155em;
+            color: #000000;
+            padding-bottom: 45px;
+            border-bottom: 0.1px solid #000000;
+        }
+
+        .intro {
+            width: 422px;
+            height: auto;
+            font-family: 'Noto Serif TC';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 0.155em;
+            color: #000000;
+        }
+
+        .titlecontainer {
+            width: 210px;
+            height: 98px;
+            margin-top: 115px;
+        }
+
+        .writerpink {
+            display: inline-block;
+            width: 8px;
+            height: 73px;
+            background: #F15BB5;
+            border-radius: 120px;
+            vertical-align: middle;
+        }
+
+        .writertitle {
+            display: inline-block;
+            font-family: 'Noto Serif TC';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 52px;
+            letter-spacing: 0.155em;
+            color: #000000;
+            margin-left: 30px;
+            vertical-align: middle;
+        }
+
+        .outcontainer {
+            width: 210px;
+            height: 98px;
+        }
+
+        .relativecontainer {
+            display: flex;
+            width: 700px;
+            height: 185px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .relativearticle {
+            width: 236px;
+            height: 162px;
+        }
+
+        .relativetitle {
+            width: 400px;
+            height: 92px;
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 46px;
+            color: #000000;
+        }
+        .relativetitle a:hover{
+            font-weight: 800;
+        }
+
+    </style>
+
+</head>
+<body style="background-color: #FFEA69; margin: 0;">
+
+    <div class="header">
+        <div style="position: absolute;left:0px; top:13px">
+            <a href="https://106204021.github.io/trashnews/finalsite.html" target="_self"><img
+                    src="../assets/BannerLOGOy.png" class="yellowlogo"></a>
+        </div>
+        <div style="display: inline-block; position: absolute; right:5px; top:40px">
+            <span class="header-font"><a href="https://106204021.github.io/trashnews/campuscat.html"
+                    target="_self">校園</a></span>
+            <span class="header-font"><a href="https://106204021.github.io/trashnews/sportcat.html"
+                    target="_self">體育</a></span>
+            <span class="header-font"><a href="https://106204021.github.io/trashnews/artcat.html"
+                    target="_self">藝文</a></span>
+            <span class="header-font"><a href="https://106204021.github.io/trashnews/about.html" target="_self">關於我們
+                    ＋</a></span>
+        </div>
+    
+    </div>
+        <div class="wbg"></div>
+    </div>
+
+    <div style="margin-top: 88px;">
+        <div style="width: 820px;margin-left: auto; margin-right: auto;">
+            <div style="display:inline-block;width: 820px;margin-right: auto;margin-left: auto;">
+                <div class="bluetag">
+                    <a href="https://106204021.github.io/trashnews/artcat.html" target="_self">藝文</a>
+                </div>
+                <div class="first">
+                    <div class="pinkstick">
+                      <div class="title">火車化身沉浸式移動舞台穿越時空遊客庄
+                        <div style="margin-top: 30px;">
+                           <div class="info">2019-12-20　吳冠伶
+                            <div class="pinktag">
+                                <div class="pinktaginfo">#戲劇</div>
+                                <div class="pinktaginfo">#客家</div>
+                                <div class="pinktaginfo">#內灣線</div>
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="gray">
+                <div class="fpara">
+                    【記者吳冠伶新竹報導】台鐵內灣支線的列車上，突然出現一對穿著高中制服的男女，又是唱客家山歌、又是談論民國70年代的流行話題，到底會是什麼樣的情景？14日，由客家委員會主辦的「HAKKA WHAT Festival」與阮劇團攜手合作，帶領乘客們穿越時空，看見一場青春愛情故事真實上演。
+                </div>
+            </div>
+
+            <div class="pic-container">
+                <div class="pic"><img src="photo/6-1-1.jpg" width="100%"></div>
+                <div class="cap">
+                    阮劇團找來年輕客家演員扮演竹中、竹女學生。故事設定在民國70年代，讓旅客們彷彿搭上時空列車，跟著演員一同回到過去。 圖／吳冠伶攝
+                </div>
+            </div>
+            
+            <div class="para">長期關懷本土議題的阮劇團，這次結合新竹當地客家特色，以及「沉浸式移動舞台」的概念，在竹東到內灣站的區間車上演出《鐵道時光》互動劇。兒時住過新竹的劇作家沈琬婷表示，由於他的母親過去就讀新竹女中，曾聽母親提起，以前都會搭著內灣支線去聯誼、出遊。此次受邀參與創作對他來說，恰好能與自己的生命經驗結合。</div>
+            <div class="para">為配合「HAKKA WHAT Festival」推廣客家文化，沈琬婷在劇本中巧妙融入了「阿啾箭」（aˊ jiuˊjien，烏鶖）等客家傳統詩歌，並讓扮演小販及車掌小姐的客家演員一邊以客語演戲、一邊和觀眾互動，全車乘客甚至在演員的帶動下接唱經典歌曲＜客家本色＞。</div>
+
+            <div class="pic-container">
+                <div class="pic"><img src="photo/6-2.jpg" width="100%"></div>
+                <div class="cap">
+                    雖然多數觀眾皆不會客語，但演員靠著風趣的口條及活潑的演技，仍成功吸引注目，現場互動氣氛十分熱絡。 圖／吳冠伶攝
+                </div>
+            </div>
+
+            <div class="para">「國家很注重客家人的文化，把它傳承、推廣，讓觀眾和列車上的演員打成一片，有一個族群和諧的場景。」民眾朱惠美說。他移民美國多年，近日返台，特地搭乘火車到內灣重溫二十多年前的回憶。對於這樣的呈現方式，擁有客家身分的他表示十分感動，並頻頻稱讚台灣的觀光很值得驕傲。他更直呼：「我想，走這趟回去後，我起碼會告訴十個以上的人，叫他們來！」</div>
+
+            <div class="pic-container">
+                <div class="pic"><img src="photo/6-3.jpg" width=100%></div>
+                <div class="cap">
+                    活動配合台鐵內灣線「山歌列車」，車內印有年輕書法家何景窗手寫的＜山歌一條路＞歌詞。該曲由多次入圍金曲獎的客家音樂人黃連煜所創作。 圖／吳冠伶攝
+                </div>
+            </div>
+
+            <div class="para">「劇場比較有距離感，在火車上就是直接接觸到，而且他可能跟你互動，比較有感覺。」民眾李順興帶著兩個女兒搭火車出遊，對此活動表示相當讚賞。另外，民眾張簡佳玲也提到，原先並沒有意識到在演戲，還以為車掌真的要驗票，令他印象深刻。</div>
+            <div class="para">不同於以往在劇場內的表演形式，大人小孩隨著火車行進，彷彿也參與了演出，成為戲劇的一部份。客家文化重新包裝，並融合戲劇、鐵路、懷舊等元素，創造觀光推廣新氣象。</div>
+  
+            <div style="width: 735px;margin-top: 152px;margin-left: auto;margin-right: auto;">
+                <div class="titlecontainer">
+                    <div class="writerpink"></div>
+                    <div class="writertitle">廢人廢話</div>
+                </div>
+                <div class="writercontainer">
+                    <img src="../assets/wuphoto.jpg" class="writerphoto">
+                    <div class="namecontainer">
+                        <div class="name">吳冠伶</div>
+                        <div class="intro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="width: 735px;margin-top: 152px;margin-left: auto;margin-right: auto;margin-bottom: 100px">
+            <div class="outcontainer">
+                <div class="writerpink"></div>
+                <div class="writertitle">廢廢相報</div>
+            </div>
+            <div class="relativecontainer">
+                <a href="https://106204021.github.io/trashnews/art/5.html">
+                    <img src="photo/5-1-1.jpg" class="relativearticle">
+                </a>
+                <div class="relativetitle">
+                    <a  style="color:#000000;" target="_blank" href="https://106204021.github.io/trashnews/art/5.html">
+                        城市記憶：李大吉和中華商場59年</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div style="display:inline-block;height: 80px;">
+            <div class="bottom-font">記者｜吳冠伶 徐嘉璟 陳庭寬</div>
+            <div class="bottom-font">指導｜李法賢</div>
+            <div style="width: 10px;height:20px;background-color: #27c9ff;"></div>
+            <div class="bottom-font">copyright©2020 廢報</div>
+        </div>
+        <div style="position: relative;width: 400px;">
+            <img src="../assets/LOGOy.png" width=190px>
+            <span
+                style="color: #ffffff ; font-size: 36px ; line-height: 52px ; position: absolute ; left: 153px ; top:55px ; font-family:'Noto Serif TC'; font-weight: 700;">
+                <a href="https://106204021.github.io/trashnews/about.html" target="_self">贊助我們</a>
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>

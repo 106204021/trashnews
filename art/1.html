@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>回歸最初悸動　《光的胎動》領觀眾探索生命之源</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="style-for-print.css" media="print">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto Serif TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+            body, p {
+                margin: 0px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+
+            .header {
+                background-color: #27c9ff;
+                width: 100%;
+                height: 97px;
+                position: relative;
+            }
+
+            .header-font {
+                font-family: 'Noto Serif TC';
+                font-size: 24px;
+                line-height: 34px;
+                font-weight: 900;
+                color: #ffffff;
+                margin-right: 30px;
+                letter-spacing: 0.1em;
+            }
+
+            .header-font a:hover{
+                color: #F15BB5;
+                opacity: 90%;
+            }
+
+            .yellowlogo {
+                width: 150px;
+                position: absolute;
+                left: 40px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 166px;
+                background-color: #27c9ff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                bottom: -10px;
+            }
+
+            .bottom-font {
+                color: #ffffff;
+                font-family: 'Noto Serif TC';
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                margin-left: 105px;
+                letter-spacing: 0.155em;
+            }
+
+
+             .wbg {
+                 width: 85%;
+                 height:6070px;
+                 background-color: #ffffff;
+                 position: absolute;
+                 top: 295px;
+                 z-index: -100;            
+            }
+
+        .bluetag {
+            background-color: #27C9FF;
+            width: 108px;
+            height: 57px;
+            border-radius: 90px;
+            margin-left: 57px;
+            margin-bottom:15px;
+
+            color: #ffffff;
+            font-family: 'Noto Sans TC';
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 57px;
+            text-align: center;
+        }
+
+
+        .first{
+            display: inline-block;
+            width: 800px;
+            height: 200px;
+            margin-bottom: 70px;
+
+        }
+
+        .pinkstick {
+            display: inline-block;
+            width: 16px;
+            height: 175px;
+            background: #F15BB5;
+            border-radius: 120px;
+            vertical-align: middle;
+        }
+
+        .title {
+            display: inline-block;
+            width: 690px;
+            font-family: 'Noto Sans TC';
+            font-weight: bold;
+            font-size: 58px;
+            line-height: 88px;
+            letter-spacing: 0.075em;
+            vertical-align: middle;
+            margin-left: 60px;
+
+        }
+
+        .info {
+            display: flex;
+            color: #000000;
+            font-family: 'Noto Serif TC';
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 29px;
+            letter-spacing: 0.04em;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .pinktag {
+            display: flex;
+            border: solid #F15BB5 1.5px;
+            height: 36px;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .pinktaginfo {
+            color: #F15BB5;
+            display: inline-block;
+            font-family: 'Noto Serif TC';
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        .gray {
+            width: 735px;
+            height: auto;
+            background: #E5E5E5;
+            margin-top: 50px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .fpara {
+            width: 645px;
+            height: auto;
+            color: #000000;
+            font-family: 'Noto Sans TC';
+            font-size: 20px;
+            line-height: 29px;
+            font-weight: normal;
+            letter-spacing: 0.075em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .pic {
+            width: 735px;
+            height: auto;
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cap {
+            width: 735px;
+            height: auto;
+            border-left: solid #A2A2A2 1px;
+            padding-left: 20px;
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 26px;
+            color: #A2A2A2;
+            margin-top: 25px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .pic-container{
+            width: 735px;
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+
+        .para {
+            width: 656px;
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 29px;
+            letter-spacing: 0.075em;
+            color: #000000;
+            margin-top: 35px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .little-title{
+            width: 656px;
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 23px;
+            line-height: 29px;
+            letter-spacing: 0.075em;
+            color: #000000;
+            margin-top: 35px;
+            margin-bottom: -25px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .ps{
+            width: 656px;
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 20px;
+            letter-spacing: 0.075em;
+            color: #000000;
+            margin-top: 15px;
+            margin-right: auto;
+            margin-left: auto;
+
+        }
+
+        .writercontainer {
+            margin-top: 22px;
+            display: flex;
+            width: 700px;
+            height: 185px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .writerphoto {
+            width: 185px;
+            height: 185px;
+            border-radius: 50%;
+        }
+
+        .namecontainer {
+            width: 422px;
+            height: 185px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .name {
+            width: 284px;
+            height: 30px;
+            font-family: 'Noto Serif TC';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 25px;
+            letter-spacing: 0.155em;
+            color: #000000;
+            padding-bottom: 45px;
+            border-bottom: 0.1px solid #000000;
+        }
+
+        .intro {
+            width: 422px;
+            height: auto;
+            font-family: 'Noto Serif TC';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 0.155em;
+            color: #000000;
+        }
+
+        .titlecontainer {
+            width: 210px;
+            height: 98px;
+            margin-top: 115px;
+        }
+
+        .writerpink {
+            display: inline-block;
+            width: 8px;
+            height: 73px;
+            background: #F15BB5;
+            border-radius: 120px;
+            vertical-align: middle;
+        }
+
+        .writertitle {
+            display: inline-block;
+            font-family: 'Noto Serif TC';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 52px;
+            letter-spacing: 0.155em;
+            color: #000000;
+            margin-left: 30px;
+            vertical-align: middle;
+        }
+
+        .outcontainer {
+            width: 210px;
+            height: 98px;
+        }
+
+        .relativecontainer {
+            display: flex;
+            width: 700px;
+            height: 185px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .relativearticle {
+            width: 236px;
+            height: 162px;
+        }
+
+        .relativetitle {
+            width: 400px;
+            height: 92px;
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 46px;
+            color: #000000;
+        }
+        .relativetitle a:hover{
+            font-weight: 800;
+        }
+
+    </style>
+
+</head>
+<body style="background-color: #FFEA69; margin: 0;">
+
+    <div class="header">
+        <div style="position: absolute;left:0px; top:13px">
+            <a href="https://106204021.github.io/trashnews/finalsite.html" target="_self"><img
+                    src="../assets/BannerLOGOy.png" class="yellowlogo"></a>
+        </div>
+        <div style="display: inline-block; position: absolute; right:5px; top:40px">
+            <span class="header-font"><a href="https://106204021.github.io/trashnews/campuscat.html"
+                    target="_self">校園</a></span>
+            <span class="header-font"><a href="https://106204021.github.io/trashnews/sportcat.html"
+                    target="_self">體育</a></span>
+            <span class="header-font"><a href="https://106204021.github.io/trashnews/artcat.html"
+                    target="_self">藝文</a></span>
+            <span class="header-font"><a href="https://106204021.github.io/trashnews/about.html" target="_self">關於我們
+                    ＋</a></span>
+        </div>
+    
+    </div>
+        <div class="wbg"></div>
+    </div>
+
+    <div style="margin-top: 88px;">
+        <div style="width: 820px;margin-left: auto; margin-right: auto;">
+            <div style="display:inline-block;width: 820px;margin-right: auto;margin-left: auto;">
+                <div class="bluetag">
+                    <a href="https://106204021.github.io/trashnews/artcat.html" target="_self">藝文</a>
+                </div>
+                <div class="first">
+                    <div class="pinkstick">
+                      <div class="title">回歸最初悸動　《光的胎動》領觀眾探索生命之源
+                        <div style="margin-top: 30px;">
+                           <div class="info">2020-10-21　徐嘉璟
+                            <div class="pinktag">
+                                <div class="pinktaginfo">#油水投影</div>
+                                <div class="pinktaginfo">#胚胎</div>
+                                <div class="pinktaginfo">#環境音</div>
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="gray">
+                <div class="fpara">
+                    【記者徐嘉璟綜合報導】黑暗的空間響起低沉穩健的胎動聲，彩色泡泡不停地游移在如繭一般的球體上。美國麻省理工學院（Massachusetts Institute of Technology, MIT）藝術、文化與科技學程研究生紀柏豪與藝術家謝欣翰、康力升等人合作，於15日起在手工藝品店「地衣荒物」舉辦展覽《光的胎動Embryonic Breath》，透過聲光變化結合油水投影，呈現最初孕育生命的場所。
+                </div>
+            </div>
+
+            <div class="pic-container">
+                <div class="pic"><img src="photo/1-1-1.jpg" width="100%"></div>
+                <div class="cap">
+                    繭狀子宮透過絲狀纖維，懸掛在展場上方。油水若產生泡泡，則會投射出陰影。　圖／曾乙心提供
+                </div>
+            </div>
+            
+            <div class="para">疫情迫使群聚的人類疏離，讓身兼策展人的謝欣翰與好友開始討論人的居住型態，而人最初居住的地方便是母親的子宮。未出世的胚胎徜徉於羊水之中，謝欣翰認為，胚胎像是一人獨居，但又與母親血水交融，兩者的生命產生難以分割的連結。此次創作，他運用油水分離卻又能相融的狀態，類比人類雖為獨立個體卻追求群聚的天性，他說：「我想探討人既想獨處又渴望群聚的矛盾情感。」</div>
+            <div class="para">規律的胎動聲環繞展場，閉上雙眼，似乎回到人類熟悉的屋巢。睜開眼後，繭狀子宮緩慢閃爍，頻率與聲音同步，展現哺育生命的溫暖形象。謝欣翰要求觀展民眾關上眼睛、打開聽覺，他闡述，胎動聲不只控制子宮內的光源，也引領觀眾遐想自己誕生前的模樣，讓他們身歷其境。他說：「聲音是一個非常重要的啟動因素，我們每個人第一個聽到的聲音，應該都是心跳聲。」</div>
+            <div class="para">接著，胎動聲的節奏逐漸加快，子宮表面開始出現如玻璃碎裂般的紋路，呈現胎兒欲突破子宮出生的慾望。紀柏豪表示，當子宮接收到現場環境音的變化，光的亮度就會隨之改變，象徵胎兒受到外在刺激的反應。他補充，觀眾的行為將製造擾動的聲響，進而觸發子宮的活動，藉由子宮發出的光芒和胎動聲，喚醒人類居住於母體的記憶。</div>
+            
+            <div class="pic-container">
+                <div class="pic"><img src="photo/1-2.jpg" width=100%></div>
+                <div class="cap">
+                    乾掉的油水會阻擋光的反射，投射出陰影。謝欣翰以指甲刮開油漬，做出破裂的切面，呈現迸裂、正要生產的子宮。　圖／徐嘉璟攝
+                </div>
+            </div>
+
+            <div class="para">繭狀子宮由紙纖維製成，康力升表示，紙張溫軟的觸感呼應母親的形象，也代表他想被包覆、照顧的願望。子宮的表面具有許多孔洞，像人的毛細孔，而在子宮的末端，如血管一般細長的纖維彼此縈繞、交疊，貼近胎兒吸取養分的意象。不過，民眾曾乙心表示，他並沒有聯想到母親的意象，未將自己「放回」子宮。他補充，球體邊緣的絲線，讓他聯想到其他物種的卵，「像是科學家培育的未知生物。」</div>
+     
+            <div class="pic-container">
+                <div class="pic"><img src="photo/1-3.jpg" width=100%></div>
+                <div class="cap">
+                    除了油水，謝欣翰也用手影進行表演。雙手包覆住子宮，增添了人性的味道、保護的意象。　圖／曾乙心提供                </div>
+            </div>
+            
+            <div class="para">現場聲光不斷變幻，節拍時而和緩，時而緊湊，謝欣翰說：「就如我們可能有經歷過掙扎突破，但也有想回到舒服的時候。」此外，他也提到，人無法控制油水的流動，每次投影都是隨機呈現，「就像這個世界一樣，每個人不同，所以才會有趣、多變、美麗。」</div>
+            
+            <div class="pic-container">
+                <div class="pic"><img src="photo/1-4.jpg" width=100%></div>
+                <div class="cap">
+                    謝欣翰在盆內滴入、倒入不同色彩的油，水則可改變油的流動方向和形狀。當光通過油水，即可在裝置上形成影像。　圖／曾乙心提供
+                </div>
+            </div>
+
+            <div style="width: 735px;margin-top: 152px;margin-left: auto;margin-right: auto;">
+                <div class="titlecontainer">
+                    <div class="writerpink"></div>
+                    <div class="writertitle">廢人廢話</div>
+                </div>
+                <div class="writercontainer">
+                    <img src="../assets/wuphoto.jpg" class="writerphoto">
+                    <div class="namecontainer">
+                        <div class="name">徐嘉璟</div>
+                        <div class="intro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="width: 735px;margin-top: 152px;margin-left: auto;margin-right: auto;margin-bottom: 100px">
+            <div class="outcontainer">
+                <div class="writerpink"></div>
+                <div class="writertitle">廢廢相報</div>
+            </div>
+            <div class="relativecontainer">
+                <a href="https://106204021.github.io/trashnews/art/6.html">
+                    <img src="photo/6-1-1.jpg" class="relativearticle">
+                </a>
+                <div class="relativetitle">
+                    <a  style="color:#000000;" target="_blank" href="https://106204021.github.io/trashnews/art/6.html">
+                        火車化身沉浸式移動舞台　穿越時空遊客庄</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div style="display:inline-block;height: 80px;">
+            <div class="bottom-font">記者｜吳冠伶 徐嘉璟 陳庭寬</div>
+            <div class="bottom-font">指導｜李法賢</div>
+            <div style="width: 10px;height:20px;background-color: #27c9ff;"></div>
+            <div class="bottom-font">copyright©2020 廢報</div>
+        </div>
+        <div style="position: relative;width: 400px;">
+            <img src="../assets/LOGOy.png" width=190px>
+            <span
+                style="color: #ffffff ; font-size: 36px ; line-height: 52px ; position: absolute ; left: 153px ; top:55px ; font-family:'Noto Serif TC'; font-weight: 700;">
+                <a href="https://106204021.github.io/trashnews/about.html" target="_self">贊助我們</a>
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
