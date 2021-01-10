@@ -4,174 +4,624 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>廢報-校園廢料</title>
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto Serif TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
     <style>
-        .header {
-            background-color: #27c9ff;
-            width: 1440px;
-            height: 97px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        @media (min-width: 1024px) {
+            .only-for-desktop {
+                display: block;
+            }
+
+            .only-for-tablet {
+                display: none;
+            }
+
+            .only-for-phone {
+                display: none;
+            }
+
+            .header {
+                background-color: #27c9ff;
+                height: 97px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .header-font {
+                font-family: 'Noto Serif TC';
+                font-size: 32px;
+                line-height: 46px;
+                font-weight: 900;
+                color: #ffffff;
+                margin-right: 50px;
+            }
+
+            .cat {
+                width: 290px;
+                height: 74px;
+                background-color: #27c9ff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .cat-font {
+                font-family: 'Noto Serif TC';
+                font-size: 40px;
+                line-height: 58px;
+                font-weight: 900;
+                color: #ffffff;
+            }
+
+            .cat-r {
+                width: 12px;
+                height: 62px;
+                background-color: #ffffff;
+                display: inline-block;
+            }
+
+            .cat-b {
+                width: 290px;
+                height: 12px;
+                background-color: #ffffff;
+                margin-left: 12px;
+            }
+
+            .trashcat {
+                position: absolute;
+            }
+
+            .trashcat-ss {
+                position: absolute;
+                color: black;
+                font-size: 24px;
+                line-height: 34.75px;
+                font-weight: 700;
+                width: 442px;
+                left: 385px;
+                top: 10px;
+            }
+
+            .lilcat {
+                font-size: 20px;
+                line-height: 29px;
+                position: absolute;
+                left: 385px;
+                bottom: 20px;
+            }
+
+            .catblock {
+                width: 826px;
+                height: 213px;
+                position: relative;
+            }
+
+            .bottom {
+                height: 166px;
+                background-color: #27c9ff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .bottom-font {
+                color: #f1f1f1;
+                font-size: 14px;
+                line-height: 20px;
+                margin-left: 105px;
+            }
+
+            .catphoto {
+                width: 309px;
+                height: 213px;
+            }
         }
 
-        .header-font {
-            font-family: Noto Serif TC;
-            font-size: 32px;
-            line-height: 46px;
-            font-weight: 900;
-            color: #ffffff;
-            margin-right: 50px;
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .only-for-desktop {
+                display: none;
+            }
+
+            .only-for-tablet {
+                display: block;
+            }
+
+            .only-for-phone {
+                display: none;
+            }
+
+            .header {
+                background-color: #27c9ff;
+                height: 55px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .header-font {
+                font-family: 'Noto Serif TC';
+                font-size: 21px;
+                line-height: 30px;
+                font-weight: 900;
+                color: #ffffff;
+                margin-right: 30px;
+            }
+
+            .cat {
+                width: 131px;
+                height: 33px;
+                background-color: #27c9ff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .cat-font {
+                font-family: 'Noto Serif TC';
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 900;
+                color: #ffffff;
+            }
+
+            .cat-r {
+                width: 5px;
+                height: 28px;
+                background-color: #ffffff;
+                display: inline-block;
+            }
+
+            .cat-b {
+                width: 131px;
+                height: 5px;
+                background-color: #ffffff;
+                margin-left: 5px;
+            }
+
+            .trashcat {
+                position: absolute;
+            }
+
+            .trashcat-ss {
+                position: absolute;
+                color: black;
+                font-size: 15px;
+                line-height: 21px;
+                font-weight: 700;
+                width: 227px;
+                left: 165px;
+                top: 5px;
+            }
+
+            .lilcat {
+                font-size: 10px;
+                line-height: 14px;
+                position: absolute;
+                left: 165px;
+                top: 50px;
+                width: 227px;
+            }
+
+            .catblock {
+                width: 392px;
+                height: 143px;
+                position: relative;
+            }
+
+            .bottom {
+                height: 82px;
+                background-color: #27c9ff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .bottom-font {
+                font-family: 'Noto Serif TC';
+                color: #f1f1f1;
+                font-size: 11px;
+                line-height: 15px;
+                margin-left: 105px;
+            }
+
+            .catphoto {
+                width: 133px;
+                height: 91px;
+            }
         }
 
-        .cat {
-            width: 290px;
-            height: 74px;
-            background-color: #27c9ff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+        @media (max-width: 767px) {
+            .only-for-desktop {
+                display: none;
+            }
 
-        .cat-font {
-            font-size: 40px;
-            line-height: 58px;
-            font-weight: 900;
-            color: #ffffff;
-        }
+            .only-for-tablet {
+                display: none;
+            }
 
-        .cat-r {
-            width: 12px;
-            height: 62px;
-            background-color: #ffffff;
-            display: inline-block;
-        }
+            .only-for-phone {
+                display: block;
+            }
 
-        .cat-b {
-            width: 290px;
-            height: 12px;
-            background-color: #ffffff;
-            margin-left: 12px;
-        }
+            .header {
+                background-color: #27c9ff;
+                height: 60px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
-        .trashcat {
-            position: absolute;
-        }
+            .header-font {
+                font-family: 'Noto Serif TC';
+                font-size: 21px;
+                line-height: 30px;
+                font-weight: 900;
+                color: #ffffff;
+                margin-right: 10px;
+            }
 
-        .trashcat-ss {
-            position: absolute;
-            color: black;
-            font-size: 24px;
-            line-height: 34.75px;
-            width: 442px;
-            left: 385px;
-            top: 10px;
-        }
+            .cat {
+                width: 133px;
+                height: 33px;
+                background-color: #27c9ff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
-        .lilcat {
-            font-size: 20px;
-            line-height: 29px;
-            position: absolute;
-            left: 385px;
-            bottom: 20px;
-        }
+            .cat-font {
+                font-family: 'Noto Serif TC';
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 900;
+                color: #ffffff;
+            }
 
-        .catblock {
-            width: 826px;
-            height: 213px;
-            position: relative;
-        }
+            .cat-r {
+                width: 2px;
+                height: 24px;
+                background-color: #ffffff;
+                display: inline-block;
+            }
 
-        .bottom {
-            width: 1440px;
-            height: 166px;
-            background-color: #27c9ff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+            .cat-b {
+                width: 133px;
+                height: 2px;
+                background-color: #ffffff;
+                margin-left: 2px;
+            }
 
-        .bottom-font {
-            color: #f1f1f1;
-            font-size: 14px;
-            line-height: 20px;
-            margin-left: 105px;
+            .trashcat {
+                position: absolute;
+            }
+
+            .trashcat-ss {
+                position: absolute;
+                color: black;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 22px;
+                width: 190px;
+                left: 143px;
+            }
+
+            .lilcat {
+                font-size: 10px;
+                line-height: 14px;
+                width: 189px;
+                position: absolute;
+                left: 143px;
+                top: 47px;
+            }
+
+            .catblock {
+                width: 303px;
+                height: 132px;
+                position: relative;
+            }
+
+            .bottom {
+                height: 61px;
+                background-color: #27c9ff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .bottom-font {
+                font-family: 'Noto Serif TC';
+                color: #f1f1f1;
+                font-size: 9px;
+                line-height: 12px;
+                margin-left: 26px;
+            }
+
+            .catphoto {
+                width: 133px;
+                height: 91px;
+            }
         }
     </style>
     <link rel="stylesheet" type="text/css" href="../finalsite/trash.css">
 </head>
 
-<body style="width: 1440px;background-color: #ffea69;">
-    <div class="header">
-        <img src="../finalsite/BannerLOGOy.png">
-        <div style="display: inline-block;">
-            <span class="header-font">校園</span>
-            <span class="header-font">體育</span>
-            <span class="header-font">藝文</span>
-            <span class="header-font">關於我們＋</span>
-        </div>
-    </div>
-    <div style="background-color: #ffea69;display: flex;align-items: center;justify-content: center;height: 300px;">
-        <img src="../finalsite/LOGOob.png" style="width:251px;height:145px;">
-    </div>
-    <div style="position: absolute;top: 460px;left: 126px;">
-        <div style="display: flex;align-items: flex-end;">
+<body style="background-color: #ffea69;">
+    <div class="only-for-desktop">
+        <div class="header">
+            <a href="https://106204021.github.io/trashnews/finalsite.html" target="_self"><img
+                    src="https://github.com/106204021/trashnews/blob/main/assets/BannerLOGOy.png?raw=true"
+                    style="width: 170px;height: 78px;"></a>
             <div style="display: inline-block;">
-                <div class="cat">
-                    <span class="cat-font">校園廢料</span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/campuscat.html"
+                        target="_self">校園</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/sportcat.html"
+                        target="_self">體育</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/artcat.html"
+                        target="_self">藝文</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/about.html"
+                        target="_self">關於我們＋</a></span>
+            </div>
+        </div>
+        <div style="background-color: #ffea69;display: flex;align-items: center;justify-content: center;height: 400px;">
+            <img src="https://github.com/106204021/trashnews/blob/main/assets/LOGOob.png?raw=true"
+                style="width:251px;height:145px;">
+        </div>
+        <div style="position: absolute;top: 460px;left: 126px;">
+            <div style="display: flex;align-items: flex-end;">
+                <div style="display: inline-block;">
+                    <div class="cat">
+                        <span class="cat-font">校園廢料</span>
+                    </div>
+                </div>
+                <div class="cat-r"></div>
+            </div>
+            <div class="cat-b"></div>
+        </div>
+        <div style="background-color: #ffffff;margin-left: 196px;padding-top: 163px;margin-right: auto;">
+            <div style="display: flex;flex-direction: column;justify-content: space-around;height:1927px;margin-left: 112px;">
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/1-3.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">【專欄】離開動盪現場後：來自港中大台生的告白</span>
+                    <span class="lilcat">自今年六月起，反送中運動的警民衝突持續擴大，局勢至今越演越烈。11日，警方與示威者的對峙蔓延到香港中文大學......</span>
+                </div>
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/2-2-1.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">打掃列必修　學生質疑勞作教育本質</span>
+                    <span class="lilcat">10日，教育部宣布廢止《教育部鼓勵技專校院開設勞作教育及服務學習課程實施要點》，勞作教育議題再度掀起熱議......</span>
+                </div>
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/3-2.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">自治參與意願低　探討學生思維究原因</span>
+                    <span class="lilcat">落實學生自治能監督校方運作、保障學生權益，然大學生參加自治事務的意願普遍低落。國立臺北大學公共行政暨政策學系教授劉嘉薇......</span>
+                </div>
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/4-1.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">「中式」連儂牆現身　台陸學生盼相互尊重</span>
+                    <span class="lilcat">自反送中議題爆發以來，香港官民衝突不斷，台灣的大學生紛紛於校園內廣設連儂牆，以聲援香港民間的行動。近日於國立政治大學內，卻出現同於多數陸方觀點的「中式」連儂牆......</span>
+                </div>
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/5-2-1.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">訪台專案助港生　實際效益待考量</span>
+                    <span class="lilcat">香港局勢動盪，導致多所大學宣佈停課、提早結束學期。為使學生能持續學習，台灣各大學推出港生赴台訪問專案，提供住宿且免學雜費......</span>
+                </div>
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/6-1-1.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">【大學人】蔡亞涵參與南鐵運動 化軟弱成抗爭力量</span>
+                    <span class="lilcat">10月13日，鐵道局工人打碎黃春香家的玻璃，霹靂小組衝進屋內將聲援學生一一拖走。衝突延續至隔日一早，蔡亞涵坐在地上，崩潰哭了......</span>
                 </div>
             </div>
-            <div class="cat-r"></div>
         </div>
-        <div class="cat-b"></div>
-    </div>
-    <div style="background-color: #ffffff;width: 1244px;height: 2000px;margin-left: 196px;padding-top: 163px;">
-        <div
-            style="display: flex;flex-direction: column;justify-content: space-around;height:1927px;margin-left: 112px;">
-            <div class="catblock">
-                <img src="../finalsite/web-4/57453 1.png">
-                <span class="trashcat-ss">【專欄】離開動盪現場後：來自港中大台生的告白</span>
-                <span class="lilcat">自今年六月起，反送中運動的警民衝突持續擴大，局勢至今越演越烈。11日，警方與示威者的對峙蔓延到香港中文大學......</span>
+        <div class="bottom">
+            <div style="display:inline-block;height: 80px;">
+                <div class="bottom-font">記者｜吳冠伶 徐嘉璟 陳庭寬</div>
+                <div class="bottom-font">指導｜李法賢</div>
+                <div style="width: 10px;height:20px;background-color: #27c9ff;"></div>
+                <div class="bottom-font">copyright©2020 廢報</div>
             </div>
-            <div class="catblock">
-                <img src="../finalsite/web-4/57453 2.png">
-                <span class="trashcat-ss">【打掃列必修　學生質疑勞作教育本質</span>
-                <span class="lilcat">10日，教育部宣布廢止《教育部鼓勵技專校院開設勞作教育及服務學習課程實施要點》，勞作教育議題再度掀起熱議......</span>
-            </div>
-            <div class="catblock">
-                <img src="../finalsite/web-4/57454 1.png">
-                <span class="trashcat-ss">自治參與意願低　探討學生思維究原因</span>
-                <span class="lilcat">落實學生自治能監督校方運作、保障學生權益，然大學生參加自治事務的意願普遍低落。國立臺北大學公共行政暨政策學系教授劉嘉薇......</span>
-            </div>
-            <div class="catblock">
-                <img src="../finalsite/web-4/57454 2.png">
-                <span class="trashcat-ss">「中式」連儂牆現身　台陸學生盼相互尊重</span>
+            <div style="position: relative;width: 400px">
+                <img src="https://github.com/106204021/trashnews/blob/main/assets/LOGOy.png?raw=true"
+                    style="width: 170px;height: 98px;">
                 <span
-                    class="lilcat">自反送中議題爆發以來，香港官民衝突不斷，台灣的大學生紛紛於校園內廣設連儂牆，以聲援香港民間的行動。近日於國立政治大學內，卻出現同於多數陸方觀點的「中式」連儂牆......</span>
+                    style="color: #f1f1f1;font-size: 36px;line-height: 52px;position: absolute;left: 143px;top:50px;"><a
+                        href="https://106204021.github.io/trashnews/about.html" target="_self">贊助我們</a></span>
             </div>
-            <div class="catblock">
-                <img src="../finalsite/web-4/57454 3.png">
-                <span class="trashcat-ss">訪台專案助港生　實際效益待考量</span>
-                <span class="lilcat">香港局勢動盪，導致多所大學宣佈停課、提早結束學期。為使學生能持續學習，台灣各大學推出港生赴台訪問專案，提供住宿且免學雜費......</span>
-            </div>
-            <div class="catblock">
-                <img src="../finalsite/web-4/57454 4.png">
-                <span class="trashcat-ss">【大學人】蔡亞涵參與南鐵運動 化軟弱成抗爭力量</span>
-                <span class="lilcat">10月13日，鐵道局工人打碎黃春香家的玻璃，霹靂小組衝進屋內將聲援學生一一拖走。衝突延續至隔日一早，蔡亞涵坐在地上，崩潰哭了......</span>
-            </div>
-        </div>    
-    </div>
-    <div class="bottom">
-        <div style="display:inline-block;height: 80px;">
-            <div class="bottom-font">記者｜吳冠伶  徐嘉璟  陳庭寬</div>
-            <div class="bottom-font">指導｜李法賢</div>
-            <div style="width: 10px;height:20px;background-color: #27c9ff;"></div>
-            <div class="bottom-font">copyright©2020 廢報</div>
         </div>
-    <div style="position: relative;width: 400px">
-        <img src="../finalsite/LOGOy 1.png">
-        <span style="color: #f1f1f1;font-size: 36px;line-height: 52px;position: absolute;left: 143px;top:50px;">贊助我們</span>
     </div>
+
+    <div class="only-for-tablet">
+        <div class="header">
+            <a href="https://106204021.github.io/trashnews/finalsite.html" target="_self">
+                <img src="https://github.com/106204021/trashnews/blob/main/assets/BannerLOGOy.png?raw=true"
+                    style="width: 82px;">
+            </a>
+            <div style="display: inline-block;">
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/campuscat.html"
+                        target="_self">校園</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/sportcat.html"
+                        target="_self">體育</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/artcat.html"
+                        target="_self">藝文</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/about.html"
+                        target="_self">關於我們＋</a></span>
+            </div>
+        </div>
+        <div style="background-color: #ffea69;display: flex;align-items: center;justify-content: center;height: 126px;">
+            <img src="https://github.com/106204021/trashnews/blob/main/assets/LOGOob.png?raw=true"
+                style="width:145px;height:93px;">
+        </div>
+        <div style="position: absolute;top: 210px;left: 170px;">
+            <div style="display: flex;align-items: flex-end;">
+                <div style="display: inline-block;">
+                    <div class="cat">
+                        <span class="cat-font">校園廢料</span>
+                    </div>
+                </div>
+                <div class="cat-r"></div>
+            </div>
+            <div class="cat-b"></div>
+        </div>
+        <div style="background-color: #ffffff;margin-left: 196px;padding-top: 96px;margin-right: auto;">
+            <div style="display: flex;flex-direction: column;justify-content: space-around;margin-left: 77px;">
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/1-3.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">【專欄】離開動盪現場後：來自港中大台生的告白</span>
+                    <span class="lilcat">自今年六月起，反送中運動的警民衝突持續擴大，局勢至今越演越烈。11日，警方與示威者的對峙蔓延到香港中文大學......</span>
+                </div>
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/2-2-1.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">打掃列必修　學生質疑勞作教育本質</span>
+                    <span class="lilcat">10日，教育部宣布廢止《教育部鼓勵技專校院開設勞作教育及服務學習課程實施要點》，勞作教育議題再度掀起熱議......</span>
+                </div>
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/3-2.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">自治參與意願低　探討學生思維究原因</span>
+                    <span class="lilcat">落實學生自治能監督校方運作、保障學生權益，然大學生參加自治事務的意願普遍低落。國立臺北大學公共行政暨政策學系教授劉嘉薇......</span>
+                </div>
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/4-1.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">「中式」連儂牆現身　台陸學生盼相互尊重</span>
+                    <span class="lilcat">自反送中議題爆發以來，香港官民衝突不斷，台灣的大學生紛紛於校園內廣設連儂牆，以聲援香港民間的行動。近日於國立政治大學內，卻出現同於多數陸方觀點的「中式」連儂牆......</span>
+                </div>
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/5-2-1.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">訪台專案助港生　實際效益待考量</span>
+                    <span class="lilcat">香港局勢動盪，導致多所大學宣佈停課、提早結束學期。為使學生能持續學習，台灣各大學推出港生赴台訪問專案，提供住宿且免學雜費......</span>
+                </div>
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/6-1-1.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">【大學人】蔡亞涵參與南鐵運動 化軟弱成抗爭力量</span>
+                    <span class="lilcat">10月13日，鐵道局工人打碎黃春香家的玻璃，霹靂小組衝進屋內將聲援學生一一拖走。衝突延續至隔日一早，蔡亞涵坐在地上，崩潰哭了......</span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div style="display:inline-block;height: 50px;">
+                <div class="bottom-font">記者｜吳冠伶 徐嘉璟 陳庭寬</div>
+                <div class="bottom-font">指導｜李法賢</div>
+                <div class="bottom-font">copyright©2020 廢報</div>
+            </div>
+            <div style="position: relative;width: 200px">
+                <img src="https://github.com/106204021/trashnews/blob/main/assets/LOGOy.png?raw=true"
+                    style="width: 109px;height: 60px;">
+                <span
+                    style="color: #f1f1f1;font-size: 24px;line-height: 34px;position: absolute;top:40px;left: 70px;"><a
+                        href="https://106204021.github.io/trashnews/about.html" target="_self">贊助我們</a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="only-for-phone">
+        <div class="header">
+            <a href="https://106204021.github.io/trashnews/finalsite.html" target="_self">
+                <img src="https://github.com/106204021/trashnews/blob/main/assets/BannerLOGOy.png?raw=true"
+                    style="width: 82px;">
+            </a>
+            <div style="display: inline-block;">
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/campuscat.html"
+                        target="_self">校園</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/sportcat.html"
+                        target="_self">體育</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/artcat.html"
+                        target="_self">藝文</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/about.html"
+                        target="_self">關於我們＋</a></span>
+            </div>
+        </div>
+        <div style="background-color: #ffea69;display: flex;align-items: center;justify-content: center;height: 126px;">
+            <img src="https://github.com/106204021/trashnews/blob/main/assets/LOGOob.png?raw=true"
+                style="width:145px;height:93px;">
+        </div>
+        <div style="position: absolute;top: 220px;left: 24px;">
+            <div style="display: flex;align-items: flex-end;">
+                <div style="display: inline-block;">
+                    <div class="cat">
+                        <span class="cat-font">校園廢料</span>
+                    </div>
+                </div>
+                <div class="cat-r"></div>
+            </div>
+            <div class="cat-b"></div>
+        </div>
+        <div style="background-color: #ffffff;margin-left: 33px;padding-top: 90px;margin-right: auto;">
+            <div style="display: flex;flex-direction: column;justify-content: space-around;margin-left: -10px;">
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/1-3.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">【專欄】離開動盪現場後：來自港中大台生的告白</span>
+                    <span class="lilcat">自今年六月起，反送中運動的警民衝突持續擴大，局勢至今越演越烈。11日，警方與示威者的對峙蔓延到香港中文大學......</span>
+                </div>
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/2-2-1.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">打掃列必修　學生質疑勞作教育本質</span>
+                    <span class="lilcat">10日，教育部宣布廢止《教育部鼓勵技專校院開設勞作教育及服務學習課程實施要點》，勞作教育議題再度掀起熱議......</span>
+                </div>
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/3-2.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">自治參與意願低　探討學生思維究原因</span>
+                    <span class="lilcat">落實學生自治能監督校方運作、保障學生權益，然大學生參加自治事務的意願普遍低落。國立臺北大學公共行政暨政策學系教授劉嘉薇......</span>
+                </div>
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/4-1.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">「中式」連儂牆現身　台陸學生盼相互尊重</span>
+                    <span class="lilcat">自反送中議題爆發以來，香港官民衝突不斷，台灣的大學生紛紛於校園內廣設連儂牆，以聲援香港民間的行動。近日於國立政治大學內，卻出現同於多數陸方觀點的「中式」連儂牆......</span>
+                </div>
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/5-2-1.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">訪台專案助港生　實際效益待考量</span>
+                    <span class="lilcat">香港局勢動盪，導致多所大學宣佈停課、提早結束學期。為使學生能持續學習，台灣各大學推出港生赴台訪問專案，提供住宿且免學雜費......</span>
+                </div>
+                <div class="catblock">
+                    <img src="https://github.com/106204021/trashnews/blob/main/campus/photo/6-1-1.jpg?raw=true"
+                        class="catphoto">
+                    <span class="trashcat-ss">【大學人】蔡亞涵參與南鐵運動 化軟弱成抗爭力量</span>
+                    <span class="lilcat">10月13日，鐵道局工人打碎黃春香家的玻璃，霹靂小組衝進屋內將聲援學生一一拖走。衝突延續至隔日一早，蔡亞涵坐在地上，崩潰哭了......</span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div style="display:inline-block;height: 40px;">
+                <div class="bottom-font">記者｜吳冠伶 徐嘉璟 陳庭寬</div>
+                <div class="bottom-font">指導｜李法賢</div>
+                <div class="bottom-font">copyright©2020 廢報</div>
+            </div>
+            <div style="position: relative;width: 160px">
+                <img src="https://github.com/106204021/trashnews/blob/main/assets/LOGOy.png?raw=true"
+                    style="width: 54px;height: 34px;">
+                <span style="color: #f1f1f1;font-size: 24px;line-height: 34px;position: absolute;top:15px;left:40px;"><a
+                        href="https://106204021.github.io/trashnews/about.html" target="_self">贊助我們</a></span>
+            </div>
+        </div>
     </div>
 </body>
 
