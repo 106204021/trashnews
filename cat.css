@@ -90,9 +90,8 @@ body{margin: 0px;}
         font-size: 24px;
         line-height: 34.75px;
         font-weight: 700;
-        width: 442px;
-        left: 385px;
-        top: 10px;
+        width: 330px;
+        left: 335px;
     }
 
     .lilcat {
@@ -100,12 +99,13 @@ body{margin: 0px;}
         font-size: 20px;
         line-height: 29px;
         position: absolute;
-        left: 385px;
-        bottom: 20px;
+        left: 335px;
+        bottom: 10px;
+        width: 330px;
     }
 
     .catblock {
-        width: 826px;
+        width: 715px;
         height: 213px;
         position: relative;
     }
