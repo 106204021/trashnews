@@ -12,6 +12,10 @@ body{margin: 0px;}
     text-decoration: none;
     color: black;
 }
+.header-font a:hover {
+            color: #F15BB5;
+            opacity: 90%;
+        }
 @media (min-width: 1440px) {
     .only-for-desktop {
         display: block;
