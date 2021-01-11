@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>火車化身沉浸式移動舞台　穿越時空遊客庄</title>
+    <title>回歸最初悸動　《光的胎動》領觀眾探索生命之源</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     <link rel="stylesheet" type="text/css" href="style-for-print.css" media="print">
 
@@ -15,8 +15,8 @@
         * {
             box-sizing: border-box;
         }
-        /*phone*/
-        @media (max-width: 767px) {
+         /*phone*/
+         @media (max-width: 767px) {
             .only-for-desktop {
                 display: none;
             }
@@ -28,10 +28,15 @@
             .only-for-phone {
                 display: block;
             }
+
+            .youtube-embed {
+            position: relative;
+             padding-bottom: calc(315/560*100%);
+            }
         
         .wbg {
             width: 100%;
-            height:3000px;
+            height:5600px;
             background-color: #ffffff;
             position: absolute;
             top: 128px;
@@ -135,47 +140,35 @@
             font-style: normal;
             font-weight: bold;
             font-size: 24px;
-            line-height: 35px;
+            line-height: 14px;
             letter-spacing: 0.075em;
             vertical-align: middle;
             margin-left: 12px;
         }
 
         .info {
-            display: flex;
             color: #000000;
             font-family: 'Noto Serif TC';
-            font-style: normal;
-            font-weight: normal;
             font-size: 9px;
-            line-height: 13px;
-            align-items: center;
-            justify-content: space-between;
-            right: 15px;
-            width: 300px;
-            margin-left: 40px;
-            margin-top: 12px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0.04em;
+            display: block;
         }
 
         .pinktag {
-            display: flex;
-            border: solid #F15BB5 1px;
-            height: 18px;
-            align-items: center;
-            justify-content: space-around;
-
-        }
-
-        .pinktaginfo {
+            border: solid #F15BB5 1.5px;
             color: #F15BB5;
-            display: inline-block;
             font-family: 'Noto Serif TC';
-            font-weight: normal;
             font-size: 9px;
-            line-height: 13px;
+            line-height: 10px;
+            font-weight: 400;
             letter-spacing: 0.04em;
-            margin-left: 2px;
-            margin-right: 2px;
+            padding: 2px;
+            width: auto;
+            display: inline-block;
+            vertical-align: text-top; 
+            margin-top: 5px;         
         }
 
 
@@ -393,9 +386,14 @@
             display: none;
             }
 
+            .youtube-embed {
+            position: relative;
+             padding-bottom: calc(315/560*100%);
+            }
+
         .wbg {
             width: 85%;
-            height: 2945px;
+            height: 4960px;
             background-color: #ffffff;
             position: absolute;
             top: 128px;
@@ -484,10 +482,7 @@
 
         .first {
             display: inline-block;
-            width: 500px;
-            height: 170px;
-            margin-bottom: 37px;
-
+            height: 190px;
         }
 
         .pinkstick {
@@ -501,7 +496,7 @@
 
         .title {
             display: inline-block;
-            width: 500px;
+            width: 450px;
             font-family: 'Noto Sans TC';
             font-weight: bold;
             font-size: 36px;
@@ -512,37 +507,30 @@
 
         }
 
+
         .info {
-            display: flex;
             color: #000000;
             font-family: 'Noto Serif TC';
             font-size: 9px;
-            font-weight: normal;
-            line-height: 13px;
-            align-items: center;
-            justify-content: space-around;
-            right: 15px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.04em;
+            display: block;
         }
 
         .pinktag {
-            display: flex;
-            border: solid #F15BB5 1px;
-            height: 18px;
-            align-items: center;
-            justify-content: space-around;
-
-        }
-
-        .pinktaginfo {
+            border: solid #F15BB5 1.5px;
             color: #F15BB5;
-            display: inline-block;
             font-family: 'Noto Serif TC';
-            font-weight: normal;
             font-size: 9px;
-            line-height: 13px;
+            line-height: 12px;
+            font-weight: 400;
             letter-spacing: 0.04em;
-            margin-left: 4px;
-            margin-right: 4px;
+            padding: 2px;
+            width: auto;
+            display: inline-block;
+            vertical-align: text-top; 
+            margin-top: 4px;         
         }
 
         .gray {
@@ -761,6 +749,11 @@
             .only-for-phone {
                 display: none;
             }
+        
+            .youtube-embed {
+            position: relative;
+            padding-bottom: calc(315/560*100%);
+            }
 
             body, p {
                 margin: 0px;
@@ -824,7 +817,7 @@
 
              .wbg {
                  width: 85%;
-                 height:3766px;
+                 height:4670px;
                  background-color: #ffffff;
                  position: absolute;
                  top: 295px;
@@ -867,7 +860,7 @@
 
         .title {
             display: inline-block;
-            width: 700px;
+            width: 690px;
             font-family: 'Noto Sans TC';
             font-weight: bold;
             font-size: 58px;
@@ -879,24 +872,28 @@
         }
 
         .info {
-            display: flex;
             color: #000000;
             font-family: 'Noto Serif TC';
             font-size: 20px;
             font-weight: 400;
-            line-height: 29px;
+            line-height: 39px;
             letter-spacing: 0.04em;
-            align-items: center;
-            justify-content: space-between;
+            display: block;
         }
 
         .pinktag {
-            display: flex;
             border: solid #F15BB5 1.5px;
-            height: 36px;
-            align-items: center;
-            justify-content: space-around;
-
+            color: #F15BB5;
+            font-family: 'Noto Serif TC';
+            font-size: 18px;
+            line-height: 23px;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            padding: 2px;
+            width: auto;
+            display: inline-block;
+            vertical-align: text-top; 
+            margin-top: 10px;         
         }
 
         .pinktaginfo {
@@ -1125,7 +1122,6 @@
 
 </head>
 <body style="background-color: #FFEA69; margin: 0;">
-
 <!--desktop-->
 <div class="only-for-desktop">
     <div style="position: fixed;bottom: 7%;left: 88%;">
@@ -1163,66 +1159,53 @@
                 </div>
                 <div class="first">
                     <div class="pinkstick">
-                      <div class="title">火車化身沉浸式移動舞台穿越時空遊客庄
-                        <div style="margin-top: 30px;">
-                           <div class="info">2019-12-20　吳冠伶
-                            <div class="pinktag">
-                                <div class="pinktaginfo">#戲劇</div>
-                                <div class="pinktaginfo">#客家</div>
-                                <div class="pinktaginfo">#內灣線</div>
-                            </div>
-                            </div>
+                      <div class="title">疫情衝擊藝文經濟　　　紓困政策是解藥還是幻影
+                           <div class="info">2020-05-25　徐嘉璟、陳嘉怡、林昕璿、黃子珊</div>
+                           <div class="pinktag">#藝文紓困 #疫情 #文化部</div>                        
                         </div>
                       </div>
                     </div>
                 </div>
 
             </div>
-            <div class="gray">
-                <div class="fpara">
-                    【記者吳冠伶新竹報導】台鐵內灣支線的列車上，突然出現一對穿著高中制服的男女，又是唱客家山歌、又是談論民國70年代的流行話題，到底會是什麼樣的情景？14日，由客家委員會主辦的「HAKKA WHAT Festival」與阮劇團攜手合作，帶領乘客們穿越時空，看見一場青春愛情故事真實上演。
-                </div>
-            </div>
-
-            <div class="pic-container">
-                <div class="pic"><img src="photo/6-1-1.jpg" width="100%"></div>
-                <div class="cap">
-                    阮劇團找來年輕客家演員扮演竹中、竹女學生。故事設定在民國70年代，讓旅客們彷彿搭上時空列車，跟著演員一同回到過去。 圖／吳冠伶攝
-                </div>
+            
+            <div style="height: 60px;width: auto;"></div>
+            <div style="display:flex;justify-content: center;">
+              <iframe width="700" height="394" src="https://www.youtube.com/embed/RmXoa-crvio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             
-            <div class="para">長期關懷本土議題的阮劇團，這次結合新竹當地客家特色，以及「沉浸式移動舞台」的概念，在竹東到內灣站的區間車上演出《鐵道時光》互動劇。兒時住過新竹的劇作家沈琬婷表示，由於他的母親過去就讀新竹女中，曾聽母親提起，以前都會搭著內灣支線去聯誼、出遊。此次受邀參與創作對他來說，恰好能與自己的生命經驗結合。</div>
-            <div class="para">為配合「HAKKA WHAT Festival」推廣客家文化，沈琬婷在劇本中巧妙融入了「阿啾箭」（aˊ jiuˊjien，烏鶖）等客家傳統詩歌，並讓扮演小販及車掌小姐的客家演員一邊以客語演戲、一邊和觀眾互動，全車乘客甚至在演員的帶動下接唱經典歌曲＜客家本色＞。</div>
-
-            <div class="pic-container">
-                <div class="pic"><img src="photo/6-2.jpg" width="100%"></div>
-                <div class="cap">
-                    雖然多數觀眾皆不會客語，但演員靠著風趣的口條及活潑的演技，仍成功吸引注目，現場互動氣氛十分熱絡。 圖／吳冠伶攝
-                </div>
-            </div>
-
-            <div class="para">「國家很注重客家人的文化，把它傳承、推廣，讓觀眾和列車上的演員打成一片，有一個族群和諧的場景。」民眾朱惠美說。他移民美國多年，近日返台，特地搭乘火車到內灣重溫二十多年前的回憶。對於這樣的呈現方式，擁有客家身分的他表示十分感動，並頻頻稱讚台灣的觀光很值得驕傲。他更直呼：「我想，走這趟回去後，我起碼會告訴十個以上的人，叫他們來！」</div>
-
-            <div class="pic-container">
-                <div class="pic"><img src="photo/6-3.jpg" width=100%></div>
-                <div class="cap">
-                    活動配合台鐵內灣線「山歌列車」，車內印有年輕書法家何景窗手寫的＜山歌一條路＞歌詞。該曲由多次入圍金曲獎的客家音樂人黃連煜所創作。 圖／吳冠伶攝
-                </div>
-            </div>
-
-            <div class="para">「劇場比較有距離感，在火車上就是直接接觸到，而且他可能跟你互動，比較有感覺。」民眾李順興帶著兩個女兒搭火車出遊，對此活動表示相當讚賞。另外，民眾張簡佳玲也提到，原先並沒有意識到在演戲，還以為車掌真的要驗票，令他印象深刻。</div>
-            <div class="para">不同於以往在劇場內的表演形式，大人小孩隨著火車行進，彷彿也參與了演出，成為戲劇的一部份。客家文化重新包裝，並融合戲劇、鐵路、懷舊等元素，創造觀光推廣新氣象。</div>
+            <!--內文-->
+            <div class="para">【記者陳嘉怡、徐嘉璟、林昕璿、黃子珊綜合報導】台上歌聲嘹亮，舞姿翩翩，舞台劇演員們正密集地進行排練。但是受到武漢肺炎疫情影響，原本五月初就要展演的舞台劇《再見歌廳秀》，已經延期到下半年。預計演出的另一齣舞台劇也延至年底。 然而檔期一旦更換，劇團就得承受前期行銷與製作費用的巨大損失。不只劇場界飽受衝擊，其它展覽活動也紛紛受到影響，前所未有的打擊正撲向藝文產業。</div>
+            <div class="para">故事工廠執行長林佳鋒說：「包含辦公室的營運管銷，然後再加上票房上面的損失，大概有1532萬左右。過去一個禮拜，大概可以賣80到90萬左右的票券；那疫情開始之後，一天賣的票不到2萬塊，一個禮拜賣不到20萬的票券。到了三月底票房，都已經出現負數了。此刻其實面對藝術票房寒冬，相信這應該是所有的團隊都面臨到的困境。」</div>
+            <div class="para">為了幫助藝文產業度過寒冬，文化部啟動藝文紓困補助辦法。受到疫情衝擊的藝文團體，除了可以向政府申請貸款利息補貼，也可以針對疫情造成的財務損失，申請藝文紓困補助，範圍包括人員薪資、行政支出、場地租金和製作費用。</div>
+            <div class="para">文化部部長鄭麗君表示，事業和自營工作者都可以提出（藝文紓困補助）申請，「我們（文化部）當時這樣規劃的核心想法就是，我們對藝文產業的紓困，最重要的目的是支持整個產業裡面的藝文工作者一起渡過難關。讓人才不要流失，讓理想不被放棄，那疫情過後振興才有可為。」</div>
+            <div class="para">為確保靠接案維生的藝文工作者，能夠證明自己的工作受到影響，提出補助申請，文化部目前提供三種管道。接案工作者可直接提出受影響的工作合約，或是納入合作事業一同申請補助。也可選擇勞動部的方案，接案工作者只要有在藝創工會投保，即可透過工會提出補助申請。</div>
+            <div class="para">在藝文事業團體方面，補助上限為250萬元，包括人員薪資、營運資金補助，以及因應提升補助計畫。鼓勵藝文團體持續創作，以提升表演品質。如果大型團體有更高的周轉需求，則適合申請艱困事業營運補貼，不受250萬元限制。</div>
+            <div class="para">丞舞製作團隊舞團經理許慈茵說：「我覺得非常直接損失，的確就是在財務上面的損失。為了保有團員他們還是可以繼續去做這樣的訓練，我們必須要有相對應還是會有支出他們。我覺得在這個上面，有非常強烈的信念是，我們絕對不要去虧待團員他們的努力跟他們的信任。承舞製作沒有因為疫情，去損失掉任何一個團員，舞團在思考的永遠是我們要怎麼走更長遠。」</div>
+            <div class="para">政府的紓困思維在於，確保藝文工作者不會因為疫情，而被裁員或停止工作，以維持藝文產業的活動能量。但政府的紓困措施，還是無法照顧到所有的藝文工作者。</div>
+            <div class="para">表演藝術聯盟祕書長李孟融解釋：「這些受衝擊的委任或承攬藝術工作者就有點像『假性的失業』，因為工作被延宕，而導致無法執行現在的業務，但無法主張失業。這有兩種層次，一個層次叫做，一旦到文化部的紓困補助的時候，無法提出合法的證明說，我真的就是失業。所以剛剛提到的合約就變得很重要，他可以真實地來反應說，我這個疫情真的影響到了工作期程，因此收不到錢。另一個狀況是失業認定的條件有障礙，因為這些人從來不是勞工。」</div>
+            <div class="para">藝術創作者職業工會秘書長謝毅弘表示，表演跟視覺藝術行政人員應該有30%到40%是承攬人員，「但是它應該是朝向雇傭，因為他就是跟上班族一樣，早上8點上班，晚上6點下班，然後中間他的主管會命令他一大堆東西。那這個應該是逐步去改善行政或技術人員的勞動條件，讓他們朝向雇傭化，這是對整個產業都有幫助的。五年十年就一大批的人退出產業圈，讓人才沒有辦法連續下去。」然而雇傭契約雖然保障多，卻跟創作者有衝突。謝毅弘解釋，因為僱傭的監督管理很重，要完全去監督管理創作者，跟創作這件事情有衝突。</div>
+            <div class="para">除了失業認定的問題之外，因為每個藝文團體的運作模式不同，所面臨到的衝擊程度也各有差異。政府想要解決各類藝文團體的問題，應該要深入瞭解藝文產業的特性，才能開出對症下藥的政策。</div>
+            <div class="para">台灣視覺藝術協會理事長吳尚邕說：「視覺藝術跟表演藝術這邊有一個比較大的根本不太一樣，以表演藝術來說，它們（表演藝術）主要的一個收入來源很明確。我聽一場音樂會，我看一場表演，我看電影也好，它都是票房。以視覺藝術來說，視覺藝術的一個展覽，都是免費的佔大多數，普遍是一個銷售藝術品。這一個項目區作為一個主要的一個營運收入，申請者他不是說非常的有辦法提出說，那我到底這一檔展覽沒有辦或延期了到底有多少損失。」</div>
+            <div class="para">由於藝術產業的創作週期長，需要長時間的準備和醞釀，才能讓一部好的作品登場。然而當藝術工作者無法維持生計，被迫從事其它可以維持穩定收入的行業，藝術產業的人才就會流失。即便將來疫情退燒，只要藝術工作者缺乏練習，就沒有辦法立刻回歸舞台。疫情對藝文產業造成的衝擊，也就不會馬上消失。</div>
+            <div class="para">即使表演活動暫停，林佳鋒表示，故事工廠團隊並沒有停下腳步，「排練場還是每天在排練，不管是技術部門表演人，或者是我的編導的團隊，他們每天早上十點鐘就開始排練。我有跟我的同仁講一段話：『此刻疫情即便那麼的嚴峻，但是我不會放棄你們，你們好好的工作。度過這一段之後，我相信我們會越來越好。』」</div>
+            <div class="para">李孟融說：「大家都說一天不跳舞，只有你自己知道，兩天只有你隔壁的舞者知道，三天觀眾都知道了。身體跟肌肉是會發生改變的，一旦沒有作品或舞團支持他每天可以排練，那這些表演者它的身體和肌肉型態會發生改變，熟悉身體、熟悉舞碼、熟悉舞台的方式也會改變。」</div>
+            <div class="para">故事工廠藝術總監黃致凱說：「我覺得我們就像十日談裡的人物，在這個瘟疫在全世界到處蔓延的同時，我們走進了劇場，暫時和現實世界隔離。我們藉由說故事，來撫慰我們的心靈。當然我知道當我們離開劇場的時候，這場瘟疫並不會結束。」</div>
+            <div class="para">疫情就像是放大鏡般，將藝文產業長期以來累積的問題，重新攤在陽光下檢視，讓藝文產業獲得反思的機會，將危機化成轉機，提出一些不同的因應做法，也可以嘗試其它的創作方式。</div>
+            <div class="para">吳尚邕說：「我們藝術家跟藏家之間，因為疫情，然後去搭建的這個臨時性的一個藝文發表的一個替代性機制，可能是一個在網路平台上販賣作品的形式。然後去做一個互助簡單來說的話，台灣的這個名稱叫做『藝起加油』。那這個狀態它講的是，我們每個藝術家提供作品在網路上，是多了一個我們平常藝術市場上，不太會看到的一個現象存在。」</div>
+            <div class="para">藝文產業向來有「先百業而衰，後百業而興」的特性。當未來疫情結束，全球經濟回暖，藝文產業還需要花多久的時間復甦，還是個未知數。武漢肺炎這隻超級黑天鵝，考驗的是整體藝文產業的體質。也許應該要沉澱思考，未來若再度面對相同的突發事件，藝文產業有沒有能力去因應，增加「抵抗力」。</div>
   
+
             <div style="width: 735px;margin-top: 152px;margin-left: auto;margin-right: auto;">
                 <div class="titlecontainer">
                     <div class="writerpink"></div>
                     <div class="writertitle">廢人廢話</div>
                 </div>
                 <div class="writercontainer">
-                    <img src="../assets/wuphoto.jpg" class="writerphoto">
+                    <img src="../assets/hsuphoto.jpg" class="writerphoto">
                     <div class="namecontainer">
-                        <div class="name">吳冠伶</div>
-                        <div class="intro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
+                        <div class="name">徐嘉璟</div>
+                        <div class="intro">誤入新聞系の社會四老寶貝，可以叫我夾緊，我會夾給你看，但不要叫我加緊腳步走，很累。</div>
                     </div>
                 </div>
             </div>
@@ -1233,16 +1216,16 @@
                 <div class="writertitle">廢廢相報</div>
             </div>
             <div class="relativecontainer">
-                <a href="https://106204021.github.io/trashnews/art/5.html" target="_blank">
-                    <img src="photo/5-1-1.jpg" class="relativearticle">
+                <a href="https://106204021.github.io/trashnews/art/2.html" target="_blank">
+                    <img src="photo/2-2-1.jpg" class="relativearticle">
                 </a>
                 <div class="relativetitle">
-                    <a  style="color:#000000;" target="_blank" href="https://106204021.github.io/trashnews/art/5.html">
-                        城市記憶：李大吉和中華商場59年</a>
+                    <a  style="color:#000000;" target="_blank" href="https://106204021.github.io/trashnews/art/2.html">
+                        油彩融創作心境　林君晏塑公園散步景觀</a>
                 </div>
             </div>
         </div>
-    </div>
+    
     <div class="bottom">
         <div style="display:inline-block;height: 80px;">
             <div class="bottom-font">記者｜吳冠伶 徐嘉璟 陳庭寬</div>
@@ -1300,57 +1283,42 @@
 
                 <div class="first">
                     <div class="pinkstick">
-                        <div class="title">火車化身沉浸式移動舞台　穿越時空遊客庄
-                            <div style="margin-top: 20px;margin-left: -52px;">
-                                <div class="info">2019-12-20　吳冠伶
-                                    <div class="pinktag">
-                                        <div class="pinktaginfo">#戲劇</div>
-                                        <div class="pinktaginfo">#客家</div>
-                                        <div class="pinktaginfo">#內灣線</div>
-                                    </div>
-                                </div>
-                            </div>
+                      <div class="title">疫情衝擊藝文經濟　　　紓困政策是解藥還是幻影
+                           <div class="info">2020-05-25　徐嘉璟、陳嘉怡、林昕璿、黃子珊</div>
+                           <div class="pinktag">#藝文紓困 #疫情 #文化部</div>                        
                         </div>
+                      </div>
                     </div>
-                </div>
 
             </div>
 
-            <div class="gray">
-                <div class="fpara">
-                    【記者吳冠伶新竹報導】台鐵內灣支線的列車上，突然出現一對穿著高中制服的男女，又是唱客家山歌、又是談論民國70年代的流行話題，到底會是什麼樣的情景？14日，由客家委員會主辦的「HAKKA WHAT Festival」與阮劇團攜手合作，帶領乘客們穿越時空，看見一場青春愛情故事真實上演。
-                </div>
-            </div>
-
-            <div class="pic-container">
-                <div class="pic"><img src="photo/6-1-1.jpg" width="100%"></div>
-                <div class="cap">
-                    阮劇團找來年輕客家演員扮演竹中、竹女學生。故事設定在民國70年代，讓旅客們彷彿搭上時空列車，跟著演員一同回到過去。 圖／吳冠伶攝
-                </div>
+            <!--內文-->
+     
+            <div style="display:flex;justify-content: center;top:-100px;">
+              <iframe width="400" height="225.14" src="https://www.youtube.com/embed/RmXoa-crvio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             
-            <div class="para">長期關懷本土議題的阮劇團，這次結合新竹當地客家特色，以及「沉浸式移動舞台」的概念，在竹東到內灣站的區間車上演出《鐵道時光》互動劇。兒時住過新竹的劇作家沈琬婷表示，由於他的母親過去就讀新竹女中，曾聽母親提起，以前都會搭著內灣支線去聯誼、出遊。此次受邀參與創作對他來說，恰好能與自己的生命經驗結合。</div>
-            <div class="para">為配合「HAKKA WHAT Festival」推廣客家文化，沈琬婷在劇本中巧妙融入了「阿啾箭」（aˊ jiuˊjien，烏鶖）等客家傳統詩歌，並讓扮演小販及車掌小姐的客家演員一邊以客語演戲、一邊和觀眾互動，全車乘客甚至在演員的帶動下接唱經典歌曲＜客家本色＞。</div>
+            <div class="para">【記者陳嘉怡、徐嘉璟、林昕璿、黃子珊綜合報導】台上歌聲嘹亮，舞姿翩翩，舞台劇演員們正密集地進行排練。但是受到武漢肺炎疫情影響，原本五月初就要展演的舞台劇《再見歌廳秀》，已經延期到下半年。預計演出的另一齣舞台劇也延至年底。 然而檔期一旦更換，劇團就得承受前期行銷與製作費用的巨大損失。不只劇場界飽受衝擊，其它展覽活動也紛紛受到影響，前所未有的打擊正撲向藝文產業。</div>
+            <div class="para">故事工廠執行長林佳鋒說：「包含辦公室的營運管銷，然後再加上票房上面的損失，大概有1532萬左右。過去一個禮拜，大概可以賣80到90萬左右的票券；那疫情開始之後，一天賣的票不到2萬塊，一個禮拜賣不到20萬的票券。到了三月底票房，都已經出現負數了。此刻其實面對藝術票房寒冬，相信這應該是所有的團隊都面臨到的困境。」</div>
+            <div class="para">為了幫助藝文產業度過寒冬，文化部啟動藝文紓困補助辦法。受到疫情衝擊的藝文團體，除了可以向政府申請貸款利息補貼，也可以針對疫情造成的財務損失，申請藝文紓困補助，範圍包括人員薪資、行政支出、場地租金和製作費用。</div>
+            <div class="para">文化部部長鄭麗君表示，事業和自營工作者都可以提出（藝文紓困補助）申請，「我們（文化部）當時這樣規劃的核心想法就是，我們對藝文產業的紓困，最重要的目的是支持整個產業裡面的藝文工作者一起渡過難關。讓人才不要流失，讓理想不被放棄，那疫情過後振興才有可為。」</div>
+            <div class="para">為確保靠接案維生的藝文工作者，能夠證明自己的工作受到影響，提出補助申請，文化部目前提供三種管道。接案工作者可直接提出受影響的工作合約，或是納入合作事業一同申請補助。也可選擇勞動部的方案，接案工作者只要有在藝創工會投保，即可透過工會提出補助申請。</div>
+            <div class="para">在藝文事業團體方面，補助上限為250萬元，包括人員薪資、營運資金補助，以及因應提升補助計畫。鼓勵藝文團體持續創作，以提升表演品質。如果大型團體有更高的周轉需求，則適合申請艱困事業營運補貼，不受250萬元限制。</div>
+            <div class="para">丞舞製作團隊舞團經理許慈茵說：「我覺得非常直接損失，的確就是在財務上面的損失。為了保有團員他們還是可以繼續去做這樣的訓練，我們必須要有相對應還是會有支出他們。我覺得在這個上面，有非常強烈的信念是，我們絕對不要去虧待團員他們的努力跟他們的信任。承舞製作沒有因為疫情，去損失掉任何一個團員，舞團在思考的永遠是我們要怎麼走更長遠。」</div>
+            <div class="para">政府的紓困思維在於，確保藝文工作者不會因為疫情，而被裁員或停止工作，以維持藝文產業的活動能量。但政府的紓困措施，還是無法照顧到所有的藝文工作者。</div>
+            <div class="para">表演藝術聯盟祕書長李孟融解釋：「這些受衝擊的委任或承攬藝術工作者就有點像『假性的失業』，因為工作被延宕，而導致無法執行現在的業務，但無法主張失業。這有兩種層次，一個層次叫做，一旦到文化部的紓困補助的時候，無法提出合法的證明說，我真的就是失業。所以剛剛提到的合約就變得很重要，他可以真實地來反應說，我這個疫情真的影響到了工作期程，因此收不到錢。另一個狀況是失業認定的條件有障礙，因為這些人從來不是勞工。」</div>
+            <div class="para">藝術創作者職業工會秘書長謝毅弘表示，表演跟視覺藝術行政人員應該有30%到40%是承攬人員，「但是它應該是朝向雇傭，因為他就是跟上班族一樣，早上8點上班，晚上6點下班，然後中間他的主管會命令他一大堆東西。那這個應該是逐步去改善行政或技術人員的勞動條件，讓他們朝向雇傭化，這是對整個產業都有幫助的。五年十年就一大批的人退出產業圈，讓人才沒有辦法連續下去。」然而雇傭契約雖然保障多，卻跟創作者有衝突。謝毅弘解釋，因為僱傭的監督管理很重，要完全去監督管理創作者，跟創作這件事情有衝突。</div>
+            <div class="para">除了失業認定的問題之外，因為每個藝文團體的運作模式不同，所面臨到的衝擊程度也各有差異。政府想要解決各類藝文團體的問題，應該要深入瞭解藝文產業的特性，才能開出對症下藥的政策。</div>
+            <div class="para">台灣視覺藝術協會理事長吳尚邕說：「視覺藝術跟表演藝術這邊有一個比較大的根本不太一樣，以表演藝術來說，它們（表演藝術）主要的一個收入來源很明確。我聽一場音樂會，我看一場表演，我看電影也好，它都是票房。以視覺藝術來說，視覺藝術的一個展覽，都是免費的佔大多數，普遍是一個銷售藝術品。這一個項目區作為一個主要的一個營運收入，申請者他不是說非常的有辦法提出說，那我到底這一檔展覽沒有辦或延期了到底有多少損失。」</div>
+            <div class="para">由於藝術產業的創作週期長，需要長時間的準備和醞釀，才能讓一部好的作品登場。然而當藝術工作者無法維持生計，被迫從事其它可以維持穩定收入的行業，藝術產業的人才就會流失。即便將來疫情退燒，只要藝術工作者缺乏練習，就沒有辦法立刻回歸舞台。疫情對藝文產業造成的衝擊，也就不會馬上消失。</div>
+            <div class="para">即使表演活動暫停，林佳鋒表示，故事工廠團隊並沒有停下腳步，「排練場還是每天在排練，不管是技術部門表演人，或者是我的編導的團隊，他們每天早上十點鐘就開始排練。我有跟我的同仁講一段話：『此刻疫情即便那麼的嚴峻，但是我不會放棄你們，你們好好的工作。度過這一段之後，我相信我們會越來越好。』」</div>
+            <div class="para">李孟融說：「大家都說一天不跳舞，只有你自己知道，兩天只有你隔壁的舞者知道，三天觀眾都知道了。身體跟肌肉是會發生改變的，一旦沒有作品或舞團支持他每天可以排練，那這些表演者它的身體和肌肉型態會發生改變，熟悉身體、熟悉舞碼、熟悉舞台的方式也會改變。」</div>
+            <div class="para">故事工廠藝術總監黃致凱說：「我覺得我們就像十日談裡的人物，在這個瘟疫在全世界到處蔓延的同時，我們走進了劇場，暫時和現實世界隔離。我們藉由說故事，來撫慰我們的心靈。當然我知道當我們離開劇場的時候，這場瘟疫並不會結束。」</div>
+            <div class="para">疫情就像是放大鏡般，將藝文產業長期以來累積的問題，重新攤在陽光下檢視，讓藝文產業獲得反思的機會，將危機化成轉機，提出一些不同的因應做法，也可以嘗試其它的創作方式。</div>
+            <div class="para">吳尚邕說：「我們藝術家跟藏家之間，因為疫情，然後去搭建的這個臨時性的一個藝文發表的一個替代性機制，可能是一個在網路平台上販賣作品的形式。然後去做一個互助簡單來說的話，台灣的這個名稱叫做『藝起加油』。那這個狀態它講的是，我們每個藝術家提供作品在網路上，是多了一個我們平常藝術市場上，不太會看到的一個現象存在。」</div>
+            <div class="para">藝文產業向來有「先百業而衰，後百業而興」的特性。當未來疫情結束，全球經濟回暖，藝文產業還需要花多久的時間復甦，還是個未知數。武漢肺炎這隻超級黑天鵝，考驗的是整體藝文產業的體質。也許應該要沉澱思考，未來若再度面對相同的突發事件，藝文產業有沒有能力去因應，增加「抵抗力」。</div>
 
-            <div class="pic-container">
-                <div class="pic"><img src="photo/6-2.jpg" width="100%"></div>
-                <div class="cap">
-                    雖然多數觀眾皆不會客語，但演員靠著風趣的口條及活潑的演技，仍成功吸引注目，現場互動氣氛十分熱絡。 圖／吳冠伶攝
-                </div>
-            </div>
 
-            <div class="para">「國家很注重客家人的文化，把它傳承、推廣，讓觀眾和列車上的演員打成一片，有一個族群和諧的場景。」民眾朱惠美說。他移民美國多年，近日返台，特地搭乘火車到內灣重溫二十多年前的回憶。對於這樣的呈現方式，擁有客家身分的他表示十分感動，並頻頻稱讚台灣的觀光很值得驕傲。他更直呼：「我想，走這趟回去後，我起碼會告訴十個以上的人，叫他們來！」</div>
-
-            <div class="pic-container">
-                <div class="pic"><img src="photo/6-3.jpg" width=100%></div>
-                <div class="cap">
-                    活動配合台鐵內灣線「山歌列車」，車內印有年輕書法家何景窗手寫的＜山歌一條路＞歌詞。該曲由多次入圍金曲獎的客家音樂人黃連煜所創作。 圖／吳冠伶攝
-                </div>
-            </div>
-
-            <div class="para">「劇場比較有距離感，在火車上就是直接接觸到，而且他可能跟你互動，比較有感覺。」民眾李順興帶著兩個女兒搭火車出遊，對此活動表示相當讚賞。另外，民眾張簡佳玲也提到，原先並沒有意識到在演戲，還以為車掌真的要驗票，令他印象深刻。</div>
-            <div class="para">不同於以往在劇場內的表演形式，大人小孩隨著火車行進，彷彿也參與了演出，成為戲劇的一部份。客家文化重新包裝，並融合戲劇、鐵路、懷舊等元素，創造觀光推廣新氣象。</div>
-           
 
             <div style="margin-top: 110px;margin-left: auto;margin-right: auto;">
                 <div class="titlecontainer">
@@ -1358,10 +1326,10 @@
                     <div class="writertitle">廢人廢話</div>
                 </div>
                 <div class="writercontainer">
-                    <img src="../assets/wuphoto.jpg" class="writerphoto">
+                    <img src="../assets/hsuphoto.jpg" class="writerphoto">
                     <div class="namecontainer">
-                        <div class="name">吳冠伶</div>
-                        <div class="intro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
+                        <div class="name">徐嘉璟</div>
+                        <div class="intro">誤入新聞系の社會四老寶貝，可以叫我夾緊，我會夾給你看，但不要叫我加緊腳步走，很累。</div>
                     </div>
                 </div>
             </div>
@@ -1373,11 +1341,11 @@
                 <div class="writertitle">廢廢相報</div>
             </div>
             <div class="relativecontainer">
-                <a href="https://106204021.github.io/trashnews/art/5.html" target="_blank"><img src="photo/5-1-1.jpg"
+                <a href="https://106204021.github.io/trashnews/art/2.html" target="_blank"><img src="photo/2-2-1.jpg"
                         class="relativearticle"></a>
                 <div class="namecontainer">
                     <div class="relativetitle"><a style="color:#000000;" target="_blank"
-                            href="https://106204021.github.io/trashnews/art/5.html">城市記憶：李大吉和中華商場59年</a></div>
+                            href="https://106204021.github.io/trashnews/art/2.html">油彩融創作心境　林君晏塑公園散步景觀</a></div>
                 </div>
             </div>
         </div>
@@ -1429,52 +1397,39 @@
 
             <div style="width:333px;height:auto;margin-right: auto;margin-left: auto;">
                 <div class="pinkstick"></div>
-                <div class="title">火車化身沉浸式移動舞台　穿越時空遊客庄</div>
-            </div>
-
-            <div class="info">2019-12-20　吳冠伶
-                <div class="pinktag">
-                    <div class="pinktaginfo">#戲劇</div>
-                    <div class="pinktaginfo">#客家</div>
-                    <div class="pinktaginfo">#內灣線</div>
+                <div class="title"><p>疫情衝擊藝文經濟</p><br><p>紓困政策是解藥還是幻影</p></div>
+                <div style="margin-left: 25px;">
+                    <div class="info">2020-05-25　徐嘉璟、陳嘉怡、林昕璿、黃子珊</div>
+                    <div class="pinktag">#藝文紓困 #疫情 #文化部</div>
                 </div>
             </div>
 
-            <div class="gray">
-                <div class="fpara">
-                    【記者吳冠伶新竹報導】台鐵內灣支線的列車上，突然出現一對穿著高中制服的男女，又是唱客家山歌、又是談論民國70年代的流行話題，到底會是什麼樣的情景？14日，由客家委員會主辦的「HAKKA WHAT Festival」與阮劇團攜手合作，帶領乘客們穿越時空，看見一場青春愛情故事真實上演。
-                </div>
+            <!--內文-->
+            <div style="height: 30px;width: auto;"></div>
+            <div style="display:flex;justify-content: center;">
+              <iframe width="375" height="211" src="https://www.youtube.com/embed/RmXoa-crvio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
-            <div class="pic-container">
-                <div class="pic"><img src="photo/6-1-1.jpg" width="100%"></div>
-                <div class="cap">
-                    阮劇團找來年輕客家演員扮演竹中、竹女學生。故事設定在民國70年代，讓旅客們彷彿搭上時空列車，跟著演員一同回到過去。 圖／吳冠伶攝
-                </div>
-            </div>
-            
-            <div class="para">長期關懷本土議題的阮劇團，這次結合新竹當地客家特色，以及「沉浸式移動舞台」的概念，在竹東到內灣站的區間車上演出《鐵道時光》互動劇。兒時住過新竹的劇作家沈琬婷表示，由於他的母親過去就讀新竹女中，曾聽母親提起，以前都會搭著內灣支線去聯誼、出遊。此次受邀參與創作對他來說，恰好能與自己的生命經驗結合。</div>
-            <div class="para">為配合「HAKKA WHAT Festival」推廣客家文化，沈琬婷在劇本中巧妙融入了「阿啾箭」（aˊ jiuˊjien，烏鶖）等客家傳統詩歌，並讓扮演小販及車掌小姐的客家演員一邊以客語演戲、一邊和觀眾互動，全車乘客甚至在演員的帶動下接唱經典歌曲＜客家本色＞。</div>
+            <div class="para">【記者陳嘉怡、徐嘉璟、林昕璿、黃子珊綜合報導】台上歌聲嘹亮，舞姿翩翩，舞台劇演員們正密集地進行排練。但是受到武漢肺炎疫情影響，原本五月初就要展演的舞台劇《再見歌廳秀》，已經延期到下半年。預計演出的另一齣舞台劇也延至年底。 然而檔期一旦更換，劇團就得承受前期行銷與製作費用的巨大損失。不只劇場界飽受衝擊，其它展覽活動也紛紛受到影響，前所未有的打擊正撲向藝文產業。</div>
+            <div class="para">故事工廠執行長林佳鋒說：「包含辦公室的營運管銷，然後再加上票房上面的損失，大概有1532萬左右。過去一個禮拜，大概可以賣80到90萬左右的票券；那疫情開始之後，一天賣的票不到2萬塊，一個禮拜賣不到20萬的票券。到了三月底票房，都已經出現負數了。此刻其實面對藝術票房寒冬，相信這應該是所有的團隊都面臨到的困境。」</div>
+            <div class="para">為了幫助藝文產業度過寒冬，文化部啟動藝文紓困補助辦法。受到疫情衝擊的藝文團體，除了可以向政府申請貸款利息補貼，也可以針對疫情造成的財務損失，申請藝文紓困補助，範圍包括人員薪資、行政支出、場地租金和製作費用。</div>
+            <div class="para">文化部部長鄭麗君表示，事業和自營工作者都可以提出（藝文紓困補助）申請，「我們（文化部）當時這樣規劃的核心想法就是，我們對藝文產業的紓困，最重要的目的是支持整個產業裡面的藝文工作者一起渡過難關。讓人才不要流失，讓理想不被放棄，那疫情過後振興才有可為。」</div>
+            <div class="para">為確保靠接案維生的藝文工作者，能夠證明自己的工作受到影響，提出補助申請，文化部目前提供三種管道。接案工作者可直接提出受影響的工作合約，或是納入合作事業一同申請補助。也可選擇勞動部的方案，接案工作者只要有在藝創工會投保，即可透過工會提出補助申請。</div>
+            <div class="para">在藝文事業團體方面，補助上限為250萬元，包括人員薪資、營運資金補助，以及因應提升補助計畫。鼓勵藝文團體持續創作，以提升表演品質。如果大型團體有更高的周轉需求，則適合申請艱困事業營運補貼，不受250萬元限制。</div>
+            <div class="para">丞舞製作團隊舞團經理許慈茵說：「我覺得非常直接損失，的確就是在財務上面的損失。為了保有團員他們還是可以繼續去做這樣的訓練，我們必須要有相對應還是會有支出他們。我覺得在這個上面，有非常強烈的信念是，我們絕對不要去虧待團員他們的努力跟他們的信任。承舞製作沒有因為疫情，去損失掉任何一個團員，舞團在思考的永遠是我們要怎麼走更長遠。」</div>
+            <div class="para">政府的紓困思維在於，確保藝文工作者不會因為疫情，而被裁員或停止工作，以維持藝文產業的活動能量。但政府的紓困措施，還是無法照顧到所有的藝文工作者。</div>
+            <div class="para">表演藝術聯盟祕書長李孟融解釋：「這些受衝擊的委任或承攬藝術工作者就有點像『假性的失業』，因為工作被延宕，而導致無法執行現在的業務，但無法主張失業。這有兩種層次，一個層次叫做，一旦到文化部的紓困補助的時候，無法提出合法的證明說，我真的就是失業。所以剛剛提到的合約就變得很重要，他可以真實地來反應說，我這個疫情真的影響到了工作期程，因此收不到錢。另一個狀況是失業認定的條件有障礙，因為這些人從來不是勞工。」</div>
+            <div class="para">藝術創作者職業工會秘書長謝毅弘表示，表演跟視覺藝術行政人員應該有30%到40%是承攬人員，「但是它應該是朝向雇傭，因為他就是跟上班族一樣，早上8點上班，晚上6點下班，然後中間他的主管會命令他一大堆東西。那這個應該是逐步去改善行政或技術人員的勞動條件，讓他們朝向雇傭化，這是對整個產業都有幫助的。五年十年就一大批的人退出產業圈，讓人才沒有辦法連續下去。」然而雇傭契約雖然保障多，卻跟創作者有衝突。謝毅弘解釋，因為僱傭的監督管理很重，要完全去監督管理創作者，跟創作這件事情有衝突。</div>
+            <div class="para">除了失業認定的問題之外，因為每個藝文團體的運作模式不同，所面臨到的衝擊程度也各有差異。政府想要解決各類藝文團體的問題，應該要深入瞭解藝文產業的特性，才能開出對症下藥的政策。</div>
+            <div class="para">台灣視覺藝術協會理事長吳尚邕說：「視覺藝術跟表演藝術這邊有一個比較大的根本不太一樣，以表演藝術來說，它們（表演藝術）主要的一個收入來源很明確。我聽一場音樂會，我看一場表演，我看電影也好，它都是票房。以視覺藝術來說，視覺藝術的一個展覽，都是免費的佔大多數，普遍是一個銷售藝術品。這一個項目區作為一個主要的一個營運收入，申請者他不是說非常的有辦法提出說，那我到底這一檔展覽沒有辦或延期了到底有多少損失。」</div>
+            <div class="para">由於藝術產業的創作週期長，需要長時間的準備和醞釀，才能讓一部好的作品登場。然而當藝術工作者無法維持生計，被迫從事其它可以維持穩定收入的行業，藝術產業的人才就會流失。即便將來疫情退燒，只要藝術工作者缺乏練習，就沒有辦法立刻回歸舞台。疫情對藝文產業造成的衝擊，也就不會馬上消失。</div>
+            <div class="para">即使表演活動暫停，林佳鋒表示，故事工廠團隊並沒有停下腳步，「排練場還是每天在排練，不管是技術部門表演人，或者是我的編導的團隊，他們每天早上十點鐘就開始排練。我有跟我的同仁講一段話：『此刻疫情即便那麼的嚴峻，但是我不會放棄你們，你們好好的工作。度過這一段之後，我相信我們會越來越好。』」</div>
+            <div class="para">李孟融說：「大家都說一天不跳舞，只有你自己知道，兩天只有你隔壁的舞者知道，三天觀眾都知道了。身體跟肌肉是會發生改變的，一旦沒有作品或舞團支持他每天可以排練，那這些表演者它的身體和肌肉型態會發生改變，熟悉身體、熟悉舞碼、熟悉舞台的方式也會改變。」</div>
+            <div class="para">故事工廠藝術總監黃致凱說：「我覺得我們就像十日談裡的人物，在這個瘟疫在全世界到處蔓延的同時，我們走進了劇場，暫時和現實世界隔離。我們藉由說故事，來撫慰我們的心靈。當然我知道當我們離開劇場的時候，這場瘟疫並不會結束。」</div>
+            <div class="para">疫情就像是放大鏡般，將藝文產業長期以來累積的問題，重新攤在陽光下檢視，讓藝文產業獲得反思的機會，將危機化成轉機，提出一些不同的因應做法，也可以嘗試其它的創作方式。</div>
+            <div class="para">吳尚邕說：「我們藝術家跟藏家之間，因為疫情，然後去搭建的這個臨時性的一個藝文發表的一個替代性機制，可能是一個在網路平台上販賣作品的形式。然後去做一個互助簡單來說的話，台灣的這個名稱叫做『藝起加油』。那這個狀態它講的是，我們每個藝術家提供作品在網路上，是多了一個我們平常藝術市場上，不太會看到的一個現象存在。」</div>
+            <div class="para">藝文產業向來有「先百業而衰，後百業而興」的特性。當未來疫情結束，全球經濟回暖，藝文產業還需要花多久的時間復甦，還是個未知數。武漢肺炎這隻超級黑天鵝，考驗的是整體藝文產業的體質。也許應該要沉澱思考，未來若再度面對相同的突發事件，藝文產業有沒有能力去因應，增加「抵抗力」。</div>
 
-            <div class="pic-container">
-                <div class="pic"><img src="photo/6-2.jpg" width="100%"></div>
-                <div class="cap">
-                    雖然多數觀眾皆不會客語，但演員靠著風趣的口條及活潑的演技，仍成功吸引注目，現場互動氣氛十分熱絡。 圖／吳冠伶攝
-                </div>
-            </div>
-
-            <div class="para">「國家很注重客家人的文化，把它傳承、推廣，讓觀眾和列車上的演員打成一片，有一個族群和諧的場景。」民眾朱惠美說。他移民美國多年，近日返台，特地搭乘火車到內灣重溫二十多年前的回憶。對於這樣的呈現方式，擁有客家身分的他表示十分感動，並頻頻稱讚台灣的觀光很值得驕傲。他更直呼：「我想，走這趟回去後，我起碼會告訴十個以上的人，叫他們來！」</div>
-
-            <div class="pic-container">
-                <div class="pic"><img src="photo/6-3.jpg" width=100%></div>
-                <div class="cap">
-                    活動配合台鐵內灣線「山歌列車」，車內印有年輕書法家何景窗手寫的＜山歌一條路＞歌詞。該曲由多次入圍金曲獎的客家音樂人黃連煜所創作。 圖／吳冠伶攝
-                </div>
-            </div>
-
-            <div class="para">「劇場比較有距離感，在火車上就是直接接觸到，而且他可能跟你互動，比較有感覺。」民眾李順興帶著兩個女兒搭火車出遊，對此活動表示相當讚賞。另外，民眾張簡佳玲也提到，原先並沒有意識到在演戲，還以為車掌真的要驗票，令他印象深刻。</div>
-            <div class="para">不同於以往在劇場內的表演形式，大人小孩隨著火車行進，彷彿也參與了演出，成為戲劇的一部份。客家文化重新包裝，並融合戲劇、鐵路、懷舊等元素，創造觀光推廣新氣象。</div>
-  
 
             <div style="width:300px; margin-top:103px ; margin-left: auto ;margin-right: auto;">
 
@@ -1484,10 +1439,10 @@
                 </div>
 
                 <div class="writercontainer">
-                    <img src="../assets/wuphoto.jpg" class="writerphoto">
+                    <img src="../assets/hsuphoto.jpg" class="writerphoto">
                     <div class="namecontainer">
-                        <div class="name">吳冠伶</div>
-                        <div class="intro">千禧年生於打狗，貓空寄居中，政大新聞系三年級。喜歡打狗大於貓空，喜歡貓貓狗狗，但貓貓大於狗狗。</div>
+                        <div class="name">徐嘉璟</div>
+                        <div class="intro">誤入新聞系の社會四老寶貝，可以叫我夾緊，我會夾給你看，但不要叫我加緊腳步走，很累。</div>
                     </div>
                 </div>
 
@@ -1500,11 +1455,11 @@
                 <div class="writertitle">廢廢相報</div>
             </div>
             <div class="relativecontainer">
-                <a href="https://106204021.github.io/trashnews/art/5.html" target="_blank"><img src="photo/5-1-1.jpg"
+                <a href="https://106204021.github.io/trashnews/art/2.html" target="_blank"><img src="photo/2-2-1.jpg"
                         class="relativearticle"></a>
                 <div class="namecontainer">
                     <div class="relativetitle"><a style="color:#000000;" target="_blank"
-                            href="https://106204021.github.io/trashnews/art/5.html">城市記憶：李大吉和中華商場59年</a></div>
+                            href="https://106204021.github.io/trashnews/art/2.html">油彩融創作心境　林君晏塑公園散步景觀</a></div>
                 </div>
             </div>
         </div>
