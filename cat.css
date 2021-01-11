@@ -12,7 +12,7 @@ body{margin: 0px;}
     text-decoration: none;
     color: black;
 }
-.header-font span a :hover {
+.header-font a :hover {
     color: #F15BB5;
     opacity: 90%;
 }
