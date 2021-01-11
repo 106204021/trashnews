@@ -12,7 +12,7 @@ body{margin: 0px;}
     text-decoration: none;
     color: black;
 }
-.header-font a :hover {
+.header-font  a :hover {
     color: #F15BB5;
     opacity: 90%;
 }
@@ -47,7 +47,7 @@ body{margin: 0px;}
         color: #ffffff;
         margin-right: 50px;
     }
-
+    
     .cat {
         width: 290px;
         height: 74px;
@@ -86,6 +86,7 @@ body{margin: 0px;}
     .trashcat-ss {
         position: absolute;
         color: black;
+        font-family: 'Noto Sans TC';
         font-size: 24px;
         line-height: 34.75px;
         font-weight: 700;
@@ -95,6 +96,7 @@ body{margin: 0px;}
     }
 
     .lilcat {
+        font-family: 'Noto Sans TC';
         font-size: 20px;
         line-height: 29px;
         position: absolute;
@@ -199,6 +201,7 @@ body{margin: 0px;}
     }
 
     .trashcat-ss {
+        font-family: 'Noto Sans TC';
         position: absolute;
         color: black;
         font-size: 15px;
@@ -210,6 +213,7 @@ body{margin: 0px;}
     }
 
     .lilcat {
+        font-family: 'Noto Sans TC';
         font-size: 10px;
         line-height: 14px;
         position: absolute;
@@ -316,6 +320,7 @@ body{margin: 0px;}
     }
 
     .trashcat-ss {
+        font-family: 'Noto Sans TC';
         position: absolute;
         color: black;
         font-size: 15px;
@@ -326,6 +331,7 @@ body{margin: 0px;}
     }
 
     .lilcat {
+        font-family: 'Noto Sans TC';
         font-size: 10px;
         line-height: 14px;
         width: 189px;
