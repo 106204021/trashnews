@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>廢報-首頁</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto Serif TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        p {
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /*phone*/
+        @media (max-width: 767px) {
+            .only-for-desktop {
+                display: none;
+            }
+
+            .only-for-tablet {
+                display: none;
+            }
+
+            .only-for-phone {
+                display: block;
+            }
+            body,
+        p {
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+
+        .header {
+            background-color: #27c9ff;
+            width: 100%;
+            height: 60px;
+            position: relative;
+        }
+
+        .header-font {
+            font-family: 'Noto Serif TC';
+            font-size: 20px;
+            line-height: 29px;
+            font-weight: 900;
+            color: #ffffff;
+            margin-right: 5px;
+            letter-spacing: 0.04em;
+        }
+
+        .header-font a:hover {
+            color: #F15BB5;
+            opacity: 90%;
+        }
+
+        .yellowlogo {
+            width: 82px;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+
+        .trashlogo {
+            margin-top: 29px;
+            margin-right: auto;
+            margin-bottom: 38px;
+            margin-left: auto;
+            width: 145px;
+            height: 100px;
+        }
+
+
+        .bottom {
+            width: 100%;
+            height: 61px;
+            background-color: #27c9ff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            bottom: -48px;
+        }
+
+        .bottom-font {
+            color: #ffffff;
+            font-family: 'Noto Serif TC';
+            font-weight: bold;
+            font-size: 9px;
+            line-height: 13px;
+            margin-left: 26px;
+            letter-spacing: 0.155em;
+        }
+
+        .w1 {
+            width: 100%;
+            height: 300px;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 499px;
+            z-index: -1000000;
+        }
+
+        .w2 {
+            width: 100%;
+            height: 300px;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 940px;
+            z-index: -10000;
+        }
+
+        .w3 {
+            width: 100%;
+            height: 305px;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 1381px;
+            z-index: -10000;
+        }
+
+
+        .p {
+            background-color: #ffffff;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            width: 100%;
+            height: 134px;
+        }
+
+        .p-carousel {
+            object-fit: cover;
+            width: 160px;
+            height: 134px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .p-carousel-indicator li {
+            width: 9.71px;
+            height: 9.71px;
+            border-radius: 100%;
+            background-color: #F15BB5;
+        }
+
+        .popo-carousel li.active {
+            background-color: #27C9FF;
+        }
+
+        .title-car {
+            display: inline-block;
+            width: 211px;
+            height: 134px;
+            padding-left: 5px;
+            padding-top: 20px;
+            padding-right: 5px;
+            vertical-align: middle;
+            overflow: visible;
+
+
+        }
+
+        .titleinfo-car {
+            width: 170px;
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+            color: #000000;
+        }
+
+
+        .bluetag {
+            display: inline-block;
+            background-color: #27C9FF;
+            width: 36px;
+            height: 18px;
+            border-radius: 90px;
+            text-align: center;
+            vertical-align: middle;
+            margin-top: 10px;
+
+
+        }
+
+        .bluetaginfo {
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 5px;
+            line-height: 18px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .pinktag {
+            display: inline-block;
+            border: solid #F15BB5 1px;
+            width: auto;
+            height: auto;
+            vertical-align: middle;
+            padding-top: -10px;
+            margin-top: 10px;
+            margin-left: 5px;
+            padding-right: 1px;
+
+
+        }
+
+
+        .pinktaginfo {
+            display: inline-block;
+            font-family: 'Noto Serif TC';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 5px;
+            color: #F15BB5;
+            margin-left: 1px;
+
+        }
+
+        .firstpic {
+            width: 100%;
+            height: 96px;
+        }
+
+        .firstimg {
+            width: 144px;
+            height: 96px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .firsttitle {
+            display: inline-block;
+            width: 150px;
+            height: 96px;
+            vertical-align: middle;
+            margin-left: 17px;
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 26px;
+            color: #000000;
+        }
+
+        .secondpic {
+            width: 100%;
+            height: 142px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .secondbox {
+            width: 97px;
+            height: 167px;
+            margin-top: 20px;
+        }
+
+        .secimg {
+            width: 100%;
+            height: 65px;
+        }
+
+        .secondtitle {
+            width: 100%;
+            height: auto;
+            margin-left: 8px;
+            margin-top: 10px;
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+            color: #000000;
+        }
+
+        .category {
+            width: 124px;
+            height: 30px;
+            background-color: #27C9FF;
+            font-family: 'Noto Serif TC';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 22px;
+            line-height: 32px;
+            color: #FFFFFF;
+            text-align: center;
+            position: relative;
+            bottom: 292px;
+        }
+
+        .smallwhite {
+            width: 124px;
+            height: 30px;
+            background-color: #ffffff;
+            position: absolute;
+            right: -5px;
+            bottom: -5px;
+            z-index: -1;
+
+        }
+
+        .more {
+            font-family: 'Noto Serif TC';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 11px;
+            line-height: 16px;
+            color: #F15BB5;
+            position: absolute;
+            bottom: -33px;
+            right: -5px;
+            z-index: 300;
+            width: 100px;
+        }
+        .more:hover{
+            color:#27c9ff;
+            font-family: 'Noto Serif TC';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 11px;
+            line-height: 16px;
+            position: absolute;
+            bottom: -33px;
+            right: -5px;
+            z-index: 300;
+            width: 100px;
+        }
+
+
+        }
+
+        /*tablet*/
+        @media (min-width: 768px) and (max-width: 1023px) {
+
+            .only-for-desktop {
+            display: none;
+            }
+
+            .only-for-tablet {
+            display: block;
+            }
+
+            .only-for-phone {
+            display: none;
+            }
+            body,
+        p {
+            margin: 0px;
+        }
+
+        a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+
+            .header {
+                background-color: #27c9ff;
+                width: 100%;
+                height: 60px;
+                position: relative;
+            }
+
+            .header-font {
+                font-family: 'Noto Serif TC';
+                font-size: 21px;
+                line-height: 30px;
+                font-weight: 900;
+                color: #ffffff;
+                margin-right: 15px;
+                letter-spacing: 0.06em;
+            }
+
+            .header-font a:hover {
+            color: #F15BB5;
+            opacity: 90%;
+            }
+
+
+            .yellowlogo {
+                width: 90px;
+                position: absolute;
+                left: 22px;
+                top: 10px;
+            }
+
+            .trashlogo {
+                margin-top: 35px;
+                margin-right: auto;
+                margin-bottom: 40px;
+                margin-left: auto;
+                width: 160px;
+                height: 100px;
+            }
+
+
+            .bottom {
+                width: 100%;
+                height: 90px;
+                background-color: #27c9ff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                top:101px;
+
+            }
+
+            .bottom-font {
+                color: #ffffff;
+                font-family: 'Noto Serif TC';
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 16px;
+                margin-left: 33px;
+                letter-spacing: 0.155em;
+            }
+
+
+        .w1 {
+            width: 100%;
+            height: 290px;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 710px;
+            z-index: -10000;
+        }
+
+        .w2 {
+            width: 100%;
+            height: 290px;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 1182px;
+            z-index: -10000;
+        }
+
+        .w3 {
+            width: 100%;
+            height: 295px;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 1655px;
+            z-index: -10000;
+        }
+
+
+        .p {
+            background-color: #ffffff;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            width: 100%;
+            height: 190px;
+        }
+
+        .p-carousel {
+            object-fit: cover;
+            width: 336.42px;
+            height: 190px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .p-carousel-indicator li {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: #F15BB5;
+        }
+
+        .popo-carousel li.active {
+            background-color: #27C9FF;
+        }
+
+        .title-car {
+            display: inline-block;
+            width: 250px;
+            height: 190px;
+            margin-left: 30px;
+            vertical-align: middle;
+            padding-top: 30px;
+            overflow: visible;
+
+        }
+
+        .titleinfo-car {
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 26px;
+            color: #000000;
+        }
+
+        .bluetag {
+            background-color: #27C9FF;
+            width: 40px;
+            height: 20px;
+            border-radius: 90px;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin-top: 15px;
+
+        }
+
+        .bluetaginfo {
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 11px;
+            line-height: 16px;
+            color: #FFFFFF;
+        }
+
+        .pinktag {
+            border: solid #F15BB5 1px;
+            width: auto;
+            height: auto;
+            display: inline-block;
+            margin-left: 20px;
+            padding-right: 7px;
+            vertical-align: middle;
+            margin-top: 15px;
+        }
+
+
+        .pinktaginfo {
+            display: inline-block;
+            font-family: 'Noto Serif TC';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 5px;
+            line-height: 13px;
+            color: #F15BB5;
+            margin-left: 7px;
+        }
+
+        .firstpic {
+            display: inline-block;
+            width: 277px;
+            height: 190px;
+        }
+
+        .firsttitle {
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 26px;
+            color: #000000;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .secondpic {
+            display: inline-block;
+            width: 280px;
+            height: 190px;
+        }
+
+        .secondbox {
+            width: 100%;
+            height: 62px;
+            margin-bottom: 37.5px;
+        }
+
+        .secimg {
+            display: inline-block;
+            width: 91px;
+            height: 62px;
+            vertical-align: top;
+        }
+
+        .secondtitle {
+            display: inline-block;
+            width: 150px;
+            height: 91px;
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 22px;
+            color: #000000;
+            vertical-align: top;
+            margin-left: 20px;
+        }
+
+        .category {
+            width: 129px;
+            height: 33px;
+            background-color: #27C9FF;
+            font-family: 'Noto Serif TC';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 22px;
+            line-height: 32px;
+            color: #FFFFFF;
+            text-align: center;
+            position: relative;
+            bottom: 250px;
+            right: 20px;
+        }
+
+        .smallwhite {
+            width: 129px;
+            height: 33px;
+            background-color: #ffffff;
+            position: absolute;
+            right: -5px;
+            bottom: -5px;
+            z-index: -1;
+
+        }
+
+        .more {
+            font-family: 'Noto Serif TC';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 11px;
+            line-height: 16px;
+            color: #F15BB5;
+            position: absolute;
+            bottom: -80px;
+            right: -54px;
+            z-index: 300;
+            width: 100px;
+        }
+        .more:hover{
+            color:#27c9ff;
+            font-family: 'Noto Serif TC';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 11px;
+            line-height: 16px;
+            position: absolute;
+            bottom: -80px;
+            right: -54px;
+            z-index: 300;
+            width: 100px;
+        }
+
+
+        }
+
+
+        /*desktop*/
+        @media (min-width: 1024px) {
+            
+
+            .only-for-desktop {
+                display: block;
+            }
+
+            .only-for-tablet {
+                display: none;
+            }
+
+            .only-for-phone {
+                display: none;
+            }
+        body,
+        p {
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+
+        .header {
+            background-color: #27c9ff;
+            width: 100%;
+            height: 97px;
+            position: relative;
+        }
+
+        .header-font {
+            font-family: 'Noto Serif TC';
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 900;
+            color: #ffffff;
+            margin-right: 30px;
+            letter-spacing: 0.1em;
+        }
+
+        .header-font a:hover {
+            color: #F15BB5;
+            opacity: 90%;
+        }
+
+        .yellowlogo {
+            width: 150px;
+            position: absolute;
+            left: 40px;
+        }
+
+        .w1 {
+            width: 100%;
+            height: 405px;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 1056px;
+            z-index: -10000;
+        }
+
+        .w2 {
+            width: 100%;
+            height: 405px;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 1787px;
+            z-index: -10000;
+        }
+
+        .w3 {
+            width: 100%;
+            height: 425px;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 2518px;
+            z-index: -10000;
+        }
+
+        .trashlogo {
+            margin-top: 60px;
+            margin-right: auto;
+            margin-bottom: 90px;
+            margin-left: auto;
+            width: 300px;
+            height: 200px;
+
+        }
+
+        .bottom {
+            width: 100%;
+            height: 166px;
+            background-color: #27c9ff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            bottom: -5px;
+        }
+
+        .bottom-font {
+            color: #ffffff;
+            font-family: 'Noto Serif TC';
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+            margin-left: 105px;
+            letter-spacing: 0.155em;
+        }
+
+
+        .p {
+            background-color: #ffffff;
+            margin-right: auto;
+            position: relative;
+            width: 100%;
+            height: 282.1px;
+            margin-bottom: 163px;
+        }
+
+        .p-carousel {
+            object-fit: cover;
+            width: 500px;
+            height: 282.1px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .p-carousel-indicator li {
+            width: 16px;
+            height: 16px;
+            border-radius: 100%;
+            background-color: #F15BB5;
+        }
+
+        .popo-carousel li.active {
+            background-color: #27C9FF;
+        }
+
+        .title-car {
+            display: inline-block;
+            width: 400px;
+            height: 282.1px;
+            margin-left: 30px;
+            vertical-align: middle;
+            padding-top: 40px;
+            overflow: visible;
+
+        }
+
+        .titleinfo-car {
+            font-family: Noto Sans TC;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 46px;
+            color: #000000;
+        }
+
+        .bluetag {
+            background-color: #27C9FF;
+            width: 60px;
+            height: 27.2px;
+            font-weight: bold;
+            border-radius: 90px;
+            display: inline-block;
+            margin-top: 20px;
+
+        }
+
+        .bluetaginfo {
+            color: #ffffff;
+            font-family: 'Roboto', 'Noto Sans TC';
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .pinktag {
+            border: solid #F15BB5 1.5px;
+            width: auto;
+            height: auto;
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 30px;
+            padding-right: 7px;
+        }
+
+
+        .pinktaginfo {
+            color: #F15BB5;
+            display: inline-block;
+            font-family: 'Roboto', 'Noto Serif TC';
+            font-size: 18px;
+            font-weight: 400;
+            margin-left: 7px;
+        }
+
+        .firstpic {
+            display: inline-block;
+            width: 400px;
+            height: 387.72px;
+        }
+
+        .firsttitle {
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 46px;
+            color: #000000;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .secondpic {
+            display: inline-block;
+            width: 410px;
+            height: auto;
+            height: 387.72px;
+        }
+
+        .secondbox {
+            width: 410px;
+            height: 92px;
+            margin-bottom: 52.5px;
+        }
+
+        .secimg {
+            display: inline-block;
+            width: 132px;
+            height: 91px;
+            vertical-align: top;
+        }
+
+        .secondtitle {
+            display: inline-block;
+            width: 240px;
+            height: 85px;
+            font-family: 'Noto Sans TC';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 35px;
+            color: #000000;
+            vertical-align: top;
+            margin-left: 30px;
+        }
+
+        .category {
+            width: 220px;
+            height: 70px;
+            background-color: #27C9FF;
+            font-family: 'Noto Serif TC';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 63px;
+            color: #FFFFFF;
+            text-align: center;
+            position: relative;
+            bottom: 500px;
+            right: 15px;
+        }
+
+        .smallwhite {
+            width: 220px;
+            height: 70px;
+            background-color: #ffffff;
+            position: absolute;
+            right: -5px;
+            bottom: -5px;
+            z-index: -1;
+
+        }
+
+        .more {
+            font-family: 'Noto Serif TC';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 26px;
+            color: #F15BB5;
+            position: absolute;
+            bottom: 20px;
+            right: 50px;
+            z-index: 300;
+            width: 150px;
+        }
+        .more:hover{
+            color:#27c9ff;
+            font-family: 'Noto Serif TC';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 26px;
+            position: absolute;
+            bottom: 20px;
+            right: 50px;
+            z-index: 300;
+            width: 150px;
+        }
+
+
+        }
+
+    </style>
+
+</head>
+<body style="background-color: #ffea69;">
+    <!--phone-->
+    <div class="only-for-phone">
+        <div class="header">
+            <div>
+                <a href="https://106204021.github.io/trashnews/finalsite.html" target="_self">
+                    <img src="assets/BannerLOGOy.png" class="yellowlogo"></a>
+            </div>
+            <div style="display: inline-block; position: absolute; right:5px; top:20px">
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/campuscat.html"
+                        target="_self">校園</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/sportcat.html"
+                        target="_self">體育</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/artcat.html"
+                        target="_self">藝文</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/about.html"
+                        target="_self">關於我們＋</a></span>
+            </div>
+            <div class="w1"></div>
+            <div class="w2"></div>
+            <div class="w3"></div>
+        </div>
+    
+        <div class="trashlogo">
+            <div><img src="assets/LOGOob.png" width=145px;></div>
+        </div>
+    
+    
+        <div id="carouselExampleIndicators" class="carousel slide p popo-carousel" data-bs-ride="carousel">
+            <ol class="carousel-indicators p-carousel-indicator li"
+                style="width:375px;margin-left: auto;margin-right: auto;margin-bottom: 2px;padding-left: 104px;">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" style="margin-left: 12px;"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" style="margin-left: 12px;"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" style="margin-left: 12px;"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" style="margin-left: 12px;"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" style="margin-left: 12px;"></li>
+            </ol>
+    
+            <div class="carousel-inner" style="width: 375px;height: auto;margin-left: auto;margin-right: auto;">
+                <div class="carousel-item active">
+                    <img class="p-carousel"
+                        src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/5e623eacc01b9ae61307ad6d943abaa0.jpg"
+                        class="d-block w-100" alt="...">
+    
+                    <div class="title-car"><a href="https://106204021.github.io/trashnews/campus/6.html">
+                        <div class="titleinfo-car">【大學人】蔡亞涵參與南鐵運動　化軟弱成抗爭力量</div>
+                        <div>
+                            <div class="bluetag">
+                                <div class="bluetaginfo">校園</div>
+                            </div>
+    
+                            <div class="pinktag">
+                                <div class="pinktaginfo">#蔡亞涵</div>
+                                <div class="pinktaginfo">#社運</div>
+                                <div class="pinktaginfo">#南鐵</div>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+    
+    
+                <div class="carousel-item">
+                    <img class="p-carousel"
+                        src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/4a8a08f09d37b73795649038408b5f33-768x577.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="title-car"><a href="https://106204021.github.io/trashnews/art/2.html">
+                        <div class="titleinfo-car">油彩融創作心境　林君晏塑公園散步景觀</div>
+                        <div class="bluetag">
+                            <div class="bluetaginfo">藝文</div>
+                        </div>
+                        <div class="pinktag">
+                            <div class="pinktaginfo">#油畫</div>
+                            <div class="pinktaginfo">#林君晏</div>
+                            <div class="pinktaginfo">#清大藝設系</div>
+                        </div>
+                    </a></div>
+                </div>
+                <div class="carousel-item">
+                    <img class="p-carousel"
+                        src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/ec6ef230f1828039ee794566b9c58adc.png"
+                        class="d-block w-100" alt="...">
+                    <div class="title-car"><a href="https://106204021.github.io/trashnews/art/3.html">
+                        <div class="titleinfo-car">堆疊紀錄科學視角　《參照系》探索地景樣貌</div>
+                        <div class="bluetag">
+                            <div class="bluetaginfo">藝文</div>
+                        </div>
+                        <div class="pinktag">
+                            <div class="pinktaginfo">#紀錄片</div>
+                            <div class="pinktaginfo">#蘇郁心</div>
+                            <div class="pinktaginfo">#雙年展</div>
+                        </div>
+                    </a></div>
+                </div>
+                <div class="carousel-item">
+                    <img class="p-carousel"
+                        src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/a8de89050bb1310f63af721f6038ae59-768x513.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="title-car"><a href="https://106204021.github.io/trashnews/sport/6.html">
+                        <div class="titleinfo-car">藍鵲盃限新手參賽　盼掀袋棍球風潮</div>
+                        <div class="bluetag">
+                            <div class="bluetaginfo">體育</div>
+                        </div>
+                        <div class="pinktag">
+                            <div class="pinktaginfo">#藍鵲盃</div>
+                            <div class="pinktaginfo">#袋棍球</div>
+                            <div class="pinktaginfo">#推廣</div>
+                        </div>
+                    </a></div>
+                </div>
+                <div class="carousel-item">
+                    <img class="p-carousel"
+                        src="http://www.newslab.nccu.edu.tw/uploads/asset/data/5df272721d41c82b660054f4/theevent_photo_%E6%B8%AF%E7%94%9F%E5%B0%88%E6%A1%882.JPG"
+                        class="d-block w-100" alt="...">
+                    <div class="title-car"><a href="https://106204021.github.io/trashnews/campus/5.html">
+                        <div class="titleinfo-car">訪台專案助港生　實際效益待考量</div>
+                        <div class="bluetag">
+                            <div class="bluetaginfo">校園</div>
+                        </div>
+                        <div class="pinktag">
+                            <div class="pinktaginfo">#港生赴台</div>
+                            <div class="pinktaginfo">#高教</div>
+                            <div class="pinktaginfo">#台大</div>
+                        </div>
+                    </a></div>
+                </div>
+                <div class="carousel-item">
+                    <img class="p-carousel"
+                        src="https://unews.nccu.edu.tw/wp-content/uploads/2020/10/bf38cb2316b73047b5c7375c0f06e9cc-768x512.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="title-car"><a href="https://106204021.github.io/trashnews/sport/2.html">
+                        <div class="titleinfo-car">一「舉」兩得　鄭又睿健力破紀錄奪金</div>
+                        <div class="bluetag">
+                            <div class="bluetaginfo">體育</div>
+                        </div>
+                        <div class="pinktag">
+                            <div class="pinktaginfo">#全民運</div>
+                            <div class="pinktaginfo">#鄭又睿</div>
+                            <div class="pinktaginfo">#健力</div>
+                        </div>
+                    </a></div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev"
+                style="width: auto;height: 134px;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next"
+                style="width: auto;height: 134px;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+    
+        <div style="width: 320px;margin-left: auto;margin-right: auto;margin-top: 122px;position: relative;">
+            <div class="firstpic"><a href="https://106204021.github.io/trashnews/campus/1.html">
+                <img src="https://github.com/106204021/trashnews/blob/main/web-4/57453%201.png?raw=true" class="firstimg">
+                <div class="firsttitle">【專欄】離開動盪現場後：來自港中大台生的告白</div>
+            </a></div>
+    
+            <div class="secondpic">
+                <div class="secondbox"><a href="https://106204021.github.io/trashnews/campus/2.html">
+                    <img src="https://github.com/106204021/trashnews/blob/main/web-4/57454%201.png?raw=true" class="secimg">
+                    <div class="secondtitle">打掃列必修　學生質疑勞作教育本質</div>
+                </a></div>
+                <div class="secondbox"><a href="https://106204021.github.io/trashnews/campus/3.html">
+                    <img src="https://github.com/106204021/trashnews/blob/main/web-4/57453%202.png?raw=true" class="secimg">
+                    <div class="secondtitle">自治參與意願低　探討學生思維究原因</div>
+                </a></div>
+                <div class="secondbox"><a href="https://106204021.github.io/trashnews/campus/4.html">
+                    <img src="https://github.com/106204021/trashnews/blob/main/web-4/57454%202.png?raw=true" class="secimg">
+                    <div class="secondtitle">「中式」連儂牆現身　台陸學生盼相互尊重</div>
+                </a></div>
+    
+            </div>
+            <div class="category">校園廢料
+                <div class="smallwhite"></div>
+            </div>
+            <a href="https://106204021.github.io/trashnews/campuscat.html" target="_self">
+                <div class="more">
+                    看更多校園廢料>>
+                </div>
+            </a>
+        </div>
+    
+        <div style="width: 320px;margin-left: auto;margin-right: auto;margin-top: 173px;position: relative;">
+            <div class="firstpic"><a href="https://106204021.github.io/trashnews/sport/1.html">
+                <img src="https://github.com/106204021/trashnews/blob/main/web-5/57453%201.png?raw=true" class="firstimg">
+                <div class="firsttitle">逆風高飛：政大雄鷹和UBA的困境與未來</div>
+            </a></div>
+    
+            <div class="secondpic">
+                <div class="secondbox"><a href="https://106204021.github.io/trashnews/sport/2.html">
+                    <img src="https://github.com/106204021/trashnews/blob/main/web-5/57454%201.png?raw=true" class="secimg">
+                    <div class="secondtitle">一「舉」兩得　鄭又睿健力破紀錄奪金</div>
+                </a></div>
+                <div class="secondbox"><a href="https://106204021.github.io/trashnews/sport/3.html">
+                    <img src="https://github.com/106204021/trashnews/blob/main/web-5/57453%202.png?raw=true" class="secimg">
+                    <div class="secondtitle">左閃右繞　李孝恒靈巧過樁直取金牌</div>
+                </a></div>
+                <div class="secondbox"><a href="https://106204021.github.io/trashnews/sport/4.html">
+                    <img src="https://github.com/106204021/trashnews/blob/main/web-5/57454%202.png?raw=true" class="secimg">
+                    <div class="secondtitle">「無聲中展球后霸氣　沈彥汝全障運羽球雙金</div>
+                </a></div>
+    
+            </div>
+    
+            <div class="category">體育廢料
+                <div class="smallwhite"></div>
+            </div>
+            <a href="https://106204021.github.io/trashnews/sportcat.html" target="_self">
+                <div class="more">
+                    看更多體育廢料>>
+                </div>
+            </a>
+        </div>
+    
+        <div style="width: 320px;margin-left: auto;margin-right: auto;margin-top: 173px;position: relative;">
+            <div class="firstpic"><a href="https://106204021.github.io/trashnews/art/1.html">
+                <img src="https://github.com/106204021/trashnews/blob/main/web-6/57453%201.png?raw=true" class="firstimg">
+                <div class="firsttitle">回歸最初悸動　《光的胎動》領觀眾探索生命之源</div>
+            </a></div>
+    
+            <div class="secondpic">
+                <div class="secondbox"><a href="https://106204021.github.io/trashnews/art/2.html">
+                    <img src="https://github.com/106204021/trashnews/blob/main/web-6/57454%201.png?raw=true" class="secimg">
+                    <div class="secondtitle">油彩融創作心境　林君晏塑公園散步景觀</div>
+                </a></div>
+    
+                <div class="secondbox"><a href="https://106204021.github.io/trashnews/art/3.html">
+                    <img src="https://github.com/106204021/trashnews/blob/main/web-6/57453%202.png?raw=true" class="secimg">
+                    <div class="secondtitle">堆疊紀錄科學視角　《參照系》探索地景樣貌</div>
+                </a></div>
+    
+                <div class="secondbox"><a href="https://106204021.github.io/trashnews/art/5.html">
+                    <img src="https://github.com/106204021/trashnews/blob/main/web-6/57454%203.png?raw=true" class="secimg">
+                    <div class="secondtitle">城市記憶：李大吉和中華商場59年</div>
+                </a></div>
+    
+            </div>
+            <div class="category">藝文廢料
+                <div class="smallwhite"></div>
+            </div>
+            <a href="https://106204021.github.io/trashnews/artcat.html" target="_self">
+                <div class="more">
+                    看更多藝文廢料>>
+                </div>
+            </a>
+        </div>
+        <div class="bottom">
+            <div style="display:inline-block;height: 35px;">
+                <div class="bottom-font">記者｜吳冠伶 徐嘉璟 陳庭寬</div>
+                <div class="bottom-font">指導｜李法賢</div>
+                <div class="bottom-font">copyright©2020 廢報</div>
+            </div>
+            
+            <div style="position: relative; width: 185px;height: 50px; right: 0px;bottom:5px;"><img src="assets/LOGOy.png" width=85px>
+                <div style="position: absolute;top:20px;right:25px;color: #ffffff ; font-size: 24px ;line-height: 34px; font-family:'Noto Serif TC'; font-weight: 700;">
+                <a href="https://106204021.github.io/trashnews/about.html" target="_self">贊助我們</a>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!--tablet-->
+    <div class="only-for-tablet">
+        <div class="header">
+            <div>
+                <a href="https://106204021.github.io/trashnews/finalsite.html" target="_self">
+                    <img src="assets/BannerLOGOy.png" class="yellowlogo"></a>
+            </div>
+            <div style="display: inline-block; position: absolute; right:5px; top:20px">
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/campuscat.html"
+                        target="_self">校園</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/sportcat.html"
+                        target="_self">體育</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/artcat.html"
+                        target="_self">藝文</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/about.html"
+                        target="_self">關於我們＋</a></span>
+            </div>
+            <div class="w1"></div>
+            <div class="w2"></div>
+            <div class="w3"></div>
+        </div>
+    
+        <div class="trashlogo">
+            <img src="assets/LOGOob.png" width="100%">
+        </div>
+    
+        <div id="carouselExampleIndicators" class="carousel slide p popo-carousel" data-bs-ride="carousel">
+            <ol class="carousel-indicators p-carousel-indicator li"
+                style="width: 630px;height: auto;margin-left: auto;margin-right: auto;margin-bottom: 20px;padding-left: 300px;">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" style="margin-left: 20px;"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" style="margin-left: 20px;"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" style="margin-left: 20px;"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" style="margin-left: 20px;"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" style="margin-left: 20px;"></li>
+            </ol>
+    
+            <div class="carousel-inner" style="width:630px; height:190px;margin-left: auto;margin-right: auto;">
+                <div class="carousel-item active">
+                    <img class="p-carousel"
+                        src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/5e623eacc01b9ae61307ad6d943abaa0.jpg"
+                        class="d-block w-100" alt="...">
+    
+                        <div class="title-car"><a href="https://106204021.github.io/trashnews/campus/6.html">
+                            <div class="titleinfo-car">【大學人】蔡亞涵參與南鐵運動　化軟弱成抗爭力量</div>
+                            <div>
+                                <div class="bluetag">
+                                    <div class="bluetaginfo">校園</div>
+                                </div>
+        
+                                <div class="pinktag">
+                                    <div class="pinktaginfo">#蔡亞涵</div>
+                                    <div class="pinktaginfo">#社運</div>
+                                    <div class="pinktaginfo">#南鐵</div>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                </div>
+    
+    
+                <div class="carousel-item">
+                    <img class="p-carousel"
+                        src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/4a8a08f09d37b73795649038408b5f33-768x577.jpg"
+                        class="d-block w-100" alt="...">
+                        <div class="title-car"><a href="https://106204021.github.io/trashnews/art/2.html">
+                            <div class="titleinfo-car">油彩融創作心境　林君晏塑公園散步景觀</div>
+                            <div class="bluetag">
+                                <div class="bluetaginfo">藝文</div>
+                            </div>
+                            <div class="pinktag">
+                                <div class="pinktaginfo">#油畫</div>
+                                <div class="pinktaginfo">#林君晏</div>
+                                <div class="pinktaginfo">#清大藝設系</div>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="carousel-item">
+                    <img class="p-carousel"
+                        src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/ec6ef230f1828039ee794566b9c58adc.png"
+                        class="d-block w-100" alt="...">
+                        <div class="title-car"><a href="https://106204021.github.io/trashnews/art/3.html">
+                            <div class="titleinfo-car">堆疊紀錄科學視角　《參照系》探索地景樣貌</div>
+                            <div class="bluetag">
+                                <div class="bluetaginfo">藝文</div>
+                            </div>
+                            <div class="pinktag">
+                                <div class="pinktaginfo">#紀錄片</div>
+                                <div class="pinktaginfo">#蘇郁心</div>
+                                <div class="pinktaginfo">#雙年展</div>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="carousel-item">
+                    <img class="p-carousel"
+                        src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/a8de89050bb1310f63af721f6038ae59-768x513.jpg"
+                        class="d-block w-100" alt="...">
+                        <div class="title-car"><a href="https://106204021.github.io/trashnews/sport/6.html">
+                            <div class="titleinfo-car">藍鵲盃限新手參賽　盼掀袋棍球風潮</div>
+                            <div class="bluetag">
+                                <div class="bluetaginfo">體育</div>
+                            </div>
+                            <div class="pinktag">
+                                <div class="pinktaginfo">#藍鵲盃</div>
+                                <div class="pinktaginfo">#袋棍球</div>
+                                <div class="pinktaginfo">#推廣</div>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="carousel-item">
+                    <img class="p-carousel"
+                        src="http://www.newslab.nccu.edu.tw/uploads/asset/data/5df272721d41c82b660054f4/theevent_photo_%E6%B8%AF%E7%94%9F%E5%B0%88%E6%A1%882.JPG"
+                        class="d-block w-100" alt="...">
+                        <div class="title-car"><a href="https://106204021.github.io/trashnews/campus/5.html">
+                            <div class="titleinfo-car">訪台專案助港生　實際效益待考量</div>
+                            <div class="bluetag">
+                                <div class="bluetaginfo">校園</div>
+                            </div>
+                            <div class="pinktag">
+                                <div class="pinktaginfo">#港生赴台</div>
+                                <div class="pinktaginfo">#高教</div>
+                                <div class="pinktaginfo">#台大</div>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="carousel-item">
+                    <img class="p-carousel"
+                        src="https://unews.nccu.edu.tw/wp-content/uploads/2020/10/bf38cb2316b73047b5c7375c0f06e9cc-768x512.jpg"
+                        class="d-block w-100" alt="...">
+                        <div class="title-car"><a href="https://106204021.github.io/trashnews/sport/2.html">
+                            <div class="titleinfo-car">一「舉」兩得　鄭又睿健力破紀錄奪金</div>
+                            <div class="bluetag">
+                                <div class="bluetaginfo">體育</div>
+                            </div>
+                            <div class="pinktag">
+                                <div class="pinktaginfo">#全民運</div>
+                                <div class="pinktaginfo">#鄭又睿</div>
+                                <div class="pinktaginfo">#健力</div>
+                            </div>
+                        </a></div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev"
+                style="width: auto;height: 190px;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+    
+        </div>
+    
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+    
+        <div style="width: 595px;height: auto;margin-left: auto;margin-right: auto;margin-top: 250px;position: relative;">
+            <div style="width:595px;display: flex;justify-content: space-around;margin-left: auto;margin-right: auto;">
+                <div class="firstpic"><a href="https://106204021.github.io/trashnews/campus/1.html">
+                    <img src="https://github.com/106204021/trashnews/blob/main/web-4/57453%201.png?raw=true" width="100%">
+                    <div class="firsttitle">【專欄】離開動盪現場後：來自港中大台生的告白</div>
+                </a></div>
+    
+                <div class="secondpic">
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/campus/2.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-4/57454%201.png?raw=true"
+                            class="secimg">
+                        <div class="secondtitle">打掃列必修　學生質疑勞作教育本質</div>
+                    </a></div>
+    
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/campus/3.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-4/57453%202.png?raw=true"
+                            class="secimg">
+                        <div class="secondtitle">自治參與意願低　探討學生思維究原因</div>
+                    </a></div>
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/campus/4.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-4/57454%202.png?raw=true"
+                            class="secimg">
+                        <div class="secondtitle">「中式」連儂牆現身　台陸學生盼相互尊重</div>
+                    </a></div>
+                </div>
+    
+            </div>
+            <div class="category">校園廢料
+                <div class="smallwhite"></div>
+            </div>
+            <a href="https://106204021.github.io/trashnews/campuscat.html" target="_self">
+                <div class="more">
+                    看更多校園廢料>>
+                </div>
+            </a>
+        </div>
+    
+        <div style="width: 595px;height: auto;margin-left: auto;margin-right: auto;margin-top: 250px;position: relative;">
+            <div style="width:595px;display: flex;justify-content: space-around;margin-left: auto;margin-right: auto;">
+                <div class="firstpic"><a href="https://106204021.github.io/trashnews/sport/1.html">
+                    <img src="https://github.com/106204021/trashnews/blob/main/web-5/57453%201.png?raw=true" width="100%">
+                    <div class="firsttitle">逆風高飛：政大雄鷹和UBA的困境與未來</div>
+                </a></div>
+    
+                <div class="secondpic">
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/sport/2.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-5/57454%201.png?raw=true"
+                            class="secimg">
+                        <div class="secondtitle">一「舉」兩得　鄭又睿健力破紀錄奪金</div>
+                    </a></div>
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/sport/3.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-5/57453%202.png?raw=true"
+                            class="secimg">
+                        <div class="secondtitle">左閃右繞　李孝恒靈巧過樁直取金牌</div>
+                    </a></div>
+    
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/sport/4.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-5/57454%202.png?raw=true"
+                            class="secimg">
+                        <div class="secondtitle">無聲中展球后霸氣　沈彥汝全障運羽球雙金</div>
+                    </a></div>
+                </div>
+    
+            </div>
+            <div class="category">體育廢料
+                <div class="smallwhite"></div>
+            </div>
+            <a href="https://106204021.github.io/trashnews/sportcat.html" target="_self">
+                <div class="more">
+                    看更多體育廢料>>
+                </div>
+            </a>
+        </div>
+    
+        <div style="width: 595px;height: auto;margin-left: auto;margin-right: auto;margin-top: 250px;position: relative;">
+            <div style="width:595px;display: flex;justify-content: space-around;margin-left: auto;margin-right: auto;">
+                <div class="firstpic"><a href="https://106204021.github.io/trashnews/art/1.html">
+                    <img src="https://github.com/106204021/trashnews/blob/main/web-6/57453%201.png?raw=true" width="100%">
+                    <div class="firsttitle">回歸最初悸動　《光的胎動》領觀眾探索生命之源</div>
+                </a></div>
+    
+                <div class="secondpic">
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/art/2.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-6/57454%201.png?raw=true"
+                            class="secimg">
+                        <div class="secondtitle">油彩融創作心境　林君晏塑公園散步景觀</div>
+                    </a></div>
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/art/3.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-6/57453%202.png?raw=true"
+                            class="secimg">
+                        <div class="secondtitle">堆疊紀錄科學視角　《參照系》探索地景樣貌</div>
+                    </a></div>
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/art/5.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-6/57454%203.png?raw=true"
+                            class="secimg">
+                        <div class="secondtitle">城市記憶：李大吉和中華商場59年</div>
+                    </a></div>
+                </div>
+    
+            </div>
+            <div class="category">藝文廢料
+                <div class="smallwhite"></div>
+            </div>
+            <a href="https://106204021.github.io/trashnews/artcat.html" target="_self">
+                <div class="more">
+                    看更多藝文廢料>>
+                </div>
+            </a>
+        </div>
+        <div class="bottom">
+            <div style="display:inline-block;height: 49px;">
+                <div class="bottom-font">記者｜吳冠伶 徐嘉璟 陳庭寬</div>
+                <div class="bottom-font">指導｜李法賢</div>
+                <div class="bottom-font">copyright©2020 廢報</div>
+            </div>
+    
+            <div style="position: relative; width: 168px;height: 35px; right: 0px;bottom:5px;"><img
+                    src="assets/LOGOy.png" width=65px>
+                <div
+                    style="position: absolute;top:10px;right:20px;color: #ffffff ; font-size: 24px ;line-height: 34px; font-family:'Noto Serif TC'; font-weight: 700;">
+                    <a href="https://106204021.github.io/trashnews/about.html" target="_self">贊助我們</a>
+                </div>
+            </div>
+    
+        </div>
+
+    </div>
+
+    <!--desktop-->
+    <div class="only-for-desktop">
+        <div class="header">
+            <div style="position: absolute;left:0px; top:13px">
+                <a href="https://106204021.github.io/trashnews/finalsite.html" target="_self"><img
+                        src="assets/BannerLOGOy.png" class="yellowlogo"></a>
+            </div>
+            <div style="display: inline-block; position: absolute; right:5px; top:40px">
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/campuscat.html"
+                        target="_self">校園</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/sportcat.html"
+                        target="_self">體育</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/artcat.html"
+                        target="_self">藝文</a></span>
+                <span class="header-font"><a href="https://106204021.github.io/trashnews/about.html"
+                        target="_self">關於我們＋</a></span>
+    
+            </div>
+            <div class="w1"></div>
+            <div class="w2"></div>
+            <div class="w3"></div>
+        </div>
+        <div class="trashlogo">
+            <div><img src="assets/LOGOob.png" width=300px;></div>
+        </div>
+    
+        <div id="carouselExampleIndicators" class="carousel slide p popo-carousel" data-bs-ride="carousel">
+            <ol class="carousel-indicators p-carousel-indicator li"
+                style="width: 1000px;height: auto;margin-left: auto;margin-right: auto;margin-bottom: 40px;padding-left: 288px;">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" style="margin-left: 20px;"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" style="margin-left: 20px;"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" style="margin-left: 20px;"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" style="margin-left: 20px;"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" style="margin-left: 20px;"></li>
+            </ol>
+    
+            <div class="carousel-inner" style="width:1000px; height:282.1px;margin-left: auto;margin-right: auto;">
+                <div class="carousel-item active">
+                    <img class="p-carousel"
+                        src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/5e623eacc01b9ae61307ad6d943abaa0.jpg"
+                        class="d-block w-100" alt="...">
+    
+                        <div class="title-car"><a href="https://106204021.github.io/trashnews/campus/6.html">
+                            <div class="titleinfo-car">【大學人】蔡亞涵參與南鐵運動　化軟弱成抗爭力量</div>
+                            <div>
+                                <div class="bluetag">
+                                    <div class="bluetaginfo">校園</div>
+                                </div>
+        
+                                <div class="pinktag">
+                                    <div class="pinktaginfo">#蔡亞涵</div>
+                                    <div class="pinktaginfo">#社運</div>
+                                    <div class="pinktaginfo">#南鐵</div>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                </div>
+    
+    
+                <div class="carousel-item">
+                    <img class="p-carousel"
+                        src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/4a8a08f09d37b73795649038408b5f33-768x577.jpg"
+                        class="d-block w-100" alt="...">
+                        <div class="title-car"><a href="https://106204021.github.io/trashnews/art/2.html">
+                            <div class="titleinfo-car">油彩融創作心境　林君晏塑公園散步景觀</div>
+                            <div class="bluetag">
+                                <div class="bluetaginfo">藝文</div>
+                            </div>
+                            <div class="pinktag">
+                                <div class="pinktaginfo">#油畫</div>
+                                <div class="pinktaginfo">#林君晏</div>
+                                <div class="pinktaginfo">#清大藝設系</div>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="carousel-item">
+                    <img class="p-carousel"
+                        src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/ec6ef230f1828039ee794566b9c58adc.png"
+                        class="d-block w-100" alt="...">
+                        <div class="title-car"><a href="https://106204021.github.io/trashnews/art/3.html">
+                            <div class="titleinfo-car">堆疊紀錄科學視角　《參照系》探索地景樣貌</div>
+                            <div class="bluetag">
+                                <div class="bluetaginfo">藝文</div>
+                            </div>
+                            <div class="pinktag">
+                                <div class="pinktaginfo">#紀錄片</div>
+                                <div class="pinktaginfo">#蘇郁心</div>
+                                <div class="pinktaginfo">#雙年展</div>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="carousel-item">
+                    <img class="p-carousel"
+                        src="https://unews.nccu.edu.tw/wp-content/uploads/2020/12/a8de89050bb1310f63af721f6038ae59-768x513.jpg"
+                        class="d-block w-100" alt="...">
+                        <div class="title-car"><a href="https://106204021.github.io/trashnews/sport/6.html">
+                            <div class="titleinfo-car">藍鵲盃限新手參賽　盼掀袋棍球風潮</div>
+                            <div class="bluetag">
+                                <div class="bluetaginfo">體育</div>
+                            </div>
+                            <div class="pinktag">
+                                <div class="pinktaginfo">#藍鵲盃</div>
+                                <div class="pinktaginfo">#袋棍球</div>
+                                <div class="pinktaginfo">#推廣</div>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="carousel-item">
+                    <img class="p-carousel"
+                        src="http://www.newslab.nccu.edu.tw/uploads/asset/data/5df272721d41c82b660054f4/theevent_photo_%E6%B8%AF%E7%94%9F%E5%B0%88%E6%A1%882.JPG"
+                        class="d-block w-100" alt="...">
+                        <div class="title-car"><a href="https://106204021.github.io/trashnews/campus/5.html">
+                            <div class="titleinfo-car">訪台專案助港生　實際效益待考量</div>
+                            <div class="bluetag">
+                                <div class="bluetaginfo">校園</div>
+                            </div>
+                            <div class="pinktag">
+                                <div class="pinktaginfo">#港生赴台</div>
+                                <div class="pinktaginfo">#高教</div>
+                                <div class="pinktaginfo">#台大</div>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="carousel-item">
+                    <img class="p-carousel"
+                        src="https://unews.nccu.edu.tw/wp-content/uploads/2020/10/bf38cb2316b73047b5c7375c0f06e9cc-768x512.jpg"
+                        class="d-block w-100" alt="...">
+                        <div class="title-car"><a href="https://106204021.github.io/trashnews/sport/2.html">
+                            <div class="titleinfo-car">一「舉」兩得　鄭又睿健力破紀錄奪金</div>
+                            <div class="bluetag">
+                                <div class="bluetaginfo">體育</div>
+                            </div>
+                            <div class="pinktag">
+                                <div class="pinktaginfo">#全民運</div>
+                                <div class="pinktaginfo">#鄭又睿</div>
+                                <div class="pinktaginfo">#健力</div>
+                            </div>
+                        </a></div>
+                </div>
+            </div>
+        
+    
+    
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+    
+        <div style="width: 1000px;height: auto;margin-left: auto;margin-right: auto;margin-top: 273px;position: relative;">
+            <div style="width:1000px;display: flex;justify-content: space-around;margin-left: auto;margin-right: auto;">
+                <div class="firstpic"><a href="https://106204021.github.io/trashnews/campus/1.html">
+                    <img src="https://github.com/106204021/trashnews/blob/main/web-4/57453%201.png?raw=true" class="firstimg">
+                    <div class="firsttitle">【專欄】離開動盪現場後：來自港中大台生的告白</div>
+                </a></div>
+        
+                <div class="secondpic">
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/campus/2.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-4/57454%201.png?raw=true" class="secimg">
+                        <div class="secondtitle">打掃列必修　學生質疑勞作教育本質</div>
+                    </a></div>
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/campus/3.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-4/57453%202.png?raw=true" class="secimg">
+                        <div class="secondtitle">自治參與意願低　探討學生思維究原因</div>
+                    </a></div>
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/campus/4.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-4/57454%202.png?raw=true" class="secimg">
+                        <div class="secondtitle">「中式」連儂牆現身　台陸學生盼相互尊重</div>
+                    </a></div>
+        
+                </div>
+    
+            </div>
+            <div class="category">校園廢料
+                <div class="smallwhite"></div>
+            </div>
+            <a href="https://106204021.github.io/trashnews/campuscat.html" target="_self">
+                <div class="more">
+                    看更多校園廢料>>
+                </div>
+            </a>
+        </div>
+    
+        <div style="width: 1000px;height: auto;margin-left: auto;margin-right: auto;margin-top: 273px;position: relative;">
+            <div style="width:1000px;display: flex;justify-content: space-around;margin-left: auto;margin-right: auto;">
+                <div class="firstpic"><a href="https://106204021.github.io/trashnews/sport/1.html">
+                    <img src="https://github.com/106204021/trashnews/blob/main/web-5/57453%201.png?raw=true" class="firstimg">
+                    <div class="firsttitle">逆風高飛：政大雄鷹和UBA的困境與未來</div>
+                </a></div>
+        
+                <div class="secondpic">
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/sport/2.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-5/57454%201.png?raw=true" class="secimg">
+                        <div class="secondtitle">一「舉」兩得　鄭又睿健力破紀錄奪金</div>
+                    </a></div>
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/sport/3.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-5/57453%202.png?raw=true" class="secimg">
+                        <div class="secondtitle">左閃右繞　李孝恒靈巧過樁直取金牌</div>
+                    </a></div>
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/sport/4.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-5/57454%202.png?raw=true" class="secimg">
+                        <div class="secondtitle">「無聲中展球后霸氣　沈彥汝全障運羽球雙金</div>
+                    </a></div>
+        
+                </div>
+    
+            </div>
+            <div class="category">體育廢料
+                <div class="smallwhite"></div>
+            </div>
+            <a href="https://106204021.github.io/trashnews/sportcat.html" target="_self">
+                <div class="more">
+                    看更多體育廢料>>
+                </div>
+            </a>
+        </div>
+    
+        <div style="width: 1000px;height: auto;margin-left: auto;margin-right: auto;margin-top: 273px;position: relative;">
+            <div style="width:1000px;display: flex;justify-content: space-around;margin-left: auto;margin-right: auto;">
+                <div class="firstpic"><a href="https://106204021.github.io/trashnews/art/1.html">
+                    <img src="https://github.com/106204021/trashnews/blob/main/web-6/57453%201.png?raw=true" class="firstimg">
+                    <div class="firsttitle">回歸最初悸動　《光的胎動》領觀眾探索生命之源</div>
+                </a></div>
+        
+                <div class="secondpic">
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/art/2.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-6/57454%201.png?raw=true" class="secimg">
+                        <div class="secondtitle">油彩融創作心境　林君晏塑公園散步景觀</div>
+                    </a></div>
+        
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/art/3.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-6/57453%202.png?raw=true" class="secimg">
+                        <div class="secondtitle">堆疊紀錄科學視角　《參照系》探索地景樣貌</div>
+                    </a></div>
+        
+                    <div class="secondbox"><a href="https://106204021.github.io/trashnews/art/5.html">
+                        <img src="https://github.com/106204021/trashnews/blob/main/web-6/57454%203.png?raw=true" class="secimg">
+                        <div class="secondtitle">城市記憶：李大吉和中華商場59年</div>
+                    </a></div>
+        
+                </div>
+    
+            </div>
+            <div class="category">藝文廢料
+                <div class="smallwhite"></div>
+            </div>
+            <a href="https://106204021.github.io/trashnews/artcat.html" target="_self">
+                <div class="more">
+                    看更多藝文廢料>>
+                </div>
+            </a>
+        </div>
+        <div class="bottom">
+            <div style="display:inline-block;height: 80px;">
+                <div class="bottom-font">記者｜吳冠伶 徐嘉璟 陳庭寬</div>
+                <div class="bottom-font">指導｜李法賢</div>
+                <div style="width: 10px;height:20px;background-color: #27c9ff;"></div>
+                <div class="bottom-font">copyright©2020 廢報</div>
+            </div>
+            <div style="position: relative;width: 400px;">
+                <img src="assets/LOGOy.png" width=190px>
+                <span
+                    style="color: #ffffff ; font-size: 36px ; line-height: 52px ; position: absolute ; left: 153px ; top:55px ; font-family:'Noto Serif TC'; font-weight: 700;">
+                    <a href="https://106204021.github.io/trashnews/about.html" target="_self">贊助我們</a>
+                </span>
+            </div>
+        </div>
+    
+    </div>
+    
+</body>
+</html>
