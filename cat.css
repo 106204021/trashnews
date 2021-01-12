@@ -12,9 +12,12 @@ body{margin: 0px;}
     text-decoration: none;
     color: black;
 }
-.header-font   :hover {
+.header-font :hover {
     color: #F15BB5;
     opacity: 90%;
+}
+.trash-ss :hover{
+    font-weight: 800;
 }
 @media (min-width: 1024px) {
     .only-for-desktop {
